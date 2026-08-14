@@ -105,9 +105,11 @@ export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const [forceMotion, setForceMotion] = useState(false);
-  const sceneFloat = progress * (scenes.length - 1);
-  const sceneIndex = Math.min(Math.floor(sceneFloat), scenes.length - 1);
-  const nextSceneIndex = Math.min(sceneIndex + 1, scenes.length - 1);
+  const activeScenes = isMobile ? scenes.slice(0, 2) : scenes;
+  const mobileProcessScenes = scenes.slice(2);
+  const sceneFloat = progress * (activeScenes.length - 1);
+  const sceneIndex = Math.min(Math.floor(sceneFloat), activeScenes.length - 1);
+  const nextSceneIndex = Math.min(sceneIndex + 1, activeScenes.length - 1);
   const sceneBlend = clamp((sceneFloat - sceneIndex) / (isMobile ? 0.56 : 0.64), 0, 1);
   const activeScene = sceneBlend >= 0.5 ? nextSceneIndex : sceneIndex;
 
@@ -162,7 +164,7 @@ export default function Home() {
     const section = journeyRef.current;
     if (!section) return;
     const distance = section.offsetHeight - window.innerHeight;
-    const target = section.offsetTop + (index / (scenes.length - 1)) * distance;
+    const target = section.offsetTop + (index / (activeScenes.length - 1)) * distance;
     window.scrollTo({ top: target, behavior: "smooth" });
   };
 
@@ -195,7 +197,7 @@ export default function Home() {
         className="world-journey"
         style={{
           "--journey-height": `${100 + (scenes.length - 1) * 50}svh`,
-          "--mobile-journey-height": `${100 + (scenes.length - 1) * 42}svh`,
+          "--mobile-journey-height": `${100 + (activeScenes.length - 1) * 42}svh`,
         } as CSSProperties}
         aria-label="Recorrido por el trabajo de Paolo Gonzales"
       >
@@ -207,7 +209,7 @@ export default function Home() {
             </button>
           )}
           <div className="world-visuals" aria-hidden="true">
-            {scenes.map((scene, index) => {
+            {activeScenes.map((scene, index) => {
               const isCurrent = index === sceneIndex;
               const isNext = index === nextSceneIndex && nextSceneIndex !== sceneIndex;
               const opacity = isCurrent ? 1 : isNext ? sceneBlend : 0;
@@ -249,7 +251,7 @@ export default function Home() {
           <div className="world-grid" aria-hidden="true" />
 
           <div className="world-copy-stack">
-            {scenes.map((scene, index) => {
+            {activeScenes.map((scene, index) => {
               const isCurrent = index === sceneIndex;
               const isNext = index === nextSceneIndex && nextSceneIndex !== sceneIndex;
               const opacity = isCurrent ? 1 - sceneBlend : isNext ? sceneBlend : 0;
@@ -278,10 +280,15 @@ export default function Home() {
                       <a href={whatsappUrl} target="_blank" rel="noreferrer">Escribir por WhatsApp ↗</a>
                     </div>
                   )}
-                  {index === scenes.length - 1 && (
+                  {!isMobile && index === activeScenes.length - 1 && (
                     <div className="world-actions">
                       <a className="is-primary" href="#casos">Ver casos reales ↓</a>
                       <a href={whatsappUrl} target="_blank" rel="noreferrer">Hablemos ↗</a>
+                    </div>
+                  )}
+                  {isMobile && index === activeScenes.length - 1 && (
+                    <div className="world-actions">
+                      <a className="is-primary" href="#proceso-movil">Continuar el proceso ↓</a>
                     </div>
                   )}
                 </article>
@@ -290,7 +297,7 @@ export default function Home() {
           </div>
 
           <div className="world-scene-nav" aria-label="Capítulos del recorrido">
-            {scenes.map((scene, index) => (
+            {activeScenes.map((scene, index) => (
               <button
                 type="button"
                 key={scene.number}
@@ -310,6 +317,29 @@ export default function Home() {
           <div className="world-scroll-hint"><span /> Scroll para recorrer</div>
         </div>
       </section>
+
+      {isMobile && (
+        <section id="proceso-movil" className="world-mobile-process" aria-label="Tres fases siguientes del proceso">
+          <div className="world-mobile-process-heading">
+            <div><span>03—05</span><h2>Del prototipo<br />al uso real.</h2></div>
+            <p>Desliza para recorrer las tres fases siguientes <b>→</b></p>
+          </div>
+          <div className="world-mobile-process-track">
+            {mobileProcessScenes.map((scene, index) => (
+              <article key={scene.number}>
+                <img src={scene.image} alt={`Escena ${scene.number}: ${scene.title}`} loading="lazy" decoding="async" />
+                <div>
+                  <div className="world-kicker"><span>{scene.number}</span>{scene.eyebrow}</div>
+                  <h3>{scene.title}</h3>
+                  <p>{scene.copy}</p>
+                  <small><i />{scene.signal}</small>
+                  {index === mobileProcessScenes.length - 1 && <a href="#casos">Ver casos reales ↓</a>}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="world-trust" aria-label="Empresas con las que ha trabajado Paolo">
         <div className="world-shell">
