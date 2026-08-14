@@ -109,11 +109,33 @@ function clamp(value: number, min: number, max: number) {
 export default function Home() {
   const journeyRef = useRef<HTMLElement>(null);
   const [progress, setProgress] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const [forceMotion, setForceMotion] = useState(false);
   const sceneFloat = progress * (scenes.length - 1);
   const sceneIndex = Math.min(Math.floor(sceneFloat), scenes.length - 1);
   const nextSceneIndex = Math.min(sceneIndex + 1, scenes.length - 1);
   const sceneBlend = clamp((sceneFloat - sceneIndex) / 0.64, 0, 1);
   const activeScene = sceneBlend >= 0.5 ? nextSceneIndex : sceneIndex;
+
+  useEffect(() => {
+    const mobileQuery = window.matchMedia("(max-width: 700px)");
+    const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const updatePreferences = () => {
+      setIsMobile(mobileQuery.matches);
+      setPrefersReducedMotion(reducedMotionQuery.matches);
+    };
+
+    updatePreferences();
+    setForceMotion(window.localStorage.getItem("paolo-portfolio-motion") === "enabled");
+    mobileQuery.addEventListener("change", updatePreferences);
+    reducedMotionQuery.addEventListener("change", updatePreferences);
+
+    return () => {
+      mobileQuery.removeEventListener("change", updatePreferences);
+      reducedMotionQuery.removeEventListener("change", updatePreferences);
+    };
+  }, []);
 
   useEffect(() => {
     let frame = 0;
@@ -151,8 +173,14 @@ export default function Home() {
     window.scrollTo({ top: target, behavior: "smooth" });
   };
 
+  const enableMotion = () => {
+    window.localStorage.setItem("paolo-portfolio-motion", "enabled");
+    setForceMotion(true);
+    window.requestAnimationFrame(() => window.scrollTo({ top: journeyRef.current?.offsetTop ?? 0, behavior: "smooth" }));
+  };
+
   return (
-    <main className="world-page">
+    <main className={`world-page${forceMotion ? " is-motion-enabled" : ""}`}>
       <header className="world-header">
         <a className="world-brand" href="#inicio" aria-label="Paolo Gonzales, volver al inicio">
           <span>PG</span>
@@ -176,26 +204,33 @@ export default function Home() {
         aria-label="Recorrido por el trabajo de Paolo Gonzales"
       >
         <div className="world-stage">
+          {prefersReducedMotion && !forceMotion && (
+            <button className="world-motion-toggle" type="button" onClick={enableMotion}>
+              <span>Tu dispositivo redujo las animaciones</span>
+              <strong>Activar recorrido animado</strong>
+            </button>
+          )}
           <div className="world-visuals" aria-hidden="true">
             {scenes.map((scene, index) => {
               const isCurrent = index === sceneIndex;
               const isNext = index === nextSceneIndex && nextSceneIndex !== sceneIndex;
               const opacity = isCurrent ? 1 : isNext ? sceneBlend : 0;
               const direction = index % 2 === 0 ? 1 : -1;
+              const motionBoost = isMobile ? 1.5 : 1;
               const scale = isCurrent
-                ? 1 + sceneBlend * 0.016
+                ? 1 + sceneBlend * 0.016 * motionBoost
                 : isNext
-                  ? 1.018 - sceneBlend * 0.018
-                  : 1.018;
+                  ? 1 + (1 - sceneBlend) * 0.018 * motionBoost
+                  : 1 + 0.018 * motionBoost;
               const pan = isCurrent
-                ? sceneBlend * -1.05 * direction
+                ? sceneBlend * -1.05 * direction * motionBoost
                 : isNext
-                  ? (1 - sceneBlend) * 1.05 * direction
+                  ? (1 - sceneBlend) * 1.05 * direction * motionBoost
                   : 0;
               const drift = isCurrent
-                ? sceneBlend * -0.45
+                ? sceneBlend * -0.45 * motionBoost
                 : isNext
-                  ? (1 - sceneBlend) * 0.45
+                  ? (1 - sceneBlend) * 0.45 * motionBoost
                   : 0;
 
               return (

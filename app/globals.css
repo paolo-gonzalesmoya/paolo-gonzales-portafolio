@@ -579,6 +579,7 @@ img { display: block; max-width: 100%; }
 .world-scroll-hint { position: absolute; z-index: 43; right: 5vw; bottom: 40px; display: flex; align-items: center; gap: 8px; color: #6c6962; font-size: 7px; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
 .world-scroll-hint span { width: 14px; height: 20px; border: 1px solid rgba(17,21,34,.25); border-radius: 8px; }
 .world-scroll-hint span:after { content: ""; width: 2px; height: 4px; display: block; margin: 4px auto 0; border-radius: 2px; background: var(--world-violet); animation: worldScroll 1.7s ease-in-out infinite; }
+.world-motion-toggle { display: none; }
 
 .world-trust { border-top: 1px solid rgba(17,21,34,.09); border-bottom: 1px solid rgba(17,21,34,.1); background: #fffaf3; }
 .world-trust .world-shell { min-height: 118px; display: grid; grid-template-columns: 210px 1fr; align-items: center; gap: 40px; }
@@ -755,14 +756,23 @@ img { display: block; max-width: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .world-journey { height: auto; }
-  .world-stage { position: relative; height: auto; min-height: 0; overflow: visible; padding-top: 90px; background: var(--world-paper); }
-  .world-visuals, .world-light, .world-grid, .world-scene-nav, .world-scroll-meter, .world-scroll-hint { display: none; }
-  .world-copy-stack { position: relative; inset: auto; display: grid; gap: 18px; padding: 20px 0 80px; }
-  .world-scene-copy { position: relative; inset: auto; width: 100%; overflow: hidden; padding: 18px 18px 30px; border: 1px solid rgba(17,21,34,.1); border-radius: 22px; opacity: 1 !important; background: #fffaf3; transform: none !important; }
-  .world-copy-image { width: calc(100% + 36px); height: auto; display: block; margin: -18px -18px 25px; }
-  .world-scene-copy h1 { max-width: 800px; font-size: clamp(42px, 7vw, 70px); }
-  .world-role { display: block; }
-  .world-actions button, .world-actions a { backdrop-filter: none; }
-  .world-scroll-hint span:after { animation: none; }
+  .world-page:not(.is-motion-enabled) .world-journey { height: auto; }
+  .world-page:not(.is-motion-enabled) .world-stage { position: relative; height: auto; min-height: 0; overflow: visible; padding-top: 90px; background: var(--world-paper); }
+  .world-page:not(.is-motion-enabled) .world-visuals,
+  .world-page:not(.is-motion-enabled) .world-light,
+  .world-page:not(.is-motion-enabled) .world-grid,
+  .world-page:not(.is-motion-enabled) .world-scene-nav,
+  .world-page:not(.is-motion-enabled) .world-scroll-meter,
+  .world-page:not(.is-motion-enabled) .world-scroll-hint { display: none; }
+  .world-page:not(.is-motion-enabled) .world-motion-toggle { width: min(520px, calc(100% - 32px)); display: flex; flex-direction: column; gap: 5px; margin: 0 auto 10px; padding: 15px 17px; border: 1px solid rgba(17,21,34,.12); border-radius: 15px; color: var(--world-ink); background: white; box-shadow: 0 16px 36px rgba(54,42,33,.08); text-align: left; cursor: pointer; }
+  .world-page:not(.is-motion-enabled) .world-motion-toggle span { color: #77736c; font-size: 9px; }
+  .world-page:not(.is-motion-enabled) .world-motion-toggle strong { color: var(--world-violet); font-size: 12px; }
+  .world-page:not(.is-motion-enabled) .world-copy-stack { position: relative; inset: auto; display: grid; gap: 18px; padding: 20px 0 80px; }
+  .world-page:not(.is-motion-enabled) .world-scene-copy { position: relative; inset: auto; width: 100%; overflow: hidden; padding: 18px 18px 30px; border: 1px solid rgba(17,21,34,.1); border-radius: 22px; opacity: 1 !important; background: #fffaf3; transform: none !important; }
+  .world-page:not(.is-motion-enabled) .world-copy-image { width: calc(100% + 36px); height: auto; display: block; margin: -18px -18px 25px; }
+  .world-page:not(.is-motion-enabled) .world-scene-copy h1 { max-width: 800px; font-size: clamp(42px, 7vw, 70px); }
+  .world-page:not(.is-motion-enabled) .world-role { display: block; }
+  .world-page:not(.is-motion-enabled) .world-actions button,
+  .world-page:not(.is-motion-enabled) .world-actions a { backdrop-filter: none; }
+  .world-page:not(.is-motion-enabled) .world-scroll-hint span:after { animation: none; }
 }
