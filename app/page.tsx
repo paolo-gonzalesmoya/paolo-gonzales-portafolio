@@ -126,7 +126,10 @@ export default function Home() {
   const journeyRef = useRef<HTMLElement>(null);
   const [progress, setProgress] = useState(0);
   const sceneFloat = progress * (scenes.length - 1);
-  const activeScene = clamp(Math.round(sceneFloat), 0, scenes.length - 1);
+  const sceneIndex = Math.min(Math.floor(sceneFloat), scenes.length - 1);
+  const nextSceneIndex = Math.min(sceneIndex + 1, scenes.length - 1);
+  const sceneBlend = clamp((sceneFloat - sceneIndex) / 0.72, 0, 1);
+  const activeScene = sceneBlend >= 0.5 ? nextSceneIndex : sceneIndex;
 
   useEffect(() => {
     let frame = 0;
@@ -185,16 +188,25 @@ export default function Home() {
         id="inicio"
         ref={journeyRef}
         className="world-journey"
-        style={{ "--scene-count": scenes.length } as CSSProperties}
+        style={{ "--journey-height": `${100 + (scenes.length - 1) * 58}svh` } as CSSProperties}
         aria-label="Recorrido por el trabajo de Paolo Gonzales"
       >
         <div className="world-stage">
           <div className="world-visuals" aria-hidden="true">
             {scenes.map((scene, index) => {
-              const distance = Math.abs(sceneFloat - index);
-              const opacity = clamp(1 - distance * 1.25, 0, 1);
-              const scale = 1 + Math.min(distance, 1.2) * 0.055;
-              const drift = clamp((index - sceneFloat) * 2.5, -4, 4);
+              const isCurrent = index === sceneIndex;
+              const isNext = index === nextSceneIndex && nextSceneIndex !== sceneIndex;
+              const opacity = isCurrent ? 1 : isNext ? sceneBlend : 0;
+              const scale = isCurrent
+                ? 1 + sceneBlend * 0.025
+                : isNext
+                  ? 1.035 - sceneBlend * 0.035
+                  : 1.04;
+              const drift = isCurrent
+                ? sceneBlend * -1.3
+                : isNext
+                  ? (1 - sceneBlend) * 1.3
+                  : 0;
 
               return (
                 <div
@@ -203,7 +215,7 @@ export default function Home() {
                   style={{
                     opacity,
                     transform: `scale(${scale}) translate3d(0, ${drift}%, 0)`,
-                    zIndex: Math.round(opacity * 10),
+                    zIndex: isNext ? 2 : isCurrent ? 1 : 0,
                   }}
                 >
                   <img src={scene.image} alt="" />
@@ -217,9 +229,14 @@ export default function Home() {
 
           <div className="world-copy-stack">
             {scenes.map((scene, index) => {
-              const distance = Math.abs(sceneFloat - index);
-              const opacity = clamp(1 - distance * 1.8, 0, 1);
-              const offset = clamp((index - sceneFloat) * 38, -46, 46);
+              const isCurrent = index === sceneIndex;
+              const isNext = index === nextSceneIndex && nextSceneIndex !== sceneIndex;
+              const opacity = isCurrent ? 1 - sceneBlend : isNext ? sceneBlend : 0;
+              const offset = isCurrent
+                ? sceneBlend * -26
+                : isNext
+                  ? (1 - sceneBlend) * 26
+                  : 26;
 
               return (
                 <article

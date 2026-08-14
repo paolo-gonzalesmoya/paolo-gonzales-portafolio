@@ -543,7 +543,7 @@ img { display: block; max-width: 100%; }
 .world-header-cta { justify-self: end; display: flex; align-items: center; gap: 18px; padding: 14px 17px; border-radius: 12px; color: white; background: var(--world-ink); font-size: 9px; font-weight: 780; letter-spacing: .08em; text-transform: uppercase; transition: transform .25s, background .25s; }
 .world-header-cta:hover { background: #292d3d; transform: translateY(-2px); }
 
-.world-journey { height: calc(var(--scene-count) * 100svh); background: var(--world-paper); }
+.world-journey { height: var(--journey-height); background: var(--world-paper); }
 .world-stage { position: sticky; top: 0; height: 100svh; min-height: 680px; overflow: hidden; isolation: isolate; background: #f5e8d7; }
 .world-visuals, .world-scene-image { position: absolute; inset: 0; }
 .world-scene-image { transition: opacity .08s linear, transform .08s linear; will-change: opacity, transform; transform-origin: 68% 54%; }
