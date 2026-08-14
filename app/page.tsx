@@ -6,22 +6,14 @@ import { useEffect, useRef, useState } from "react";
 const scenes = [
   {
     number: "01",
-    eyebrow: "Punto de partida",
+    eyebrow: "Entender",
     title: "Los procesos cuentan una historia.",
-    copy: "En mi oficina reviso hojas, mensajes y tareas manuales hasta encontrar la fricción que realmente le cuesta tiempo al equipo.",
-    signal: "Diagnóstico antes que herramientas",
+    copy: "En mi oficina reviso hojas, mensajes y tareas manuales; luego sigo la información junto al equipo hasta encontrar dónde se pierde tiempo y trazabilidad.",
+    signal: "Una prioridad clara antes que herramientas",
     image: "/assets/journey/scene-01.webp",
   },
   {
     number: "02",
-    eyebrow: "Entender",
-    title: "Primero observo cómo trabaja el equipo.",
-    copy: "Sigo la información en su recorrido real, converso con quienes ejecutan el proceso y encuentro dónde se pierde trazabilidad.",
-    signal: "Una prioridad clara",
-    image: "/assets/journey/scene-02.webp",
-  },
-  {
-    number: "03",
     eyebrow: "Diseñar",
     title: "El recorrido se convierte en una app.",
     copy: "Conecto formularios, reglas y responsables en una primera versión simple que el equipo puede probar antes de invertir de más.",
@@ -29,7 +21,7 @@ const scenes = [
     image: "/assets/journey/scene-03.webp",
   },
   {
-    number: "04",
+    number: "03",
     eyebrow: "Implementar",
     title: "La solución llega al trabajo real.",
     copy: "Campo, obra, almacén o celular: el dato nace donde ocurre la operación y viaja sin volver a ser digitado.",
@@ -37,7 +29,7 @@ const scenes = [
     image: "/assets/journey/scene-04.webp",
   },
   {
-    number: "05",
+    number: "04",
     eyebrow: "Automatizar",
     title: "Una acción activa todo el flujo.",
     copy: "Alertas, documentos, firmas y aprobaciones avanzan de forma automática mientras cada rol mantiene el control que necesita.",
@@ -45,7 +37,7 @@ const scenes = [
     image: "/assets/journey/scene-05.webp",
   },
   {
-    number: "06",
+    number: "05",
     eyebrow: "Decidir",
     title: "Los datos terminan en decisiones claras.",
     copy: "Facturación, riesgos y productividad se convierten en tableros legibles para saber qué pasó y cuál es el siguiente paso.",
@@ -53,20 +45,12 @@ const scenes = [
     image: "/assets/journey/scene-06.webp",
   },
   {
-    number: "07",
+    number: "06",
     eyebrow: "Evolucionar",
     title: "El equipo aprende y la solución crece.",
     copy: "Capacito a las personas, acompaño la adopción y priorizamos nuevas mejoras a partir del uso real.",
     signal: "Adopción sostenible",
     image: "/assets/journey/scene-07.webp",
-  },
-  {
-    number: "08",
-    eyebrow: "Tu siguiente paso",
-    title: "Conversemos sobre tu proceso.",
-    copy: "La primera conversación no cuesta. Revisamos cómo trabajan hoy y definimos una mejora concreta, útil y ajustada a la operación.",
-    signal: "Respuesta en menos de 24 h",
-    image: "/assets/journey/scene-08.webp",
   },
 ];
 
@@ -128,7 +112,7 @@ export default function Home() {
   const sceneFloat = progress * (scenes.length - 1);
   const sceneIndex = Math.min(Math.floor(sceneFloat), scenes.length - 1);
   const nextSceneIndex = Math.min(sceneIndex + 1, scenes.length - 1);
-  const sceneBlend = clamp((sceneFloat - sceneIndex) / 0.72, 0, 1);
+  const sceneBlend = clamp((sceneFloat - sceneIndex) / 0.64, 0, 1);
   const activeScene = sceneBlend >= 0.5 ? nextSceneIndex : sceneIndex;
 
   useEffect(() => {
@@ -188,7 +172,7 @@ export default function Home() {
         id="inicio"
         ref={journeyRef}
         className="world-journey"
-        style={{ "--journey-height": `${100 + (scenes.length - 1) * 58}svh` } as CSSProperties}
+        style={{ "--journey-height": `${100 + (scenes.length - 1) * 50}svh` } as CSSProperties}
         aria-label="Recorrido por el trabajo de Paolo Gonzales"
       >
         <div className="world-stage">
@@ -259,8 +243,8 @@ export default function Home() {
                   )}
                   {index === scenes.length - 1 && (
                     <div className="world-actions">
-                      <a className="is-primary" href={whatsappUrl} target="_blank" rel="noreferrer">Cuéntame tu proceso ↗</a>
-                      <a href="mailto:paolo.gonzalesmoya@gmail.com">Enviar un correo</a>
+                      <a className="is-primary" href="#casos">Ver casos reales ↓</a>
+                      <a href={whatsappUrl} target="_blank" rel="noreferrer">Hablemos ↗</a>
                     </div>
                   )}
                 </article>
@@ -393,6 +377,9 @@ export default function Home() {
       </section>
 
       <section id="contacto" className="world-contact">
+        <div className="world-contact-scene" aria-hidden="true">
+          <img src="/assets/journey/scene-08.webp" alt="" />
+        </div>
         <div className="world-shell world-contact-grid">
           <div>
             <p className="world-overline">¿Tienes un proceso manual por mejorar?</p>
