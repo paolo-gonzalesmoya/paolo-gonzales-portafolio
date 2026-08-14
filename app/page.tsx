@@ -38,19 +38,11 @@ const scenes = [
   },
   {
     number: "05",
-    eyebrow: "Decidir",
-    title: "Los datos terminan en decisiones claras.",
-    copy: "Facturación, riesgos y productividad se convierten en tableros legibles para saber qué pasó y cuál es el siguiente paso.",
-    signal: "Control en tiempo real",
+    eyebrow: "Decidir y evolucionar",
+    title: "Los datos guían la siguiente mejora.",
+    copy: "Facturación, riesgos y productividad se convierten en decisiones claras; luego acompaño al equipo para mejorar la solución a partir del uso real.",
+    signal: "Control y adopción sostenible",
     image: "/assets/journey/scene-06.webp",
-  },
-  {
-    number: "06",
-    eyebrow: "Evolucionar",
-    title: "El equipo aprende y la solución crece.",
-    copy: "Capacito a las personas, acompaño la adopción y priorizamos nuevas mejoras a partir del uso real.",
-    signal: "Adopción sostenible",
-    image: "/assets/journey/scene-07.webp",
   },
 ];
 
@@ -95,8 +87,9 @@ const cases = [
 const method = [
   ["01", "Entender", "Seguir el proceso real y encontrar la fricción prioritaria."],
   ["02", "Diseñar", "Convertir el recorrido principal en un prototipo funcional."],
-  ["03", "Conectar", "Unir personas, datos, documentos y decisiones."],
-  ["04", "Evolucionar", "Medir el uso y mejorar sin perder simplicidad."],
+  ["03", "Implementar", "Llevar la solución al lugar donde ocurre el trabajo."],
+  ["04", "Automatizar", "Conectar personas, datos, documentos y alertas."],
+  ["05", "Decidir y evolucionar", "Medir el uso, acompañar al equipo y priorizar la siguiente mejora."],
 ];
 
 const whatsappUrl =
@@ -115,7 +108,7 @@ export default function Home() {
   const sceneFloat = progress * (scenes.length - 1);
   const sceneIndex = Math.min(Math.floor(sceneFloat), scenes.length - 1);
   const nextSceneIndex = Math.min(sceneIndex + 1, scenes.length - 1);
-  const sceneBlend = clamp((sceneFloat - sceneIndex) / 0.64, 0, 1);
+  const sceneBlend = clamp((sceneFloat - sceneIndex) / (isMobile ? 0.56 : 0.64), 0, 1);
   const activeScene = sceneBlend >= 0.5 ? nextSceneIndex : sceneIndex;
 
   useEffect(() => {
@@ -200,7 +193,10 @@ export default function Home() {
         id="inicio"
         ref={journeyRef}
         className="world-journey"
-        style={{ "--journey-height": `${100 + (scenes.length - 1) * 50}svh` } as CSSProperties}
+        style={{
+          "--journey-height": `${100 + (scenes.length - 1) * 50}svh`,
+          "--mobile-journey-height": `${100 + (scenes.length - 1) * 42}svh`,
+        } as CSSProperties}
         aria-label="Recorrido por el trabajo de Paolo Gonzales"
       >
         <div className="world-stage">
@@ -347,27 +343,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="world-reel">
-        <div className="world-shell world-reel-grid">
-          <div>
-            <p className="world-overline">Recorrido completo</p>
-            <h2>Ocho escenas.<br />Una historia conectada.</h2>
-            <p>Este reel reúne el viaje en 23 segundos. En la experiencia principal, tú controlas el ritmo con el scroll.</p>
-          </div>
-          <div className="world-video-frame">
-            <video controls muted playsInline preload="metadata" poster="/assets/journey/scene-01.webp">
-              <source src="/assets/paolo-scroll-journey.mp4" type="video/mp4" />
-              Tu navegador no puede reproducir este video.
-            </video>
-          </div>
-        </div>
-      </section>
-
       <section id="metodo" className="world-section world-method">
         <div className="world-shell">
-          <div className="world-heading light">
-            <div><p>Cómo trabajo</p><h2>Una transformación<br />en cuatro movimientos.</h2></div>
-            <span>Una buena app no empieza con pantallas. Empieza entendiendo una fricción.</span>
+          <div className="world-heading light world-method-heading">
+            <div>
+              <p>Cómo trabajo</p>
+              <h2>Una transformación<br />en cinco movimientos.</h2>
+              <span className="world-method-lead">Una buena app no empieza con pantallas. Empieza entendiendo una fricción y crece con el uso real.</span>
+            </div>
+            <div className="world-method-visual">
+              <img src="/assets/journey/scene-07.webp" alt="Paolo capacitando al equipo para adoptar la solución" loading="lazy" decoding="async" />
+              <span>La tecnología se vuelve útil cuando el equipo la hace suya.</span>
+            </div>
           </div>
           <div className="world-method-grid">
             {method.map(([number, title, copy]) => (
