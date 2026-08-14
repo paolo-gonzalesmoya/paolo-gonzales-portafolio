@@ -181,15 +181,21 @@ export default function Home() {
               const isCurrent = index === sceneIndex;
               const isNext = index === nextSceneIndex && nextSceneIndex !== sceneIndex;
               const opacity = isCurrent ? 1 : isNext ? sceneBlend : 0;
+              const direction = index % 2 === 0 ? 1 : -1;
               const scale = isCurrent
-                ? 1 + sceneBlend * 0.025
+                ? 1 + sceneBlend * 0.016
                 : isNext
-                  ? 1.035 - sceneBlend * 0.035
-                  : 1.04;
+                  ? 1.018 - sceneBlend * 0.018
+                  : 1.018;
+              const pan = isCurrent
+                ? sceneBlend * -1.05 * direction
+                : isNext
+                  ? (1 - sceneBlend) * 1.05 * direction
+                  : 0;
               const drift = isCurrent
-                ? sceneBlend * -1.3
+                ? sceneBlend * -0.45
                 : isNext
-                  ? (1 - sceneBlend) * 1.3
+                  ? (1 - sceneBlend) * 0.45
                   : 0;
 
               return (
@@ -198,7 +204,7 @@ export default function Home() {
                   key={scene.number}
                   style={{
                     opacity,
-                    transform: `scale(${scale}) translate3d(0, ${drift}%, 0)`,
+                    transform: `translate3d(${pan}%, ${drift}%, 0) scale(${scale})`,
                     zIndex: isNext ? 2 : isCurrent ? 1 : 0,
                   }}
                 >
