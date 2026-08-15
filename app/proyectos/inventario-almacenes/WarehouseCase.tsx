@@ -170,7 +170,7 @@ export default function WarehouseCase() {
         <nav aria-label="Navegación del caso">
           <a href="#recorrido">Recorrido</a>
           <a href="#demo">Demo</a>
-          <a href="#arquitectura">Arquitectura</a>
+          <a href="#roles">Roles</a>
         </nav>
         <Link className="timco-header-link" href="/">Volver al portafolio <span>↗</span></Link>
       </header>
@@ -351,35 +351,37 @@ export default function WarehouseCase() {
         </div>
       </section>
 
-      <section id="arquitectura" className="timco-architecture">
-        <div className="timco-shell">
-          <div className="timco-architecture-intro">
-            <div><p className="timco-overline">Arquitectura de solución</p><h2>Una operación, varias vistas.</h2></div>
-            <p>La experiencia combina captura móvil, automatización documental, conciliación de datos, una interfaz espacial y analítica para decisiones.</p>
-          </div>
-          <div className="timco-stack">
-            <article><span>01</span><h3>AppSheet</h3><p>Registro móvil, checklist, fotografías, ingreso, salida y vistas por rol.</p></article>
-            <article><span>02</span><h3>Google Workspace</h3><p>Datos estructurados, generación de documentos y acceso mediante QR.</p></article>
-            <article><span>03</span><h3>Apps Script</h3><p>Layout web interactivo que refleja el inventario y reorganiza las columnas.</p></article>
-            <article><span>04</span><h3>Looker Studio</h3><p>Inventario, áreas, movimientos e información necesaria para el cobro.</p></article>
-          </div>
-        </div>
-      </section>
+      <section id="roles" className="timco-role-control">
+        <div className="timco-shell timco-role-control-grid">
+          <figure className="timco-role-visual">
+            <img
+              src="/assets/projects/timco/roles-control.webp"
+              alt="Tres estaciones conectadas representan los accesos del administrador, almacenero y cliente observador"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption><span />Una fuente de datos · tres niveles de acceso</figcaption>
+          </figure>
 
-      <section className="timco-access">
-        <div className="timco-shell">
-          <div className="timco-access-intro">
-            <div>
-              <p className="timco-overline">Acceso según responsabilidad</p>
-              <h2>Cada rol ve lo necesario.</h2>
-              <p>La misma fuente de datos ofrece control operativo, información para administrar y evidencia de consulta, sin exponer funciones que no corresponden a cada usuario.</p>
+          <div className="timco-role-content">
+            <p className="timco-overline">Permisos por responsabilidad</p>
+            <h2>Cada rol ve y hace exactamente lo necesario.</h2>
+            <p className="timco-role-summary">El sistema adapta información y acciones a cada usuario. Todos trabajan sobre la misma operación, sin exponer controles que no les corresponden.</p>
+
+            <div className="timco-role-list">
+              <article>
+                <span>Administrador</span>
+                <div><h3>Control y decisión</h3><p>Consulta inventario, áreas y datos necesarios para el cobro.</p></div>
+              </article>
+              <article>
+                <span>Almacenero</span>
+                <div><h3>Operación del layout</h3><p>Registra movimientos y ubica las unidades vigentes.</p></div>
+              </article>
+              <article>
+                <span>Cliente observador</span>
+                <div><h3>Evidencia sin edición</h3><p>Accede a sus documentos sin alterar la operación.</p></div>
+              </article>
             </div>
-            <figure><img src="/assets/projects/timco/scene-07.webp" alt="Administrador, almacenero y cliente consultando diferentes vistas del sistema" loading="lazy" /></figure>
-          </div>
-          <div className="timco-roles">
-            <article><span>Administrador</span><h3>Área, control y cobro.</h3><p>Observa inventario, variación de áreas y la información que sostiene la gestión.</p></article>
-            <article><span>Almacenero</span><h3>Ubicación y movimiento.</h3><p>Opera ingresos, salidas y el layout visual desde la realidad diaria del almacén.</p></article>
-            <article><span>Cliente observador</span><h3>Evidencia disponible.</h3><p>Consulta los documentos de sus unidades sin alterar la información operativa.</p></article>
           </div>
         </div>
       </section>
