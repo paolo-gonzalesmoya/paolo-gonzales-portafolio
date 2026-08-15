@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const whatsappUrl =
   "https://wa.me/51925180724?text=Hola%20Paolo%2C%20vi%20el%20caso%20del%20inventario%20visual%20y%20quiero%20conversar%20sobre%20un%20proyecto.";
+const calComUrl = "https://cal.com/paolo-gonzales-8itwaw";
 
 const storySteps = [
   {
@@ -100,8 +101,13 @@ export default function WarehouseCase() {
   const [search, setSearch] = useState("");
   const [recentExits, setRecentExits] = useState(["DEMO-088", "DEMO-173", "DEMO-290"]);
   const [announcement, setAnnouncement] = useState("Demostración lista.");
+  const consultationStartedAt = useRef(0);
+  const [consultationStatus, setConsultationStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [consultationMessage, setConsultationMessage] = useState("");
+  const [showContactForm, setShowContactForm] = useState(false);
 
   useEffect(() => {
+    consultationStartedAt.current = Date.now();
     const observer = new IntersectionObserver(
       (entries) => {
         const visible = entries
@@ -161,21 +167,50 @@ export default function WarehouseCase() {
     setAnnouncement("La demostración volvió a su estado inicial.");
   };
 
-  const requestConsultation = (event: FormEvent<HTMLFormElement>) => {
+  const requestConsultation = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const form = new FormData(event.currentTarget);
+    if (consultationStatus === "submitting") return;
+
+    const formElement = event.currentTarget;
+    const form = new FormData(formElement);
     const name = String(form.get("name") || "").trim();
-    const company = String(form.get("company") || "").trim();
     const contact = String(form.get("contact") || "").trim();
-    const need = String(form.get("need") || "").trim();
-    const context = String(form.get("context") || "").trim();
-    const message = [
-      `Hola Paolo, soy ${name}${company ? ` de ${company}` : ""}.`,
-      `Quiero solicitar una consulta sobre: ${need}.`,
-      `Contexto: ${context}`,
-      `Puedes contactarme en: ${contact}.`,
-    ].join("\n\n");
-    window.open(`https://wa.me/51925180724?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+    const message = String(form.get("message") || "").trim();
+    const website = String(form.get("website") || "").trim();
+
+    setConsultationStatus("submitting");
+    setConsultationMessage("Coordinando tu solicitud…");
+
+    try {
+      const response = await fetch("/api/consultations", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          contact,
+          message,
+          website,
+          startedAt: consultationStartedAt.current,
+        }),
+      });
+      const result = (await response.json()) as { error?: string };
+
+      if (!response.ok) {
+        throw new Error(result.error || "No pudimos registrar la solicitud.");
+      }
+
+      formElement.reset();
+      consultationStartedAt.current = Date.now();
+      setConsultationStatus("success");
+      setConsultationMessage("Solicitud registrada. Te contactaré para confirmar el día y la hora.");
+    } catch (error) {
+      setConsultationStatus("error");
+      setConsultationMessage(
+        error instanceof Error
+          ? error.message
+          : "No pudimos registrar la solicitud. Puedes escribirme por WhatsApp.",
+      );
+    }
   };
 
   return (
@@ -396,7 +431,7 @@ export default function WarehouseCase() {
               </article>
               <article>
                 <span>Almacenero</span>
-                <div><h3>Operación del layout</h3><p>Registra movimientos y ubica las unidades vigentes.</p></div>
+                <div><h3>Registro y ubicación</h3><p>Registra ingresos, salidas y checklists; además posiciona cada unidad dentro del layout.</p></div>
               </article>
               <article>
                 <span>Cliente observador</span>
@@ -428,54 +463,77 @@ export default function WarehouseCase() {
       <section id="consulta" className="timco-cta">
         <div className="timco-shell timco-cta-grid">
           <div className="timco-cta-copy">
-            <p className="timco-overline">Diagnóstico de procesos</p>
-            <h2>Empecemos por la fricción que más tiempo te cuesta.</h2>
-            <p>Comparte una necesidad concreta y recibirás una primera orientación sobre el proceso, la información necesaria y el mejor punto para comenzar.</p>
+            <p className="timco-overline">Conversemos</p>
+            <h2>Hablemos de tu operación.</h2>
+            <p>No necesitas tener el problema definido ni saber qué herramienta usar. Coordinemos una llamada breve para entender tu contexto.</p>
             <ul>
-              <li>Lectura inicial de tu necesidad</li>
-              <li>Recomendación del primer paso</li>
-              <li>Respuesta en 1–2 días hábiles</li>
+              <li>Llamadas de 15 o 30 minutos</li>
+              <li>Sin compromiso ni preparación previa</li>
+              <li>Coordinación por correo o WhatsApp</li>
             </ul>
-            <a className="timco-cta-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><span />Prefiero escribir directamente por WhatsApp ↗</a>
+            <a className="timco-cta-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><span />Prefiero coordinar por WhatsApp ↗</a>
           </div>
 
-          <form className="timco-consultation-form" onSubmit={requestConsultation}>
-            <div className="timco-form-heading">
-              <span>Cuéntame tu caso</span>
-              <strong>La información justa para darte una respuesta útil.</strong>
+          <div className="timco-booking-card">
+            <div className="timco-booking-topline">
+              <span><i /> Agenda abierta</span>
+              <strong>Cal.com</strong>
             </div>
-            <label className="timco-form-wide">
-              <span>¿Qué necesitas mejorar?</span>
-              <select name="need" defaultValue="" required>
-                <option value="" disabled>Selecciona una necesidad</option>
-                <option>Inventario o almacén</option>
-                <option>Aprobaciones y documentos</option>
-                <option>Reportes y control de datos</option>
-                <option>Proceso operativo a medida</option>
-                <option>Aún no lo tengo claro</option>
-              </select>
-            </label>
-            <label>
-              <span>Nombre</span>
-              <input name="name" type="text" autoComplete="name" placeholder="Tu nombre" required />
-            </label>
-            <label>
-              <span>Empresa</span>
-              <input name="company" type="text" autoComplete="organization" placeholder="Empresa o proyecto" />
-            </label>
-            <label className="timco-form-wide">
-              <span>Correo o WhatsApp</span>
-              <input name="contact" type="text" autoComplete="email" placeholder="Dónde puedo responderte" required />
-            </label>
-            <label className="timco-form-wide">
-              <span>¿Qué ocurre hoy?</span>
-              <textarea name="context" rows={4} minLength={20} placeholder="Cuéntame brevemente el proceso, quiénes participan y dónde se pierde tiempo o control." required />
-            </label>
-            <div className="timco-form-submit timco-form-wide">
-              <button type="submit">Preparar mi consulta <span>↗</span></button>
-              <p>Revisarás el mensaje en WhatsApp antes de enviarlo.</p>
+            <div className="timco-booking-main">
+              <p className="timco-overline">Conversación inicial</p>
+              <h3>Elige una conversación de 15 o 30 minutos.</h3>
+              <p>Elige el horario que mejor te funcione. La reserva se añadirá a tu calendario con el enlace de videollamada.</p>
+              <div className="timco-booking-meta" aria-label="Detalles de la conversación">
+                <span><small>Duración</small><strong>15–30 min</strong></span>
+                <span><small>Modalidad</small><strong>Videollamada</strong></span>
+                <span><small>Zona horaria</small><strong>Automática</strong></span>
+              </div>
+              <a className="timco-booking-primary" href={calComUrl} target="_blank" rel="noreferrer">
+                Ver horarios disponibles <span>↗</span>
+              </a>
+              <button
+                className="timco-booking-fallback"
+                type="button"
+                aria-expanded={showContactForm}
+                onClick={() => setShowContactForm((current) => !current)}
+              >
+                {showContactForm ? "Cerrar formulario" : "Prefiero que me contacten"} <span>{showContactForm ? "−" : "+"}</span>
+              </button>
             </div>
-          </form>
+
+            {showContactForm && (
+              <form className="timco-consultation-form" onSubmit={requestConsultation}>
+                <label>
+                  <span>Tu nombre</span>
+                  <input name="name" type="text" autoComplete="name" placeholder="Tu nombre" minLength={2} maxLength={120} required />
+                </label>
+                <label>
+                  <span>Cómo te contacto</span>
+                  <input name="contact" type="text" autoComplete="email" placeholder="Correo o WhatsApp" minLength={5} maxLength={180} required />
+                </label>
+                <label className="timco-form-wide">
+                  <span>Mensaje <small>(opcional)</small></span>
+                  <textarea name="message" rows={3} maxLength={3000} placeholder="Si quieres, añade algún contexto para nuestra conversación." />
+                </label>
+                <label className="timco-form-trap" aria-hidden="true">
+                  <span>Sitio web</span>
+                  <input name="website" type="text" tabIndex={-1} autoComplete="off" />
+                </label>
+                <div className="timco-form-submit timco-form-wide">
+                  <button type="submit" disabled={consultationStatus === "submitting"}>
+                    {consultationStatus === "submitting" ? "Enviando…" : "Solicitar contacto"} <span>↗</span>
+                  </button>
+                  <p>Te contactaré para coordinar el día y la hora.</p>
+                </div>
+                <p
+                  className={`timco-form-status timco-form-wide${consultationStatus !== "idle" ? ` is-${consultationStatus}` : ""}`}
+                  aria-live="polite"
+                >
+                  {consultationMessage}
+                </p>
+              </form>
+            )}
+          </div>
         </div>
       </section>
 
