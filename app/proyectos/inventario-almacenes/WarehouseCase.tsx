@@ -202,17 +202,6 @@ export default function WarehouseCase() {
         </div>
       </section>
 
-      <section className="timco-intro timco-shell">
-        <div>
-          <p className="timco-overline">El reto</p>
-          <h2>Una unidad no es solo una fila.</h2>
-        </div>
-        <div>
-          <p>Su ingreso contiene estado, implementos, combustible, evidencias y responsabilidad. Su permanencia ocupa un espacio que debe controlarse y cobrarse. Su salida necesita cerrar la historia sin perder trazabilidad.</p>
-          <p>El proyecto convierte ese ciclo completo en información visible para tres necesidades distintas: operar el almacén, administrar el negocio y entregar evidencia al cliente.</p>
-        </div>
-      </section>
-
       <section id="recorrido" className="timco-story">
         <div className="timco-shell timco-story-layout">
           <div className="timco-story-copy">

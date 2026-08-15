@@ -866,10 +866,10 @@ img { display: block; max-width: 100%; }
 .timco-hero-facts span:last-child { border: 0; }
 .timco-hero-facts strong { color: var(--timco-red); font: 760 8px/1 var(--font-geist-mono), monospace; }
 
-.timco-intro, .timco-role { display: grid; grid-template-columns: .9fr 1.1fr; gap: 110px; padding-block: 140px; }
-.timco-intro h2, .timco-role h2 { max-width: 680px; margin: 19px 0 0; font-size: clamp(50px, 5.5vw, 78px); line-height: .95; letter-spacing: -.06em; }
-.timco-intro>div:last-child, .timco-role>div:last-child { padding-top: 25px; }
-.timco-intro>div:last-child p, .timco-role>div:last-child p { margin: 0 0 22px; color: #64635d; font-size: 15px; line-height: 1.8; }
+.timco-role { display: grid; grid-template-columns: .9fr 1.1fr; gap: 110px; padding-block: 140px; }
+.timco-role h2 { max-width: 680px; margin: 19px 0 0; font-size: clamp(50px, 5.5vw, 78px); line-height: .95; letter-spacing: -.06em; }
+.timco-role>div:last-child { padding-top: 25px; }
+.timco-role>div:last-child p { margin: 0 0 22px; color: #64635d; font-size: 15px; line-height: 1.8; }
 
 .timco-story { color: white; background: #101522; }
 .timco-story-layout { display: grid; grid-template-columns: .72fr 1.28fr; gap: 70px; }
@@ -982,7 +982,7 @@ img { display: block; max-width: 100%; }
 @media (max-width: 980px) {
   .timco-header { grid-template-columns: 1fr auto; }
   .timco-header nav { display: none; }
-  .timco-intro, .timco-role, .timco-evidence, .timco-section-heading { grid-template-columns: 1fr; gap: 45px; }
+  .timco-role, .timco-evidence, .timco-section-heading { grid-template-columns: 1fr; gap: 45px; }
   .timco-hero { padding-top: 112px; }
   .timco-hero-frame { grid-template-columns: 1fr 1fr; gap: 34px; }
   .timco-hero-content h1 { font-size: clamp(50px,7vw,68px); }
@@ -1015,9 +1015,9 @@ img { display: block; max-width: 100%; }
   .timco-hero-facts span { padding: 13px; border-bottom: 1px solid rgba(16,21,34,.09); }
   .timco-hero-facts span:nth-child(2) { border-right: 0; }
   .timco-hero-facts span:nth-child(n+3) { border-bottom: 0; }
-  .timco-intro, .timco-role { padding-block: 90px; }
-  .timco-intro h2, .timco-role h2 { font-size: 49px; }
-  .timco-intro>div:last-child, .timco-role>div:last-child { padding: 0; }
+  .timco-role { padding-block: 90px; }
+  .timco-role h2 { font-size: 49px; }
+  .timco-role>div:last-child { padding: 0; }
   .timco-story { padding: 80px 0; }
   .timco-story-layout { display: block; }
   .timco-story-copy { display: grid; gap: 18px; }
