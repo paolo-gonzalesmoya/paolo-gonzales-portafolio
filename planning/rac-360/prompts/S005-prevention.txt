@@ -1,0 +1,11 @@
+Use case: stylized-concept
+Asset type: final wide storytelling scene for the RAC 360 professional portfolio case
+Primary request: show how a structured history of safety findings enables AI-assisted pattern detection and preventive action before an accident occurs
+Input images: S005 is the visual reference for isometric composition, construction modules, palette, materials and analyst character; S004 is the reference for clear before/after safety logic and green verified outcomes
+Scene/backdrop: warm ivory studio world containing several modular construction sites connected as one system
+Subject: on the left and center, three different construction-site modules contain the same recurring unsafe pattern represented by repeated damaged orange safety mesh and matching orange warning nodes; thin cyan data paths carry these repeated signals into a refined dark-navy pattern-recognition hub made of transparent layered grids and connected glowing nodes, clearly abstract and not a literal robot or brain; the same dark-haired consultant in a dark suit from S005 studies the hub; on the right, a new construction module receives a green preventive signal and already has a reinforced intact safety barrier before workers reach the risk area, communicating prevention before an incident
+Style/medium: premium cinematic isometric 3D editorial illustration matching the reference images exactly, tactile architectural miniatures, restrained futuristic data overlays
+Composition/framing: wide 16:9 composition with a clear left-to-right story: recurring findings → pattern recognition → preventive action; balanced scale and generous breathing room; suitable for fullscreen scroll background
+Lighting/mood: soft warm studio lighting, confident, intelligent and preventive
+Color palette: warm ivory, midnight navy, safety orange for recurring risk, cyan for structured data, green only for preventive action
+Constraints: no accident, no injured people, no vehicles, no words, no letters, no numbers, no logos, no watermark, no full dashboard UI, no giant screen dominating the composition; keep the process visually understandable at a glance

@@ -34,7 +34,7 @@ const storySteps = [
     eyebrow: "Prevenir",
     title: "Los hallazgos empiezan a hablar entre sí.",
     copy: "Al consolidar recurrencias, ubicaciones, causas y respuestas, el historial queda preparado para detectar patrones con IA y orientar acciones preventivas dentro del marco de SST.",
-    image: "/assets/projects/rac-360/scene-05.webp",
+    image: "/assets/projects/rac-360/scene-05-prevention.webp",
   },
 ];
 
