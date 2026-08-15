@@ -872,16 +872,17 @@ img { display: block; max-width: 100%; }
 .timco-role>div:last-child p { margin: 0 0 22px; color: #64635d; font-size: 15px; line-height: 1.8; }
 
 .timco-story { color: white; background: #101522; }
-.timco-story-layout { display: grid; grid-template-columns: .72fr 1.28fr; gap: 70px; }
+.timco-story-layout { display: grid; grid-template-columns: minmax(0,.78fr) minmax(0,1.22fr); gap: 64px; }
+.timco-story-copy { position: relative; z-index: 2; min-width: 0; }
 .timco-story-copy article { min-height: 85svh; display: flex; flex-direction: column; justify-content: center; padding: 90px 0; opacity: .28; transition: opacity .35s, transform .35s; transform: translateY(18px); }
 .timco-story-copy article.is-active { opacity: 1; transform: none; }
 .timco-story-copy article>img { display: none; }
 .timco-story-copy h2 { max-width: 510px; margin: 20px 0 22px; font-size: clamp(48px, 5vw, 72px); line-height: .94; letter-spacing: -.06em; }
 .timco-story-copy article>p:last-child { max-width: 500px; margin: 0; color: #a9aebb; font-size: 14px; line-height: 1.75; }
-.timco-story-stage { position: relative; }
-.timco-story-stage>div { position: sticky; top: 0; height: 100svh; display: grid; place-items: center; }
+.timco-story-stage { position: relative; z-index: 1; min-width: 0; }
+.timco-story-stage>div { position: sticky; top: 0; width: 100%; min-width: 0; height: 100svh; display: grid; place-items: center; }
 .timco-story-stage>div:before { content: ""; position: absolute; width: 75%; aspect-ratio: 1; border-radius: 50%; background: rgba(68,184,221,.1); filter: blur(90px); }
-.timco-story-stage img { position: absolute; width: 100%; border: 1px solid rgba(255,255,255,.1); border-radius: 26px; box-shadow: 0 35px 90px rgba(0,0,0,.28); opacity: 0; transform: translateY(18px) scale(.985); transition: opacity .5s, transform .7s cubic-bezier(.2,.7,.2,1); }
+.timco-story-stage img { position: absolute; right: 0; width: 100%; max-width: 100%; height: auto; border: 1px solid rgba(255,255,255,.1); border-radius: 26px; box-shadow: 0 35px 90px rgba(0,0,0,.28); opacity: 0; transform: translateY(18px) scale(.985); transition: opacity .5s, transform .7s cubic-bezier(.2,.7,.2,1); }
 .timco-story-stage img.is-active { opacity: 1; transform: none; }
 .timco-story-index { position: absolute; right: 20px; bottom: 11%; padding: 10px 12px; border: 1px solid rgba(255,255,255,.12); border-radius: 999px; color: #c4c7d0; background: rgba(9,12,20,.6); font: 720 8px/1 var(--font-geist-mono), monospace; backdrop-filter: blur(10px); }
 
@@ -990,7 +991,7 @@ img { display: block; max-width: 100%; }
   .timco-hero-frame { grid-template-columns: 1fr 1fr; gap: 34px; }
   .timco-hero-content h1 { font-size: clamp(50px,7vw,68px); }
   .timco-role-control-grid { grid-template-columns: 1fr 1fr; gap: 38px; }
-  .timco-story-layout { grid-template-columns: .8fr 1.2fr; gap: 38px; }
+  .timco-story-layout { grid-template-columns: minmax(0,.86fr) minmax(0,1.14fr); gap: 38px; }
   .timco-role-list article { grid-template-columns: 112px 1fr; }
   .warehouse-summary { grid-template-columns: 1fr 1fr; }
   .warehouse-summary>article:first-child { grid-column: 1 / -1; }
