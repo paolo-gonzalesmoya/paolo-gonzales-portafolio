@@ -2,6 +2,7 @@
 
 import type { CSSProperties } from "react";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 const scenes = [
   {
@@ -61,7 +62,7 @@ const cases = [
     title: "Inventario visual y trazabilidad de unidades",
     copy: "Ingreso, checklist, evidencia fotográfica, PDF con QR y un layout táctil que convierte los movimientos del almacén en control operativo y área para cobro.",
     tags: ["Ingreso y salida", "PDF + QR", "Layout táctil", "Área y cobro"],
-    image: "/assets/projects/timco/scene-05.webp",
+    image: "/assets/projects/timco/scene-01.webp",
     tone: "violet",
     href: "/proyectos/inventario-almacenes",
   },
@@ -335,21 +336,45 @@ export default function Home() {
 
       <section id="casos" className="world-section world-cases">
         <div className="world-shell">
-          <div className="world-heading">
-            <div><p>Casos seleccionados</p><h2>El efecto visual atrae.<br />El resultado convence.</h2></div>
-            <span>Soluciones construidas alrededor de operaciones reales, no de una plantilla.</span>
+          <div className="world-heading world-portfolio-heading">
+            <div><p>Portafolio de productos</p><h2>Procesos reales convertidos en productos digitales.</h2></div>
+            <span>Una selección de soluciones construidas alrededor de operaciones reales. El portafolio crecerá con nuevos casos completos, sin perder claridad.</span>
           </div>
 
-          <div className="world-case-grid">
-            {cases.map((item) => (
-              <article className={`world-case ${item.tone}`} key={item.number}>
-                <div className="world-case-image"><img src={item.image} alt={`Solución desarrollada para ${item.client}`} /></div>
-                <div className="world-case-copy">
-                  <div><span>{item.number}</span><small>{item.client}</small></div>
+          <article className="world-project-featured">
+            <Link className="world-project-featured-image" href={cases[0].href ?? "/proyectos/inventario-almacenes"} aria-label={`Explorar ${cases[0].title}`}>
+              <img src={cases[0].image} alt="Ingreso digital de una unidad al almacén TIMCO" />
+              <span>Ver caso completo <b>↗</b></span>
+            </Link>
+            <div className="world-project-featured-copy">
+              <div className="world-project-meta"><span>01</span><small>Proyecto destacado · {cases[0].client}</small></div>
+              <h3>{cases[0].title}</h3>
+              <p>{cases[0].copy}</p>
+              <div className="world-project-flow" aria-label="Recorrido del proyecto">
+                <span>Ingreso</span><i />
+                <span>Evidencia</span><i />
+                <span>Inventario</span><i />
+                <span>Salida</span>
+              </div>
+              <ul>{cases[0].tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
+              <Link className="world-case-link" href={cases[0].href ?? "/proyectos/inventario-almacenes"}>Explorar el proyecto <span>↗</span></Link>
+            </div>
+          </article>
+
+          <div className="world-project-library-heading">
+            <div><p>Archivo de proyectos</p><h3>Otras soluciones construidas.</h3></div>
+            <span>Casos breves que se convertirán progresivamente en páginas completas.</span>
+          </div>
+
+          <div className="world-project-library">
+            {cases.slice(1).map((item) => (
+              <article className={`world-project-card ${item.tone}`} key={item.number}>
+                <div className="world-project-card-image"><img src={item.image} alt={`Solución desarrollada para ${item.client}`} loading="lazy" decoding="async" /></div>
+                <div className="world-project-card-copy">
+                  <div className="world-project-meta"><span>{item.number}</span><small>{item.client}</small></div>
                   <h3>{item.title}</h3>
                   <p>{item.copy}</p>
                   <ul>{item.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
-                  {item.href && <a className="world-case-link" href={item.href}>Explorar el caso <span>↗</span></a>}
                 </div>
               </article>
             ))}
