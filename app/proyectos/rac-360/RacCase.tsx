@@ -33,7 +33,7 @@ const storySteps = [
     number: "04",
     eyebrow: "Prevenir",
     title: "Los hallazgos empiezan a hablar entre sí.",
-    copy: "Al consolidar recurrencias, ubicaciones, causas y respuestas, el historial queda preparado para detectar patrones con IA y orientar acciones preventivas dentro del marco de SST.",
+    copy: "El sistema controla el avance frente a las metas semanales y genera informes automáticos, reduciendo horas de consolidación para Document Control. El historial queda preparado para detectar patrones con IA y orientar la prevención.",
     image: "/assets/projects/rac-360/scene-05-prevention.webp",
   },
 ];
@@ -73,15 +73,15 @@ const demoStages = [
     title: "El cierre alimenta la prevención.",
     copy: "La descripción y la foto de corrección completan la trazabilidad. El registro queda disponible para análisis agregado y búsqueda de patrones.",
     action: "Reiniciar demostración",
-    facts: [["Corrección", "Verificada"], ["Evidencia", "Adjunta"], ["Estado", "Cerrado"]],
+    facts: [["Meta semanal", "18 / 20"], ["Evidencia", "Verificada"], ["Informe", "Actualizado"]],
   },
 ];
 
 const solutionLayers = [
   {
     number: "01",
-    title: "Ciclo trazable",
-    copy: "Cada hallazgo conserva contexto, clasificación, responsable, acción correctiva y evidencia de cierre bajo una secuencia verificable.",
+    title: "Ciclo y metas",
+    copy: "Cada hallazgo conserva su trazabilidad y suma al seguimiento de una meta semanal definida por obra, equipo o periodo.",
     image: "/assets/projects/rac-360/solution-process.webp",
     alt: "Flujo minimalista de una inspección desde su registro hasta el cierre",
   },
@@ -101,8 +101,8 @@ const solutionLayers = [
   },
   {
     number: "04",
-    title: "Inteligencia preventiva",
-    copy: "Un historial confiable permite buscar recurrencias y preparar modelos de IA que ayuden a anticipar riesgos y reducir accidentes.",
+    title: "Automatización e IA",
+    copy: "Los informes se generan automáticamente y el historial queda listo para buscar patrones que ayuden a anticipar riesgos.",
     image: "/assets/projects/rac-360/solution-analytics.webp",
     alt: "Indicadores ascendentes que convierten registros en decisiones",
   },
@@ -155,7 +155,7 @@ export default function RacCase() {
             <p className="timco-overline"><span>Caso de estudio</span> PDK Produktiva</p>
             <h1>RAC<br />360.</h1>
             <p className="timco-hero-lead">Hallazgos SSOMA convertidos en prevención.</p>
-            <p className="timco-hero-description">RAC 360 conecta inspección, riesgo, responsables y correcciones para construir un historial confiable: la base necesaria para reconocer patrones, prevenir accidentes y reducir riesgos.</p>
+            <p className="timco-hero-description">RAC 360 conecta inspección, riesgo, responsables, metas semanales e informes automáticos. Reduce la consolidación manual y construye la base necesaria para reconocer patrones, prevenir accidentes y reducir riesgos.</p>
             <ol className="timco-flowline" aria-label="Flujo principal del sistema">
               <li>Detectar</li><li>Estructurar</li><li>Corregir</li><li>Analizar</li><li>Prevenir</li>
             </ol>
@@ -166,8 +166,8 @@ export default function RacCase() {
           </div>
           <div className="timco-hero-facts" aria-label="Capacidades principales">
             <span><strong>01</strong> Captura en obra</span>
-            <span><strong>02</strong> Riesgo y responsable</span>
-            <span><strong>03</strong> Cierre con evidencia</span>
+            <span><strong>02</strong> Metas semanales</span>
+            <span><strong>03</strong> Informes automáticos</span>
             <span><strong>04</strong> Base para análisis con IA</span>
           </div>
         </div>
@@ -274,7 +274,7 @@ export default function RacCase() {
         <div className="timco-shell">
           <div className="rac-solution-heading">
             <div><p className="timco-overline">Diseño de la solución</p><h2>Cerrar el hallazgo resuelve el caso. Aprender del historial ayuda a prevenir el siguiente.</h2></div>
-            <p>La solución estandariza el ciclo y construye una base confiable para reconocer recurrencias y, progresivamente, aplicar IA a la prevención de accidentes y reducción de riesgos dentro del marco de las normativas SST aplicables.</p>
+            <p>La solución estandariza el ciclo, controla metas semanales y automatiza los informes que antes exigían horas de consolidación. Esa base confiable permite reconocer recurrencias y avanzar hacia IA preventiva dentro de las normativas SST aplicables.</p>
           </div>
           <div className="rac-solution-grid">
             {solutionLayers.map((item) => (
@@ -292,11 +292,11 @@ export default function RacCase() {
           <div className="timco-cta-copy">
             <p className="timco-overline">De registro a prevención</p>
             <h2>Tu historial de hallazgos puede ayudarte a anticipar el próximo riesgo.</h2>
-            <p>El primer paso no es entrenar una IA. Es asegurar que los datos SST sean completos, comparables y confiables para encontrar señales que hoy pasan desapercibidas.</p>
+            <p>Cuando la captura, las metas semanales y los informes viven en un mismo flujo, Document Control deja de invertir horas consolidando información y puede enfocarse en prevención. Ese historial confiable es el punto de partida para la IA.</p>
             <ul>
-              <li>Evaluamos la calidad y estructura de tus datos SST</li>
-              <li>Identificamos recurrencias con valor preventivo</li>
-              <li>Definimos una ruta realista hacia analítica e IA</li>
+              <li>Medimos el tiempo destinado a consolidar informes</li>
+              <li>Evaluamos la calidad y estructura de los datos SST</li>
+              <li>Definimos una ruta hacia automatización, analítica e IA</li>
             </ul>
             <a className="timco-cta-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><span />Quiero explorar mis datos SST ↗</a>
           </div>
@@ -306,7 +306,7 @@ export default function RacCase() {
             <div className="timco-booking-main">
               <p className="timco-overline">Diagnóstico inicial</p>
               <h3>Descubre si tus registros están listos para generar inteligencia preventiva.</h3>
-              <p>En 15 o 30 minutos revisamos qué información ya tienes, qué falta y cómo convertirla en mejores decisiones sin perder trazabilidad SST.</p>
+              <p>En 15 o 30 minutos revisamos qué información ya tienes, qué informes pueden automatizarse y cómo preparar el historial para decisiones preventivas.</p>
               <div className="timco-booking-meta">
                 <span><small>Duración</small><strong>15–30 min</strong></span>
                 <span><small>Modalidad</small><strong>Online</strong></span>

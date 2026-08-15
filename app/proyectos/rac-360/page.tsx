@@ -4,11 +4,11 @@ import RacCase from "./RacCase";
 export const metadata: Metadata = {
   title: "RAC 360 | Gestión de hallazgos SSOMA — Paolo Gonzales",
   description:
-    "Caso de estudio de una aplicación que estructura hallazgos SSOMA, conserva su trazabilidad y prepara el historial para detectar patrones con IA y fortalecer la prevención SST.",
+    "Caso de estudio de una aplicación que controla metas semanales, automatiza informes, estructura hallazgos SSOMA y prepara el historial para detectar patrones con IA.",
   openGraph: {
     title: "RAC 360 | Gestión de hallazgos SSOMA",
     description:
-      "Del hallazgo en campo a una base confiable para reconocer patrones, prevenir accidentes y reducir riesgos.",
+      "Metas semanales, informes automáticos y una base confiable para reconocer patrones, prevenir accidentes y reducir riesgos.",
     type: "article",
     images: [
       {
