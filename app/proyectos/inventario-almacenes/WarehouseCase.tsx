@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { type FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 
 const whatsappUrl =
@@ -159,6 +159,23 @@ export default function WarehouseCase() {
     setSearch("");
     setRecentExits(["DEMO-088", "DEMO-173", "DEMO-290"]);
     setAnnouncement("La demostración volvió a su estado inicial.");
+  };
+
+  const requestConsultation = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    const name = String(form.get("name") || "").trim();
+    const company = String(form.get("company") || "").trim();
+    const contact = String(form.get("contact") || "").trim();
+    const need = String(form.get("need") || "").trim();
+    const context = String(form.get("context") || "").trim();
+    const message = [
+      `Hola Paolo, soy ${name}${company ? ` de ${company}` : ""}.`,
+      `Quiero solicitar una consulta sobre: ${need}.`,
+      `Contexto: ${context}`,
+      `Puedes contactarme en: ${contact}.`,
+    ].join("\n\n");
+    window.open(`https://wa.me/51925180724?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -389,16 +406,75 @@ export default function WarehouseCase() {
         </div>
       </section>
 
-      <section className="timco-role timco-shell">
-        <div><p className="timco-overline">Mi aporte</p><h2>Convertir el proceso físico en un sistema que el equipo puede ver.</h2></div>
-        <div><p>El trabajo conecta levantamiento del proceso, modelado de datos, experiencia móvil, automatizaciones, documentos, permisos, analítica y una interfaz espacial adaptada a la forma real del almacén.</p><p>No se trata de sumar pantallas: se trata de que cada movimiento deje evidencia y actualice la misma versión de la operación.</p></div>
+      <section className="timco-contribution">
+        <div className="timco-shell">
+          <div className="timco-contribution-intro">
+            <div>
+              <p className="timco-overline">Alcance y responsabilidad</p>
+              <h2>Del proceso físico a una operación conectada.</h2>
+            </div>
+            <p>Mi responsabilidad fue traducir la lógica real del almacén en un sistema útil para quienes registran, controlan y toman decisiones. El valor está en conectar toda la operación, no en sumar pantallas aisladas.</p>
+          </div>
+          <div className="timco-contribution-grid">
+            <article><span>01</span><h3>Diagnóstico operativo</h3><p>Levantamiento del flujo, reglas, responsables y puntos de pérdida de información.</p></article>
+            <article><span>02</span><h3>Modelo de datos</h3><p>Estructura para ingresos, salidas, unidades, evidencia, áreas y clientes.</p></article>
+            <article><span>03</span><h3>Automatización</h3><p>Checklists, documentos PDF, códigos QR, permisos y actualización del inventario.</p></article>
+            <article><span>04</span><h3>Experiencia operativa</h3><p>Interfaz móvil, layout táctil y analítica adaptados a la realidad del equipo.</p></article>
+          </div>
+        </div>
       </section>
 
-      <section className="timco-cta">
-        <div className="timco-shell">
-          <p className="timco-overline">Tu operación puede ser el siguiente caso</p>
-          <h2>¿Hay un proceso que hoy depende de hojas, mensajes y memoria?</h2>
-          <a href={whatsappUrl} target="_blank" rel="noreferrer">Conversemos por WhatsApp <span>↗</span></a>
+      <section id="consulta" className="timco-cta">
+        <div className="timco-shell timco-cta-grid">
+          <div className="timco-cta-copy">
+            <p className="timco-overline">Consulta inicial</p>
+            <h2>Cuéntame dónde se atasca tu operación.</h2>
+            <p>Describe el proceso que hoy depende de hojas, mensajes o tareas manuales. Revisaré tu caso para identificar por dónde conviene comenzar.</p>
+            <ul>
+              <li>Respuesta en 1–2 días hábiles</li>
+              <li>Primera orientación sin compromiso</li>
+              <li>Enfoque en una necesidad concreta</li>
+            </ul>
+            <a className="timco-cta-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><span />Prefiero escribir directamente por WhatsApp ↗</a>
+          </div>
+
+          <form className="timco-consultation-form" onSubmit={requestConsultation}>
+            <div className="timco-form-heading">
+              <span>Solicitud de diagnóstico</span>
+              <strong>Cuatro datos para entender tu caso.</strong>
+            </div>
+            <label className="timco-form-wide">
+              <span>¿Qué necesitas mejorar?</span>
+              <select name="need" defaultValue="" required>
+                <option value="" disabled>Selecciona una necesidad</option>
+                <option>Inventario o almacén</option>
+                <option>Aprobaciones y documentos</option>
+                <option>Reportes y control de datos</option>
+                <option>Proceso operativo a medida</option>
+                <option>Aún no lo tengo claro</option>
+              </select>
+            </label>
+            <label>
+              <span>Nombre</span>
+              <input name="name" type="text" autoComplete="name" placeholder="Tu nombre" required />
+            </label>
+            <label>
+              <span>Empresa</span>
+              <input name="company" type="text" autoComplete="organization" placeholder="Empresa o proyecto" />
+            </label>
+            <label className="timco-form-wide">
+              <span>Correo o WhatsApp</span>
+              <input name="contact" type="text" autoComplete="email" placeholder="Dónde puedo responderte" required />
+            </label>
+            <label className="timco-form-wide">
+              <span>¿Qué ocurre hoy?</span>
+              <textarea name="context" rows={4} minLength={20} placeholder="Cuéntame brevemente el proceso, quiénes participan y dónde se pierde tiempo o control." required />
+            </label>
+            <div className="timco-form-submit timco-form-wide">
+              <button type="submit">Preparar mi consulta <span>↗</span></button>
+              <p>Revisarás el mensaje en WhatsApp antes de enviarlo.</p>
+            </div>
+          </form>
         </div>
       </section>
 
