@@ -4,36 +4,36 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 const whatsappUrl =
-  "https://wa.me/51925180724?text=Hola%20Paolo%2C%20vi%20el%20caso%20RAC%20360%20y%20quiero%20conversar%20sobre%20un%20proyecto.";
+  "https://wa.me/51925180724?text=Hola%20Paolo%2C%20vi%20el%20caso%20RAC%20360%20y%20quiero%20explorar%20c%C3%B3mo%20usar%20mis%20hallazgos%20SST%20para%20prevenir%20riesgos%20con%20IA.";
 const calComUrl = "https://cal.com/paolo-gonzales-8itwaw";
 
 const storySteps = [
   {
     number: "01",
     eyebrow: "Detectar",
-    title: "La evidencia nace en obra.",
-    copy: "El inspector registra desde el celular la obra, el área y la descripción del hallazgo. La fotografía conserva el contexto exacto sin esperar a volver a oficina.",
+    title: "Cada señal empieza en campo.",
+    copy: "El inspector registra desde el celular la obra, el área, el hallazgo y su evidencia. Capturar el contexto desde el origen evita vacíos y hace que cada observación pueda compararse después.",
     image: "/assets/projects/rac-360/scene-02.webp",
   },
   {
     number: "02",
-    eyebrow: "Priorizar",
-    title: "Cada hallazgo recibe una ruta.",
-    copy: "Tipo, nivel de riesgo, categoría, cuadrilla y empresa convierten una observación en una prioridad operativa con responsable y fecha límite.",
+    eyebrow: "Estructurar",
+    title: "Un dato aislado no revela un patrón.",
+    copy: "Tipo, nivel de riesgo, categoría, cuadrilla, empresa y ubicación convierten una observación en información consistente para priorizar y analizar recurrencias.",
     image: "/assets/projects/rac-360/scene-03.webp",
   },
   {
     number: "03",
-    eyebrow: "Corregir",
-    title: "Cerrar exige evidencia.",
-    copy: "El registro permanece abierto hasta documentar la corrección. La nueva fotografía deja visible qué cambió, quién atendió y cuándo se cerró.",
+    eyebrow: "Cerrar",
+    title: "La corrección también genera aprendizaje.",
+    copy: "El registro permanece abierto hasta documentar la acción correctiva. La evidencia antes y después permite verificar el cierre y entender qué respuesta funcionó.",
     image: "/assets/projects/rac-360/scene-04.webp",
   },
   {
     number: "04",
-    eyebrow: "Decidir",
-    title: "La operación se vuelve visible.",
-    copy: "Los registros consolidados alimentan reportes y un dashboard para comparar obras, riesgos, usuarios, cuadrillas, subcontratistas y evolución semanal.",
+    eyebrow: "Prevenir",
+    title: "Los hallazgos empiezan a hablar entre sí.",
+    copy: "Al consolidar recurrencias, ubicaciones, causas y respuestas, el historial queda preparado para detectar patrones con IA y orientar acciones preventivas dentro del marco de SST.",
     image: "/assets/projects/rac-360/scene-05.webp",
   },
 ];
@@ -70,8 +70,8 @@ const demoStages = [
     number: "04",
     status: "Cerrado",
     eyebrow: "Verificación",
-    title: "La evidencia confirma el cierre.",
-    copy: "La descripción y la foto de corrección completan la trazabilidad y actualizan los indicadores.",
+    title: "El cierre alimenta la prevención.",
+    copy: "La descripción y la foto de corrección completan la trazabilidad. El registro queda disponible para análisis agregado y búsqueda de patrones.",
     action: "Reiniciar demostración",
     facts: [["Corrección", "Verificada"], ["Evidencia", "Adjunta"], ["Estado", "Cerrado"]],
   },
@@ -80,29 +80,29 @@ const demoStages = [
 const solutionLayers = [
   {
     number: "01",
-    title: "Proceso",
-    copy: "Programada, abierta y cerrada: cada estado exige la información necesaria para avanzar sin perder evidencia.",
+    title: "Ciclo trazable",
+    copy: "Cada hallazgo conserva contexto, clasificación, responsable, acción correctiva y evidencia de cierre bajo una secuencia verificable.",
     image: "/assets/projects/rac-360/solution-process.webp",
     alt: "Flujo minimalista de una inspección desde su registro hasta el cierre",
   },
   {
     number: "02",
-    title: "Modelo de datos",
-    copy: "Obras, áreas, personal, categorías, cuadrillas y empresas se conectan alrededor de cada inspección.",
+    title: "Base comparable",
+    copy: "Obras, áreas, riesgos, causas, cuadrillas y empresas se normalizan para analizar el historial con criterios consistentes.",
     image: "/assets/projects/rac-360/solution-data-model.webp",
     alt: "Módulos conectados alrededor de un núcleo de información",
   },
   {
     number: "03",
-    title: "Seguridad",
-    copy: "El rol, la obra asignada y el estado del registro definen con precisión qué puede ver o modificar cada persona.",
+    title: "Gobierno SST",
+    copy: "Roles, obras asignadas, estados y evidencias protegen la trazabilidad y sostienen el cumplimiento del proceso de SST.",
     image: "/assets/projects/rac-360/solution-security.webp",
     alt: "Escudo minimalista que representa permisos y accesos controlados",
   },
   {
     number: "04",
-    title: "Analítica",
-    copy: "Los registros alimentan reportes y comparaciones para reconocer recurrencias, riesgos y responsables.",
+    title: "Inteligencia preventiva",
+    copy: "Un historial confiable permite buscar recurrencias y preparar modelos de IA que ayuden a anticipar riesgos y reducir accidentes.",
     image: "/assets/projects/rac-360/solution-analytics.webp",
     alt: "Indicadores ascendentes que convierten registros en decisiones",
   },
@@ -149,15 +149,15 @@ export default function RacCase() {
         <div className="timco-shell timco-hero-cover">
           <figure className="timco-hero-media">
             <img src="/assets/projects/rac-360/scene-01.webp" alt="Inspector registra un hallazgo en una obra y activa su recorrido digital" />
-            <figcaption><span>Proyecto</span> Del hallazgo al cierre verificable.</figcaption>
+            <figcaption><span>Proyecto</span> De la evidencia en campo a la prevención inteligente.</figcaption>
           </figure>
           <div className="timco-hero-content">
             <p className="timco-overline"><span>Caso de estudio</span> PDK Produktiva</p>
             <h1>RAC<br />360.</h1>
-            <p className="timco-hero-lead">Gestión de hallazgos SSOMA.</p>
-            <p className="timco-hero-description">Una aplicación que conecta inspección, riesgo, responsables, correcciones y analítica para que cada hallazgo conserve su historia completa.</p>
+            <p className="timco-hero-lead">Hallazgos SSOMA convertidos en prevención.</p>
+            <p className="timco-hero-description">RAC 360 conecta inspección, riesgo, responsables y correcciones para construir un historial confiable: la base necesaria para reconocer patrones, prevenir accidentes y reducir riesgos.</p>
             <ol className="timco-flowline" aria-label="Flujo principal del sistema">
-              <li>Detectar</li><li>Priorizar</li><li>Asignar</li><li>Corregir</li><li>Decidir</li>
+              <li>Detectar</li><li>Estructurar</li><li>Corregir</li><li>Analizar</li><li>Prevenir</li>
             </ol>
             <div className="timco-hero-actions">
               <a href="#recorrido">Entender el recorrido <span>↓</span></a>
@@ -168,7 +168,7 @@ export default function RacCase() {
             <span><strong>01</strong> Captura en obra</span>
             <span><strong>02</strong> Riesgo y responsable</span>
             <span><strong>03</strong> Cierre con evidencia</span>
-            <span><strong>04</strong> Reportes y dashboard</span>
+            <span><strong>04</strong> Base para análisis con IA</span>
           </div>
         </div>
       </section>
@@ -206,9 +206,9 @@ export default function RacCase() {
           <div className="timco-section-heading">
             <div>
               <p className="timco-overline">Demostración del flujo</p>
-              <h2>Recorre un hallazgo hasta su cierre.</h2>
+              <h2>Recorre cómo un hallazgo se convierte en dato preventivo.</h2>
             </div>
-            <p>La simulación utiliza una obra y datos ficticios. Avanza por cada estado para ver qué información transforma una observación en trazabilidad.</p>
+            <p>La simulación utiliza datos ficticios. Avanza por cada estado para ver cómo una observación documentada termina alimentando un historial útil para prevención.</p>
           </div>
 
           <div className="rac-demo-app">
@@ -262,7 +262,7 @@ export default function RacCase() {
                 <div className="rac-demo-evidence">
                   <span>Progreso documental</span>
                   <div><i style={{ width: `${25 * (demoStep + 1)}%` }} /></div>
-                  <small>{demoStep === 3 ? "Evidencia inicial + corrección verificadas" : "El registro aún necesita completar su recorrido"}</small>
+                  <small>{demoStep === 3 ? "Evidencia verificada · registro disponible para análisis preventivo" : "El registro aún necesita completar su recorrido"}</small>
                 </div>
               </article>
             </div>
@@ -273,8 +273,8 @@ export default function RacCase() {
       <section id="solucion" className="rac-solution">
         <div className="timco-shell">
           <div className="rac-solution-heading">
-            <div><p className="timco-overline">Diseño de la solución</p><h2>No era digitalizar un formato. Era conectar el ciclo.</h2></div>
-            <p>Mi aporte fue traducir la lógica SSOMA en una aplicación operable, segura y medible, desde la captura hasta la lectura gerencial.</p>
+            <div><p className="timco-overline">Diseño de la solución</p><h2>Cerrar el hallazgo resuelve el caso. Aprender del historial ayuda a prevenir el siguiente.</h2></div>
+            <p>La solución estandariza el ciclo y construye una base confiable para reconocer recurrencias y, progresivamente, aplicar IA a la prevención de accidentes y reducción de riesgos dentro del marco de las normativas SST aplicables.</p>
           </div>
           <div className="rac-solution-grid">
             {solutionLayers.map((item) => (
@@ -290,29 +290,29 @@ export default function RacCase() {
       <section className="timco-cta rac-cta">
         <div className="timco-shell timco-cta-grid">
           <div className="timco-cta-copy">
-            <p className="timco-overline">Próximo paso</p>
-            <h2>Que ningún hallazgo vuelva a quedarse a medias.</h2>
-            <p>Una conversación breve puede revelar dónde se corta el seguimiento y qué necesita el equipo para llegar al cierre con evidencia.</p>
+            <p className="timco-overline">De registro a prevención</p>
+            <h2>Tu historial de hallazgos puede ayudarte a anticipar el próximo riesgo.</h2>
+            <p>El primer paso no es entrenar una IA. Es asegurar que los datos SST sean completos, comparables y confiables para encontrar señales que hoy pasan desapercibidas.</p>
             <ul>
-              <li>Revisamos un caso real de tu operación</li>
-              <li>Identificamos el punto donde se pierde el control</li>
-              <li>Definimos un primer paso viable</li>
+              <li>Evaluamos la calidad y estructura de tus datos SST</li>
+              <li>Identificamos recurrencias con valor preventivo</li>
+              <li>Definimos una ruta realista hacia analítica e IA</li>
             </ul>
-            <a className="timco-cta-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><span />Quiero coordinar por WhatsApp ↗</a>
+            <a className="timco-cta-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><span />Quiero explorar mis datos SST ↗</a>
           </div>
 
           <div className="timco-booking-card">
             <div className="timco-booking-topline"><span><i /> Agenda abierta</span><strong>Cal.com</strong></div>
             <div className="timco-booking-main">
-              <p className="timco-overline">Revisión inicial</p>
-              <h3>Trae un hallazgo real. Saldrás con una ruta más clara.</h3>
-              <p>En 15 o 30 minutos revisamos cómo se registra, quién responde y qué hace falta para cerrar el ciclo.</p>
+              <p className="timco-overline">Diagnóstico inicial</p>
+              <h3>Descubre si tus registros están listos para generar inteligencia preventiva.</h3>
+              <p>En 15 o 30 minutos revisamos qué información ya tienes, qué falta y cómo convertirla en mejores decisiones sin perder trazabilidad SST.</p>
               <div className="timco-booking-meta">
                 <span><small>Duración</small><strong>15–30 min</strong></span>
                 <span><small>Modalidad</small><strong>Online</strong></span>
-                <span><small>Zona horaria</small><strong>Automática</strong></span>
+                <span><small>Enfoque</small><strong>SST + datos</strong></span>
               </div>
-              <a className="timco-booking-primary" href={calComUrl} target="_blank" rel="noreferrer">Ver horarios disponibles <span>↗</span></a>
+              <a className="timco-booking-primary" href={calComUrl} target="_blank" rel="noreferrer">Agendar diagnóstico <span>↗</span></a>
             </div>
           </div>
         </div>
