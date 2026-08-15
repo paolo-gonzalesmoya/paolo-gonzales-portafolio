@@ -202,7 +202,7 @@ Salida: primera versión completa integrada en el portafolio.
 
 ### Fase 6 — Validación y publicación
 
-Estado: pendiente.
+Estado: completada.
 
 - Validar comportamiento en escritorio y móvil.
 - Revisar accesibilidad, contraste, foco y controles táctiles.
@@ -244,7 +244,7 @@ Estado: backlog.
 | --- | --- |
 | Arquitectura del portafolio | Aprobada |
 | Roadmap | Completado |
-| Inventario visual | Implementado; pendiente de publicación |
+| Inventario visual | Implementado y publicado |
 | Gestión financiera | Backlog |
 | Evaluación 360° | Backlog |
-| Cambios en la web pública | Validados localmente; pendiente de despliegue |
+| Cambios en la web pública | Publicados en la URL existente |
