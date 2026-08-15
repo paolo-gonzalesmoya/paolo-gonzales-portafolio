@@ -9,52 +9,31 @@ const whatsappUrl =
 const storySteps = [
   {
     number: "01",
-    eyebrow: "Registrar",
-    title: "Cada unidad entra con identidad.",
-    copy: "El registro nace en la puerta del almacén. La unidad queda asociada a su cliente, tipo, condición y datos operativos desde el primer contacto.",
-    image: "/assets/projects/timco/scene-01.webp",
-  },
-  {
-    number: "02",
-    eyebrow: "Inspeccionar",
-    title: "El estado queda documentado.",
-    copy: "Un checklist reúne implementos, combustible, AdBlue, limpieza, condición nuevo o usado y fotografías de evidencia.",
+    eyebrow: "Registrar e inspeccionar",
+    title: "Cada unidad entra con identidad y deja una historia documentada.",
+    copy: "Desde el primer registro, la unidad queda asociada a su cliente, tipo y condición. El checklist suma implementos, combustible, AdBlue, limpieza y fotografías para construir una evidencia completa.",
     image: "/assets/projects/timco/scene-02.webp",
   },
   {
-    number: "03",
+    number: "02",
     eyebrow: "Compartir",
     title: "La evidencia viaja con un QR.",
     copy: "El sistema genera el PDF de ingreso y un acceso QR para que el cliente pueda consultar el documento asociado a su unidad.",
     image: "/assets/projects/timco/scene-03.webp",
   },
   {
-    number: "04",
-    eyebrow: "Conciliar",
-    title: "Ingresos menos salidas.",
-    copy: "El inventario vigente no depende de una lista manual: se obtiene al cruzar cada unidad ingresada con sus movimientos de salida.",
+    number: "03",
+    eyebrow: "Actualizar",
+    title: "Inventario actualizado.",
+    copy: "El inventario vigente se deduce automáticamente de los ingresos menos las salidas. Así, cada unidad visible corresponde a una permanencia real dentro del almacén.",
     image: "/assets/projects/timco/scene-04.webp",
   },
   {
-    number: "05",
+    number: "04",
     eyebrow: "Ubicar",
     title: "El almacén se vuelve visible.",
     copy: "El layout representa las columnas reales, permite mover unidades con mouse o pantalla táctil y reorganiza cada fila cuando se registra una salida.",
     image: "/assets/projects/timco/scene-05.webp",
-  },
-  {
-    number: "06",
-    eyebrow: "Comparar",
-    title: "La salida cierra la evidencia.",
-    copy: "El estado final se compara con el ingreso. Las fotografías y el PDF de salida ayudan a resolver diferencias con evidencia verificable.",
-    image: "/assets/projects/timco/scene-06.webp",
-  },
-  {
-    number: "07",
-    eyebrow: "Decidir",
-    title: "Cada rol ve lo necesario.",
-    copy: "Administración revisa áreas y cobros, almacén opera el layout y el cliente consulta sus documentos sin modificar la operación.",
-    image: "/assets/projects/timco/scene-07.webp",
   },
 ];
 
@@ -256,7 +235,7 @@ export default function WarehouseCase() {
               {storySteps.map((step, index) => (
                 <img className={activeStory === index ? "is-active" : ""} src={step.image} alt="" key={step.number} />
               ))}
-              <span className="timco-story-index">{storySteps[activeStory].number} / 07</span>
+              <span className="timco-story-index">{storySteps[activeStory].number} / 04</span>
             </div>
           </div>
         </div>
@@ -371,8 +350,8 @@ export default function WarehouseCase() {
       <section className="timco-evidence timco-shell">
         <div className="timco-evidence-media"><img src="/assets/projects/timco/scene-06.webp" alt="Comparación visual entre el ingreso y la salida de una unidad" loading="lazy" /></div>
         <div>
-          <p className="timco-overline">Evidencia de punta a punta</p>
-          <h2>El PDF no es el final. Es la memoria del proceso.</h2>
+          <p className="timco-overline">Cierre de la unidad</p>
+          <h2>La salida cierra la evidencia.</h2>
           <p>Ingreso y salida conservan su propia evidencia. La comparación ayuda a identificar diferencias y respaldar posibles reclamos sin reconstruir la historia desde mensajes o archivos dispersos.</p>
           <ul>
             <li>Checklist técnico y condición de la unidad.</li>
@@ -394,6 +373,19 @@ export default function WarehouseCase() {
             <article><span>02</span><h3>Google Workspace</h3><p>Datos estructurados, generación de documentos y acceso mediante QR.</p></article>
             <article><span>03</span><h3>Apps Script</h3><p>Layout web interactivo que refleja el inventario y reorganiza las columnas.</p></article>
             <article><span>04</span><h3>Looker Studio</h3><p>Inventario, áreas, movimientos e información necesaria para el cobro.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section className="timco-access">
+        <div className="timco-shell">
+          <div className="timco-access-intro">
+            <div>
+              <p className="timco-overline">Acceso según responsabilidad</p>
+              <h2>Cada rol ve lo necesario.</h2>
+              <p>La misma fuente de datos ofrece control operativo, información para administrar y evidencia de consulta, sin exponer funciones que no corresponden a cada usuario.</p>
+            </div>
+            <figure><img src="/assets/projects/timco/scene-07.webp" alt="Administrador, almacenero y cliente consultando diferentes vistas del sistema" loading="lazy" /></figure>
           </div>
           <div className="timco-roles">
             <article><span>Administrador</span><h3>Área, control y cobro.</h3><p>Observa inventario, variación de áreas y la información que sostiene la gestión.</p></article>

@@ -910,11 +910,17 @@ img { display: block; max-width: 100%; }
 .timco-stack span { color: #8b78f7; font: 760 9px/1 var(--font-geist-mono), monospace; }
 .timco-stack h3 { margin: 48px 0 14px; font-size: 29px; letter-spacing: -.045em; }
 .timco-stack p { max-width: 440px; margin: 0; color: #a1a7b2; font-size: 12px; line-height: 1.7; }
-.timco-roles { width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; margin-top: 48px; padding-top: 48px; border-top: 1px solid rgba(255,255,255,.1); }
-.timco-roles article { min-width: 0; min-height: 230px; padding: 30px; border: 1px solid rgba(255,255,255,.1); border-radius: 18px; background: rgba(255,255,255,.035); }
-.timco-roles span { color: #6bd293; font-size: 8px; font-weight: 780; letter-spacing: .11em; text-transform: uppercase; }
+.timco-access { padding: 140px 0; background: #e9dfd3; }
+.timco-access-intro { display: grid; grid-template-columns: minmax(0,.78fr) minmax(480px,1.22fr); gap: 80px; align-items: center; }
+.timco-access-intro h2 { max-width: 650px; margin: 20px 0 24px; font-size: clamp(52px,5.5vw,78px); line-height: .94; letter-spacing: -.063em; }
+.timco-access-intro>div>p:last-child { max-width: 540px; margin: 0; color: #61615c; font-size: 13px; line-height: 1.75; }
+.timco-access-intro figure { overflow: hidden; margin: 0; padding: 9px; border: 1px solid rgba(16,21,34,.11); border-radius: 25px; background: rgba(255,255,255,.5); box-shadow: 0 28px 70px rgba(50,39,30,.1); }
+.timco-access-intro img { width: 100%; display: block; border-radius: 17px; }
+.timco-roles { width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; margin-top: 55px; padding-top: 48px; border-top: 1px solid rgba(16,21,34,.11); }
+.timco-roles article { min-width: 0; min-height: 230px; padding: 30px; border: 1px solid rgba(16,21,34,.11); border-radius: 18px; background: rgba(255,255,255,.48); }
+.timco-roles span { color: #238449; font-size: 8px; font-weight: 780; letter-spacing: .11em; text-transform: uppercase; }
 .timco-roles h3 { max-width: 300px; margin: 24px 0 14px; font-size: 29px; line-height: 1.04; letter-spacing: -.045em; }
-.timco-roles p { max-width: 320px; margin: 0; color: #a1a7b2; font-size: 11px; line-height: 1.7; }
+.timco-roles p { max-width: 320px; margin: 0; color: #62635e; font-size: 11px; line-height: 1.7; }
 
 .timco-cta { position: relative; overflow: hidden; padding: 135px 0; color: white; background: #6549e5; }
 .timco-cta:after { content: ""; position: absolute; width: 560px; height: 560px; right: -140px; top: -240px; border: 90px solid rgba(255,255,255,.08); border-radius: 50%; }
@@ -933,6 +939,7 @@ img { display: block; max-width: 100%; }
   .timco-hero-frame { grid-template-columns: 1fr 1fr; gap: 34px; }
   .timco-hero-content h1 { font-size: clamp(50px,7vw,68px); }
   .timco-architecture-intro { grid-template-columns: 1fr; gap: 30px; }
+  .timco-access-intro { grid-template-columns: 1fr 1fr; gap: 38px; }
   .timco-story-layout { grid-template-columns: .8fr 1.2fr; gap: 38px; }
   .timco-stack { grid-template-columns: repeat(2, 1fr); }
   .warehouse-summary { grid-template-columns: 1fr 1fr; }
@@ -970,11 +977,13 @@ img { display: block; max-width: 100%; }
   .timco-story-copy article>img { width: calc(100% + 36px); display: block; margin: -18px -18px 26px; }
   .timco-story-copy h2 { margin: 18px 0 15px; font-size: 43px; }
   .timco-story-stage { display: none; }
-  .timco-demo-section, .timco-architecture { padding: 90px 0; }
+  .timco-demo-section, .timco-architecture, .timco-access { padding: 90px 0; }
   .timco-section-heading { margin-bottom: 38px; }
   .timco-section-heading h2 { font-size: 50px; }
   .timco-architecture-intro { min-height: 0; margin-bottom: 38px; }
   .timco-architecture-intro h2 { font-size: 49px; }
+  .timco-access-intro { grid-template-columns: 1fr; }
+  .timco-access-intro h2 { font-size: 49px; }
   .warehouse-app { border-radius: 18px; }
   .warehouse-toolbar { grid-template-columns: 1fr auto; }
   .warehouse-tabs { grid-column: 1 / -1; }
