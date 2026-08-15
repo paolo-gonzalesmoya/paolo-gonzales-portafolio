@@ -1,0 +1,16 @@
+Create one polished 16:9 cinematic isometric 3D storyboard frame for a premium scroll-driven case study.
+
+MESSAGE
+The viewer must immediately understand that many field findings become comparable management information across projects, people, risks, crews, subcontractors and time.
+
+COMPOSITION
+Fixed 35-degree isometric camera. Three small construction-project dioramas on the left and center send clean cyan data lines into one dominant physical analytics console on the right. The console contains large abstract chart shapes only: one donut, one horizontal bar ranking, one risk distribution and one weekly trend, all without text or numbers. An adult administrator studies the console while a neat table-report sheet exits from a side tray. Use orange to highlight the one priority requiring attention and green for resolved records.
+
+TEXT
+Narrative title for production tracking only: “La operación se vuelve visible”. Do not render it. Do not render any text.
+
+VISUAL LANGUAGE
+Premium tactile architectural miniature 3D matching the supplied portfolio reference, matte architectural materials, warm ivory background, midnight navy platforms, signal orange decisions, cyan data routes, restrained coral risk and green resolved states, realistic soft studio shadows, restrained depth of field and polished editorial spacing.
+
+AVOID
+Do not add any other words, pseudo-text, letters, numbers, logos, watermarks or signatures. Avoid literal Looker Studio screenshots, tiny illegible charts, floating UI clutter, duplicate administrators and glossy science fiction.

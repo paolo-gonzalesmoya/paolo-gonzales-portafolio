@@ -1,0 +1,16 @@
+Create one polished 16:9 cinematic isometric 3D storyboard frame for a premium scroll-driven case study.
+
+MESSAGE
+The viewer must immediately understand that every finding is classified by operational context, prioritized by risk, assigned to a responsible person and given a deadline.
+
+COMPOSITION
+Fixed 35-degree isometric camera. Place one photo-evidence tile of a construction finding at the center on a midnight navy hub. Connect it cleanly to exactly four large stations: a three-light risk beacon with green, amber and coral red; one category shelf represented by safety objects; one combined crew-and-subcontractor station with two adult worker silhouettes and a small company building token; and one responsible-person station paired with a clear clock and calendar shape. The inspector stands off-center guiding the orange path from the finding to the responsible station. All connections begin and end at specific objects and never cross.
+
+TEXT
+Narrative title for production tracking only: “Prioridad y responsabilidad”. Do not render it. Do not render any text.
+
+VISUAL LANGUAGE
+Premium tactile architectural miniature 3D matching the supplied reference, matte materials, warm ivory environment, midnight navy base, signal orange primary path, restrained cyan secondary data, coral risk and green confirmation, realistic soft shadows, restrained depth of field and strong thumbnail readability.
+
+AVOID
+Do not add any other words, pseudo-text, letters, numbers, logos, watermarks or signatures. Avoid dense dashboards, generic cyber shields, floating form fields, duplicate characters and decorative clutter.

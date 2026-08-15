@@ -602,11 +602,6 @@ export default function WarehouseCase() {
         </div>
       </section>
 
-      <footer className="timco-footer timco-shell">
-        <Link className="timco-brand" href="/"><span>PG</span><strong>Paolo Gonzales</strong></Link>
-        <p>© 2026 Paolo Gonzales</p>
-        <a href="#top" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Volver arriba ↑</a>
-      </footer>
     </main>
   );
 }

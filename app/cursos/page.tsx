@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Cursos de AppSheet | Paolo Gonzales",
@@ -64,11 +65,11 @@ export default function CoursesPage() {
     <main className="courses-page">
       <header className="site-header">
         <nav className="nav shell" aria-label="Navegación de cursos">
-          <a className="brand" href="/" aria-label="Volver al portafolio">
+          <Link className="brand" href="/" aria-label="Volver al portafolio">
             PAOLO<span>/</span>GONZALES
-          </a>
+          </Link>
           <div className="nav-links course-nav-links">
-            <a href="/">Portafolio</a>
+            <Link href="/">Portafolio</Link>
             <a href="#programas">Programas</a>
             <a href="#metodologia">Metodología</a>
           </div>
@@ -82,7 +83,7 @@ export default function CoursesPage() {
         <div className="course-hero-orb orb-a" aria-hidden="true" />
         <div className="course-hero-orb orb-b" aria-hidden="true" />
         <div className="shell courses-hero-content">
-          <a className="back-link" href="/">← Volver al portafolio</a>
+          <Link className="back-link" href="/">← Volver al portafolio</Link>
           <p className="overline">Formación práctica · AppSheet</p>
           <h1>De una idea a una app que realmente funciona.</h1>
           <p className="courses-lead">
@@ -164,11 +165,6 @@ export default function CoursesPage() {
         </div>
       </section>
 
-      <footer className="footer shell">
-        <div className="brand">PAOLO<span>/</span>GONZALES</div>
-        <p>© 2026 Paolo Gonzales · Formación práctica en AppSheet.</p>
-        <a href="mailto:paolo.gonzalesmoya@gmail.com">paolo.gonzalesmoya@gmail.com</a>
-      </footer>
     </main>
   );
 }

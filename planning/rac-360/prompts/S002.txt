@@ -1,0 +1,16 @@
+Create one polished 16:9 cinematic isometric 3D storyboard frame for a premium scroll-driven case study.
+
+MESSAGE
+The viewer must immediately understand that the inspector captures the finding, its exact worksite context and photographic evidence directly in the field.
+
+COMPOSITION
+Fixed 35-degree isometric camera in the same modular construction world as the reference. Center an adult safety inspector in white hard hat, dark navy workwear and restrained orange safety vest, photographing one clearly damaged perimeter safety mesh with a phone. Four large readable physical objects surround the phone without text: a miniature building-site token for the project, a highlighted floor-zone tile for the inspected area, one clean note sheet for the description, and one large photographic evidence frame showing the same mesh. Thin orange and cyan conduits connect the real hazard into these structured evidence objects. Keep one dominant action and generous breathing room.
+
+TEXT
+Narrative title for production tracking only: “La evidencia nace en obra”. Do not render it. Do not render any text.
+
+VISUAL LANGUAGE
+Premium tactile architectural miniature 3D, matte concrete and metal, warm ivory background, midnight navy platforms, signal orange actions, restrained coral risk accent, cyan data path and realistic soft studio shadows; high-end editorial spacing, restrained depth of field, credible adult enterprise design.
+
+AVOID
+Do not add any other words, pseudo-text, letters, numbers, logos, watermarks or signatures. Avoid generic floating UI cards, dense forms, injuries, dramatic accidents, duplicate people and childish proportions.

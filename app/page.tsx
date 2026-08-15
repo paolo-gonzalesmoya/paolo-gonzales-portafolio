@@ -68,12 +68,13 @@ const cases = [
   },
   {
     number: "02",
-    client: "PDK Perú",
-    title: "Inspecciones y hallazgos con trazabilidad",
-    copy: "Captura de evidencias en obra, asignación de responsables, acciones correctivas e indicadores multiobra.",
-    tags: ["SSOMA", "Evidencias", "Control por roles", "KPIs"],
-    image: "/assets/pdk-dashboard.webp",
-    tone: "cyan",
+    client: "PDK Produktiva",
+    title: "RAC 360",
+    copy: "Un flujo completo para detectar, priorizar, asignar y cerrar hallazgos SSOMA con evidencia; los registros alimentan el control multiobra.",
+    tags: ["Inspección móvil", "Riesgo y responsables", "Cierre con evidencia", "Dashboard multiobra"],
+    image: "/assets/projects/rac-360/scene-01.webp",
+    tone: "orange",
+    href: "/proyectos/rac-360",
   },
   {
     number: "03",
@@ -122,12 +123,15 @@ export default function Home() {
       setPrefersReducedMotion(reducedMotionQuery.matches);
     };
 
-    updatePreferences();
-    setForceMotion(window.localStorage.getItem("paolo-portfolio-motion") === "enabled");
+    const preferenceFrame = window.requestAnimationFrame(() => {
+      updatePreferences();
+      setForceMotion(window.localStorage.getItem("paolo-portfolio-motion") === "enabled");
+    });
     mobileQuery.addEventListener("change", updatePreferences);
     reducedMotionQuery.addEventListener("change", updatePreferences);
 
     return () => {
+      window.cancelAnimationFrame(preferenceFrame);
       mobileQuery.removeEventListener("change", updatePreferences);
       reducedMotionQuery.removeEventListener("change", updatePreferences);
     };
@@ -376,6 +380,7 @@ export default function Home() {
                   <h3>{item.title}</h3>
                   <p>{item.copy}</p>
                   <ul>{item.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
+                  {item.href ? <Link className="world-case-link" href={item.href}>Explorar el proyecto <span>↗</span></Link> : null}
                 </div>
               </article>
             ))}
@@ -461,12 +466,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <footer className="world-footer world-shell">
-        <div className="world-brand"><span>PG</span><div><strong>Paolo Gonzales</strong><small>Automatización que sí se usa</small></div></div>
-        <p>© 2026 Paolo Gonzales</p>
-        <a href="#inicio">Volver al recorrido ↑</a>
-      </footer>
 
       <a className="world-floating-wa" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Contactar a Paolo por WhatsApp">WA</a>
     </main>
