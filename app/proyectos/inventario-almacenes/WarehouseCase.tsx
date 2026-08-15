@@ -38,6 +38,37 @@ const storySteps = [
   },
 ];
 
+const contributionSteps = [
+  {
+    number: "01",
+    title: "Diagnóstico operativo",
+    copy: "Levantamiento del flujo, reglas, responsables y puntos de pérdida de información.",
+    image: "/assets/projects/timco/contribution-01.webp",
+    alt: "Diagnóstico visual del recorrido de una unidad y del punto donde se pierde información",
+  },
+  {
+    number: "02",
+    title: "Modelo de datos",
+    copy: "Estructura para ingresos, salidas, unidades, evidencia, áreas y clientes.",
+    image: "/assets/projects/timco/contribution-02.webp",
+    alt: "Modelo central que relaciona la unidad con ingreso, salida, evidencia, área y cliente",
+  },
+  {
+    number: "03",
+    title: "Automatización",
+    copy: "Checklists, documentos PDF, códigos QR, permisos y actualización del inventario.",
+    image: "/assets/projects/timco/contribution-03.webp",
+    alt: "Automatización que convierte el checklist en evidencia PDF, QR e inventario actualizado",
+  },
+  {
+    number: "04",
+    title: "Experiencia operativa",
+    copy: "Interfaz móvil, layout táctil y analítica adaptados a la realidad del equipo.",
+    image: "/assets/projects/timco/contribution-04.webp",
+    alt: "Experiencia conectada entre registro móvil, layout táctil y analítica del almacén",
+  },
+];
+
 type SiteName = "Timco 1" | "Timco 2";
 type Unit = {
   id: string;
@@ -95,6 +126,8 @@ function createInitialLayouts(): Layouts {
 export default function WarehouseCase() {
   const [activeStory, setActiveStory] = useState(0);
   const storyRefs = useRef<Array<HTMLElement | null>>([]);
+  const contributionRef = useRef<HTMLElement | null>(null);
+  const [contributionVisible, setContributionVisible] = useState(false);
   const [site, setSite] = useState<SiteName>("Timco 1");
   const [layouts, setLayouts] = useState<Layouts>(() => createInitialLayouts());
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -118,7 +151,21 @@ export default function WarehouseCase() {
       { rootMargin: "-28% 0px -42%", threshold: [0.15, 0.45, 0.7] },
     );
     storyRefs.current.forEach((node) => node && observer.observe(node));
-    return () => observer.disconnect();
+
+    const contributionObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        setContributionVisible(true);
+        contributionObserver.disconnect();
+      },
+      { rootMargin: "0px 0px -18%", threshold: 0.16 },
+    );
+    if (contributionRef.current) contributionObserver.observe(contributionRef.current);
+
+    return () => {
+      observer.disconnect();
+      contributionObserver.disconnect();
+    };
   }, []);
 
   const activeLanes = layouts[site];
@@ -442,7 +489,10 @@ export default function WarehouseCase() {
         </div>
       </section>
 
-      <section className="timco-contribution">
+      <section
+        ref={contributionRef}
+        className={`timco-contribution${contributionVisible ? " is-visible" : ""}`}
+      >
         <div className="timco-shell">
           <div className="timco-contribution-intro">
             <div>
@@ -452,10 +502,25 @@ export default function WarehouseCase() {
             <p>Mi responsabilidad fue traducir la lógica real del almacén en un sistema útil para quienes registran, controlan y toman decisiones. El valor está en conectar toda la operación, no en sumar pantallas aisladas.</p>
           </div>
           <div className="timco-contribution-grid">
-            <article><span>01</span><h3>Diagnóstico operativo</h3><p>Levantamiento del flujo, reglas, responsables y puntos de pérdida de información.</p></article>
-            <article><span>02</span><h3>Modelo de datos</h3><p>Estructura para ingresos, salidas, unidades, evidencia, áreas y clientes.</p></article>
-            <article><span>03</span><h3>Automatización</h3><p>Checklists, documentos PDF, códigos QR, permisos y actualización del inventario.</p></article>
-            <article><span>04</span><h3>Experiencia operativa</h3><p>Interfaz móvil, layout táctil y analítica adaptados a la realidad del equipo.</p></article>
+            {contributionSteps.map((step) => (
+              <article key={step.number}>
+                <figure>
+                  <img
+                    src={step.image}
+                    alt={step.alt}
+                    width={1120}
+                    height={630}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <div className="timco-contribution-copy">
+                  <span>{step.number}</span>
+                  <h3>{step.title}</h3>
+                  <p>{step.copy}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -482,10 +547,10 @@ export default function WarehouseCase() {
             <div className="timco-booking-main">
               <p className="timco-overline">Conversación inicial</p>
               <h3>Elige una conversación de 15 o 30 minutos.</h3>
-              <p>Elige el horario que mejor te funcione. La reserva se añadirá a tu calendario con el enlace de videollamada.</p>
+              <p>Elige el horario que mejor te funcione. La reserva se añadirá a tu calendario con un enlace privado de Cal Video.</p>
               <div className="timco-booking-meta" aria-label="Detalles de la conversación">
                 <span><small>Duración</small><strong>15–30 min</strong></span>
-                <span><small>Modalidad</small><strong>Videollamada</strong></span>
+                <span><small>Modalidad</small><strong>Cal Video</strong></span>
                 <span><small>Zona horaria</small><strong>Automática</strong></span>
               </div>
               <a className="timco-booking-primary" href={calComUrl} target="_blank" rel="noreferrer">

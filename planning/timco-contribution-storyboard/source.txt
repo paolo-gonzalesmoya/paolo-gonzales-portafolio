@@ -1,0 +1,11 @@
+01 — Diagnóstico operativo
+Levantamiento del flujo, reglas, responsables y puntos de pérdida de información.
+
+02 — Modelo de datos
+Estructura para ingresos, salidas, unidades, evidencia, áreas y clientes.
+
+03 — Automatización
+Checklists, documentos PDF, códigos QR, permisos y actualización del inventario.
+
+04 — Experiencia operativa
+Interfaz móvil, layout táctil y analítica adaptados a la realidad del equipo.

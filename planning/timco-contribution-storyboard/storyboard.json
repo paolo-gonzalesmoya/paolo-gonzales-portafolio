@@ -1,0 +1,55 @@
+{
+  "projectTitle": "TIMCO — Del proceso físico a una operación conectada",
+  "source": "C:/Users/Usuario/Marca Personal Paolo Gonzales/paolo-gonzales-portafolio/planning/timco-contribution-storyboard/source.txt",
+  "style": {
+    "aspectRatio": "16:9",
+    "model": "gpt_image_2",
+    "referenceImages": [
+      "public/assets/projects/timco/scene-01.webp",
+      "public/assets/projects/timco/scene-04.webp",
+      "public/assets/projects/timco/roles-control.webp"
+    ]
+  },
+  "beats": [
+    {
+      "id": "S001",
+      "script": "Levantamiento del flujo, reglas, responsables y puntos de pérdida de información.",
+      "title": "Diagnóstico operativo",
+      "visualMode": "single-scene",
+      "visualClaim": "Antes de diseñar el sistema, el proceso real del almacén se observa y se convierte en un mapa claro de decisiones y pérdidas de información.",
+      "direction": "Escena isométrica compacta. Paolo observa una miniatura del almacén desde la izquierda; en el centro sigue una ruta luminosa que conecta ingreso, inspección, ubicación y salida; un único tramo interrumpido con documentos dispersos representa la pérdida de información. Una libreta y un lápiz óptico refuerzan el trabajo de diagnóstico.",
+      "labels": [],
+      "prompt": "Create one polished 16:9 landscape isometric 3D editorial illustration. Concept title: \"Diagnóstico operativo\". MESSAGE: The viewer must immediately understand that a consultant first observes the real warehouse workflow, identifies rules and responsibilities, and detects where information is lost. COMPOSITION: a compact miniature warehouse platform seen from a slightly elevated three-quarter angle; Paolo, a young Peruvian male consultant with medium black hair, black shirt, charcoal trousers and gray hoodie, stands on the left studying a glowing route that connects vehicle arrival, inspection, storage position and departure. In the center, one broken segment leaks a few paper records, clearly showing the information gap; Paolo marks that exact point on a small digital notepad. Keep one dominant path and four simple operational nodes, generous breathing room, no diagram labels. VISUAL LANGUAGE: match the supplied TIMCO references: premium low-poly isometric diorama, warm cream background, dark navy platforms, soft realistic materials, cyan and violet data light, restrained green confirmation accents, cinematic but bright studio lighting, shallow soft shadows, clean corporate editorial finish, consistent character proportions and clothing. The scene must read instantly at small card size. TEXT: render no words, no letters, no numbers, no logos, no watermark, no pseudo-text. Do not add any other words or captions. AVOID: photorealistic people, oversized UI screens, dense flowcharts, clutter, repeated characters, random icons, illegible documents, dark background, exaggerated neon, and cropped focal objects."
+    },
+    {
+      "id": "S002",
+      "script": "Estructura para ingresos, salidas, unidades, evidencia, áreas y clientes.",
+      "title": "Modelo de datos",
+      "visualMode": "system-map",
+      "visualClaim": "Una estructura central relaciona cada unidad con sus ingresos, salidas, evidencias, áreas y cliente sin duplicar información.",
+      "direction": "Composición radial contenida. En el centro, un cubo de datos translúcido contiene una unidad; alrededor hay cinco objetos grandes y distintos: puerta de ingreso, puerta de salida, cámara/evidencia, plano de área y ficha de cliente. Paolo conecta la última relación desde la parte inferior derecha. Todas las líneas terminan en un objeto concreto.",
+      "labels": [],
+      "prompt": "Create one polished 16:9 landscape isometric 3D editorial illustration. Concept title: \"Modelo de datos\". MESSAGE: The viewer must immediately understand that one coherent data model connects every vehicle to its entry, exit, evidence, occupied area and client. COMPOSITION: a central translucent navy-and-cyan data cube contains a small vehicle token; exactly five well-spaced satellites surround it: an arrival gate, a departure gate, a camera with photo evidence, a warehouse floor-area tile, and a client profile token. Clean luminous connectors begin and end at each object without crossing. Paolo, the same young Peruvian male consultant with medium black hair, black shirt, charcoal trousers and gray hoodie, kneels at the lower right and attaches the final connector. Make the central cube twice as visually dominant as the satellites and preserve generous margins. VISUAL LANGUAGE: match the supplied TIMCO references: premium low-poly isometric diorama, warm cream background, dark navy platforms, soft realistic materials, cyan and violet data light, restrained green confirmation accents, cinematic but bright studio lighting, shallow soft shadows, clean corporate editorial finish, consistent character proportions and clothing. The scene must read instantly at small card size. TEXT: render no words, no letters, no numbers, no logos, no watermark, no pseudo-text. Do not add any other words or captions. AVOID: photorealistic people, floating generic dashboards, dense database diagrams, clutter, repeated characters, random icons, crossing connectors, dark background, exaggerated neon, and cropped focal objects."
+    },
+    {
+      "id": "S003",
+      "script": "Checklists, documentos PDF, códigos QR, permisos y actualización del inventario.",
+      "title": "Automatización",
+      "visualMode": "pipeline-4",
+      "visualClaim": "Una sola automatización transforma el checklist y las fotografías en evidencia documental, acceso QR y un inventario actualizado.",
+      "direction": "Pipeline de izquierda a derecha sobre una plataforma. Un checklist con cámara entra, pasa por un módulo de automatización activado por Paolo, genera una hoja PDF con QR y termina en una cuadrícula de inventario actualizada con una señal verde. Solo una flecha luminosa continua guía toda la lectura.",
+      "labels": [],
+      "prompt": "Create one polished 16:9 landscape isometric 3D editorial illustration. Concept title: \"Automatización\". MESSAGE: The viewer must immediately understand that automation turns one operational checklist and its photographs into a PDF, a QR access point and an updated inventory. COMPOSITION: one clean left-to-right pipeline on a compact dark navy platform. Stage one is a checklist tablet paired with a small camera; stage two is a central automation gate activated by Paolo, the same young Peruvian male consultant with medium black hair, black shirt, charcoal trousers and gray hoodie; stage three is a crisp document tile with a clearly recognizable QR-like square pattern but no readable text; stage four is a tidy warehouse inventory grid that receives a green confirmation pulse. One continuous cyan-to-violet-to-green light path connects the stages. Use distinct silhouettes and balanced spacing. VISUAL LANGUAGE: match the supplied TIMCO references: premium low-poly isometric diorama, warm cream background, dark navy platforms, soft realistic materials, cyan and violet data light, restrained green confirmation accents, cinematic but bright studio lighting, shallow soft shadows, clean corporate editorial finish, consistent character proportions and clothing. The scene must read instantly at small card size. TEXT: render no words, no letters, no numbers, no logos, no watermark, no pseudo-text. Do not add any other words or captions. AVOID: photorealistic people, factory machinery, dense flowcharts, clutter, repeated characters, random symbols, red alarm emphasis, dark background, exaggerated neon, and cropped focal objects."
+    },
+    {
+      "id": "S004",
+      "script": "Interfaz móvil, layout táctil y analítica adaptados a la realidad del equipo.",
+      "title": "Experiencia operativa",
+      "visualMode": "device-sync",
+      "visualClaim": "La misma operación se entiende y controla desde una interfaz móvil, un layout táctil y una vista analítica diseñada para cada responsabilidad.",
+      "direction": "Escena unificada con tres superficies conectadas alrededor de Paolo: móvil de registro a la izquierda, layout táctil del almacén al centro como elemento dominante y panel analítico a la derecha. Un almacenero mueve una unidad en el layout mientras la información se sincroniza hacia las otras vistas.",
+      "labels": [],
+      "prompt": "Create one polished 16:9 landscape isometric 3D editorial illustration. Concept title: \"Experiencia operativa\". MESSAGE: The viewer must immediately understand that the same live warehouse operation is usable through a mobile registration interface, a tactile warehouse layout and an analytical view adapted to the team. COMPOSITION: one unified isometric workstation. The dominant center object is a large tactile warehouse layout with orderly blue and green vehicle tiles; at left, a warehouse operator holds a phone showing simple inspection controls; at right, a compact analytics screen shows clean chart shapes. Paolo, the same young Peruvian male consultant with medium black hair, black shirt, charcoal trousers and gray hoodie, stands behind the center layout guiding the operator as one vehicle tile is moved by touch. Thin cyan sync lines link the phone, layout and analytics screen. Use one coherent environment rather than three separate cards. VISUAL LANGUAGE: match the supplied TIMCO references: premium low-poly isometric diorama, warm cream background, dark navy platforms, soft realistic materials, cyan and violet data light, restrained green confirmation accents, cinematic but bright studio lighting, shallow soft shadows, clean corporate editorial finish, consistent character proportions and clothing. The scene must read instantly at small card size. TEXT: render no words, no letters, no numbers, no logos, no watermark, no pseudo-text. Do not add any other words or captions. AVOID: photorealistic people, floating unrelated UI, dense dashboards, clutter, duplicate devices, repeated characters, random icons, dark background, exaggerated neon, and cropped focal objects."
+    }
+  ]
+}
