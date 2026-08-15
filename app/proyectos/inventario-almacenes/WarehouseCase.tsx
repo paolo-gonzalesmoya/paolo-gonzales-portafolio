@@ -192,12 +192,17 @@ export default function WarehouseCase() {
         <Link className="timco-header-link" href="/">Volver al portafolio <span>↗</span></Link>
       </header>
 
-      <section className="timco-hero">
-        <div className="timco-shell timco-hero-frame">
+      <section id="top" className="timco-hero">
+        <div className="timco-shell timco-hero-cover">
+          <figure className="timco-hero-media">
+            <img src="/assets/projects/timco/scene-01.webp" alt="Ingreso digital de una unidad pesada al almacén" />
+            <figcaption><span>Proyecto</span> Del ingreso al inventario visual.</figcaption>
+          </figure>
           <div className="timco-hero-content">
-            <p className="timco-overline"><span>Proyecto 01</span> Operación de almacenes</p>
-            <h1>Cada unidad deja una historia desde que entra.</h1>
-            <p>El sistema acompaña a cada vehículo desde su registro inicial hasta la salida: documenta su estado, mantiene el inventario visible y convierte el espacio ocupado en información para operar y cobrar.</p>
+            <p className="timco-overline"><span>Caso de estudio</span> Proyecto dedicado</p>
+            <h1>Almacén<br />Layout.</h1>
+            <p className="timco-hero-lead">Inventario visual y trazabilidad de unidades.</p>
+            <p className="timco-hero-description">Un sistema que acompaña a cada vehículo desde el registro inicial hasta la salida, conserva su evidencia y convierte el espacio ocupado en información para operar y cobrar.</p>
             <ol className="timco-flowline" aria-label="Flujo principal del sistema">
               <li>Ingreso</li><li>Checklist</li><li>Evidencia</li><li>Inventario</li><li>Salida</li>
             </ol>
@@ -206,16 +211,12 @@ export default function WarehouseCase() {
               <a href="#demo">Probar el layout</a>
             </div>
           </div>
-          <figure className="timco-hero-media">
-            <img src="/assets/projects/timco/scene-01.webp" alt="Ingreso digital de una unidad pesada al almacén" />
-            <figcaption><span>01</span> El registro comienza en la puerta del almacén.</figcaption>
-          </figure>
-        </div>
-        <div className="timco-shell timco-hero-facts" aria-label="Capacidades principales">
-          <span><strong>01</strong> Registro de ingreso</span>
-          <span><strong>02</strong> Evidencia + QR</span>
-          <span><strong>03</strong> Inventario visual</span>
-          <span><strong>04</strong> Salida documentada</span>
+          <div className="timco-hero-facts" aria-label="Capacidades principales">
+            <span><strong>01</strong> Registro de ingreso</span>
+            <span><strong>02</strong> Evidencia + QR</span>
+            <span><strong>03</strong> Inventario visual</span>
+            <span><strong>04</strong> Salida documentada</span>
+          </div>
         </div>
       </section>
 
@@ -427,21 +428,21 @@ export default function WarehouseCase() {
       <section id="consulta" className="timco-cta">
         <div className="timco-shell timco-cta-grid">
           <div className="timco-cta-copy">
-            <p className="timco-overline">Consulta inicial</p>
-            <h2>Cuéntame dónde se atasca tu operación.</h2>
-            <p>Describe el proceso que hoy depende de hojas, mensajes o tareas manuales. Revisaré tu caso para identificar por dónde conviene comenzar.</p>
+            <p className="timco-overline">Diagnóstico de procesos</p>
+            <h2>Empecemos por la fricción que más tiempo te cuesta.</h2>
+            <p>Comparte una necesidad concreta y recibirás una primera orientación sobre el proceso, la información necesaria y el mejor punto para comenzar.</p>
             <ul>
+              <li>Lectura inicial de tu necesidad</li>
+              <li>Recomendación del primer paso</li>
               <li>Respuesta en 1–2 días hábiles</li>
-              <li>Primera orientación sin compromiso</li>
-              <li>Enfoque en una necesidad concreta</li>
             </ul>
             <a className="timco-cta-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><span />Prefiero escribir directamente por WhatsApp ↗</a>
           </div>
 
           <form className="timco-consultation-form" onSubmit={requestConsultation}>
             <div className="timco-form-heading">
-              <span>Solicitud de diagnóstico</span>
-              <strong>Cuatro datos para entender tu caso.</strong>
+              <span>Cuéntame tu caso</span>
+              <strong>La información justa para darte una respuesta útil.</strong>
             </div>
             <label className="timco-form-wide">
               <span>¿Qué necesitas mejorar?</span>

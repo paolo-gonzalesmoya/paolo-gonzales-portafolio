@@ -59,8 +59,8 @@ const cases = [
   {
     number: "01",
     client: "TIMCO",
-    title: "Inventario visual y trazabilidad de unidades",
-    copy: "Ingreso, checklist, evidencia fotográfica, PDF con QR y un layout táctil que convierte los movimientos del almacén en control operativo y área para cobro.",
+    title: "Almacén Layout",
+    copy: "Un caso completo de ingreso, evidencia, inventario y salida: el layout táctil convierte cada movimiento del almacén en control operativo y área para cobro.",
     tags: ["Ingreso y salida", "PDF + QR", "Layout táctil", "Área y cobro"],
     image: "/assets/projects/timco/scene-01.webp",
     tone: "violet",
@@ -344,10 +344,11 @@ export default function Home() {
           <article className="world-project-featured">
             <Link className="world-project-featured-image" href={cases[0].href ?? "/proyectos/inventario-almacenes"} aria-label={`Explorar ${cases[0].title}`}>
               <img src={cases[0].image} alt="Ingreso digital de una unidad al almacén TIMCO" />
+              <small>Proyecto dedicado · Almacén Layout</small>
               <span>Ver caso completo <b>↗</b></span>
             </Link>
             <div className="world-project-featured-copy">
-              <div className="world-project-meta"><span>01</span><small>Proyecto destacado · {cases[0].client}</small></div>
+              <div className="world-project-meta"><span>01</span><small>Caso de estudio · {cases[0].client}</small></div>
               <h3>{cases[0].title}</h3>
               <p>{cases[0].copy}</p>
               <div className="world-project-flow" aria-label="Recorrido del proyecto">
