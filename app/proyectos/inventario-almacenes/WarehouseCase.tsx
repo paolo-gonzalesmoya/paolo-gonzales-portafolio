@@ -232,8 +232,8 @@ export default function WarehouseCase() {
 
       <section id="demo" className="timco-demo-section">
         <div className="timco-shell">
-          <div className="timco-section-heading">
-            <div><p className="timco-overline">Demostración interactiva</p><h2>Muévelo como en el almacén.</h2></div>
+          <div className="timco-section-heading timco-demo-heading">
+            <div><p className="timco-overline">Demostración interactiva</p><h2>Prueba el layout en acción.</h2></div>
             <p>Selecciona una unidad y luego otra columna. También puedes arrastrarla con el mouse. Al registrar una salida, la unidad desaparece y su columna se compacta.</p>
           </div>
 
