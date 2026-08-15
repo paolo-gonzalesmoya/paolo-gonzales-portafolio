@@ -43,28 +43,28 @@ const contributionSteps = [
     number: "01",
     title: "Diagnóstico operativo",
     copy: "Levantamiento del flujo, reglas, responsables y puntos de pérdida de información.",
-    image: "/assets/projects/timco/contribution-01.webp",
+    image: "/assets/projects/timco/contribution-minimal-01.webp",
     alt: "Diagnóstico visual del recorrido de una unidad y del punto donde se pierde información",
   },
   {
     number: "02",
     title: "Modelo de datos",
     copy: "Estructura para ingresos, salidas, unidades, evidencia, áreas y clientes.",
-    image: "/assets/projects/timco/contribution-02.webp",
+    image: "/assets/projects/timco/contribution-minimal-02.webp",
     alt: "Modelo central que relaciona la unidad con ingreso, salida, evidencia, área y cliente",
   },
   {
     number: "03",
     title: "Automatización",
     copy: "Checklists, documentos PDF, códigos QR, permisos y actualización del inventario.",
-    image: "/assets/projects/timco/contribution-03.webp",
+    image: "/assets/projects/timco/contribution-minimal-03.webp",
     alt: "Automatización que convierte el checklist en evidencia PDF, QR e inventario actualizado",
   },
   {
     number: "04",
     title: "Experiencia operativa",
     copy: "Interfaz móvil, layout táctil y analítica adaptados a la realidad del equipo.",
-    image: "/assets/projects/timco/contribution-04.webp",
+    image: "/assets/projects/timco/contribution-minimal-04.webp",
     alt: "Experiencia conectada entre registro móvil, layout táctil y analítica del almacén",
   },
 ];
@@ -508,8 +508,8 @@ export default function WarehouseCase() {
                   <img
                     src={step.image}
                     alt={step.alt}
-                    width={1120}
-                    height={630}
+                    width={720}
+                    height={480}
                     loading="lazy"
                     decoding="async"
                   />
