@@ -58,11 +58,12 @@ const cases = [
   {
     number: "01",
     client: "TIMCO",
-    title: "Gestión de partidas y ciclo de facturación",
-    copy: "Registro, clasificación, validación y seguimiento de facturas conectados con control financiero y reportes ejecutivos.",
-    tags: ["4 roles", "PDF versionado", "Alertas de pago", "Dashboard"],
-    image: "/assets/timco-dashboard.webp",
+    title: "Inventario visual y trazabilidad de unidades",
+    copy: "Ingreso, checklist, evidencia fotográfica, PDF con QR y un layout táctil que convierte los movimientos del almacén en control operativo y área para cobro.",
+    tags: ["Ingreso y salida", "PDF + QR", "Layout táctil", "Área y cobro"],
+    image: "/assets/projects/timco/scene-05.webp",
     tone: "violet",
+    href: "/proyectos/inventario-almacenes",
   },
   {
     number: "02",
@@ -348,6 +349,7 @@ export default function Home() {
                   <h3>{item.title}</h3>
                   <p>{item.copy}</p>
                   <ul>{item.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
+                  {item.href && <a className="world-case-link" href={item.href}>Explorar el caso <span>↗</span></a>}
                 </div>
               </article>
             ))}

@@ -141,7 +141,7 @@ Estado: completada.
 
 ### Fase 1 — Descubrimiento del inventario
 
-Estado: pendiente de la explicación de Paolo.
+Estado: completada.
 
 - Recopilar la información del producto.
 - Separar hechos publicables, datos de demostración y contenido confidencial.
@@ -153,7 +153,7 @@ Salida: brief de producto aprobado.
 
 ### Fase 2 — Storytelling y arquitectura de contenido
 
-Estado: pendiente.
+Estado: completada.
 
 - Redactar problema, solución, proceso, aporte e impacto.
 - Definir la jerarquía de la página individual.
@@ -165,7 +165,7 @@ Salida: contenido y wireframe narrativo.
 
 ### Fase 3 — Dirección visual
 
-Estado: pendiente.
+Estado: completada.
 
 - Diseñar el lenguaje visual del producto.
 - Construir el layout 2D del almacén.
@@ -177,7 +177,7 @@ Salida: concepto visual aprobado.
 
 ### Fase 4 — Prototipo interactivo
 
-Estado: pendiente.
+Estado: completada.
 
 - Implementar selección de ubicaciones.
 - Implementar ingreso y retiro de unidades.
@@ -190,7 +190,7 @@ Salida: demostración funcional del almacén.
 
 ### Fase 5 — Página del caso y actualización de la landing
 
-Estado: pendiente.
+Estado: completada.
 
 - Crear `/proyectos/inventario-almacenes`.
 - Sustituir la sección actual de casos por la nueva portada de productos.
@@ -244,7 +244,7 @@ Estado: backlog.
 | --- | --- |
 | Arquitectura del portafolio | Aprobada |
 | Roadmap | Completado |
-| Inventario visual | Esperando descubrimiento |
+| Inventario visual | Implementado; pendiente de publicación |
 | Gestión financiera | Backlog |
 | Evaluación 360° | Backlog |
-| Cambios en la web pública | No iniciados |
+| Cambios en la web pública | Validados localmente; pendiente de despliegue |
