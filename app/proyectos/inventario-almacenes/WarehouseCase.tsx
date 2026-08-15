@@ -197,24 +197,29 @@ export default function WarehouseCase() {
       </header>
 
       <section className="timco-hero">
-        <div className="timco-hero-media" aria-hidden="true">
-          <img src="/assets/projects/timco/scene-05.webp" alt="" />
-        </div>
-        <div className="timco-hero-shade" aria-hidden="true" />
-        <div className="timco-shell timco-hero-content">
-          <p className="timco-overline"><span>Proyecto 01</span> Operación de almacenes</p>
-          <h1>Del ingreso al control visual del almacén.</h1>
-          <p>Una solución que conecta registro, checklist, evidencia, PDF con QR, inventario, layout táctil y cálculo de áreas en un solo recorrido.</p>
-          <div className="timco-hero-actions">
-            <a href="#recorrido">Recorrer el sistema <span>↓</span></a>
-            <a href="#demo">Probar el layout</a>
+        <div className="timco-shell timco-hero-frame">
+          <div className="timco-hero-content">
+            <p className="timco-overline"><span>Proyecto 01</span> Operación de almacenes</p>
+            <h1>Cada unidad deja una historia desde que entra.</h1>
+            <p>El sistema acompaña a cada vehículo desde su registro inicial hasta la salida: documenta su estado, mantiene el inventario visible y convierte el espacio ocupado en información para operar y cobrar.</p>
+            <ol className="timco-flowline" aria-label="Flujo principal del sistema">
+              <li>Ingreso</li><li>Checklist</li><li>Evidencia</li><li>Inventario</li><li>Salida</li>
+            </ol>
+            <div className="timco-hero-actions">
+              <a href="#recorrido">Entender el recorrido <span>↓</span></a>
+              <a href="#demo">Probar el layout</a>
+            </div>
           </div>
+          <figure className="timco-hero-media">
+            <img src="/assets/projects/timco/scene-01.webp" alt="Ingreso digital de una unidad pesada al almacén" />
+            <figcaption><span>01</span> El registro comienza en la puerta del almacén.</figcaption>
+          </figure>
         </div>
-        <div className="timco-hero-facts" aria-label="Capacidades principales">
-          <span><strong>01</strong> Ingreso + checklist</span>
-          <span><strong>02</strong> PDF + QR</span>
-          <span><strong>03</strong> Layout táctil</span>
-          <span><strong>04</strong> Área + control</span>
+        <div className="timco-shell timco-hero-facts" aria-label="Capacidades principales">
+          <span><strong>01</strong> Registro de ingreso</span>
+          <span><strong>02</strong> Evidencia + QR</span>
+          <span><strong>03</strong> Inventario visual</span>
+          <span><strong>04</strong> Salida documentada</span>
         </div>
       </section>
 
@@ -380,7 +385,7 @@ export default function WarehouseCase() {
 
       <section id="arquitectura" className="timco-architecture">
         <div className="timco-shell">
-          <div className="timco-section-heading is-light">
+          <div className="timco-architecture-intro">
             <div><p className="timco-overline">Arquitectura de solución</p><h2>Una operación, varias vistas.</h2></div>
             <p>La experiencia combina captura móvil, automatización documental, conciliación de datos, una interfaz espacial y analítica para decisiones.</p>
           </div>

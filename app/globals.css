@@ -798,17 +798,22 @@ img { display: block; max-width: 100%; }
 .timco-overline { margin: 0; color: #6f55ea; font-size: 9px; font-weight: 820; letter-spacing: .15em; text-transform: uppercase; }
 .timco-overline span { margin-right: 9px; padding: 5px 8px; border-radius: 999px; color: var(--timco-red); background: rgba(227,52,52,.08); }
 
-.timco-hero { min-height: 100svh; position: relative; display: flex; align-items: center; overflow: hidden; background: #f4eadf; }
-.timco-hero-media { position: absolute; inset: 0; }
-.timco-hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 62% center; }
-.timco-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(246,237,226,.99) 0%, rgba(246,237,226,.94) 25%, rgba(246,237,226,.63) 44%, rgba(246,237,226,.07) 69%); }
-.timco-hero-content { position: relative; z-index: 2; padding: 150px 0 130px; }
-.timco-hero-content h1 { max-width: 690px; margin: 25px 0 26px; font-size: clamp(58px, 6.6vw, 96px); line-height: .9; letter-spacing: -.072em; }
-.timco-hero-content>p:last-of-type { max-width: 575px; margin: 0; color: #575750; font-size: 14px; line-height: 1.75; }
+.timco-hero { min-height: 100svh; display: grid; align-content: center; gap: 28px; overflow: hidden; padding: 125px 0 32px; background: #f4eadf; }
+.timco-hero-frame { display: grid; grid-template-columns: minmax(0,.86fr) minmax(480px,1.14fr); gap: 62px; align-items: center; }
+.timco-hero-content { min-width: 0; }
+.timco-hero-content h1 { max-width: 650px; margin: 24px 0 24px; font-size: clamp(56px, 5.8vw, 84px); line-height: .92; letter-spacing: -.068em; }
+.timco-hero-content>p:last-of-type { max-width: 590px; margin: 0; color: #575750; font-size: 14px; line-height: 1.75; }
+.timco-hero-media { min-width: 0; overflow: hidden; margin: 0; padding: 10px; border: 1px solid rgba(16,21,34,.11); border-radius: 28px; background: rgba(255,250,244,.72); box-shadow: 0 28px 70px rgba(50,39,30,.12); }
+.timco-hero-media img { width: 100%; display: block; aspect-ratio: 16 / 10; border-radius: 20px; object-fit: cover; object-position: center; }
+.timco-hero-media figcaption { display: flex; align-items: center; gap: 12px; padding: 13px 8px 4px; color: #66645e; font-size: 9px; font-weight: 680; }
+.timco-hero-media figcaption span { width: 26px; height: 21px; display: grid; place-items: center; border-radius: 999px; color: var(--timco-red); background: rgba(227,52,52,.08); font: 760 8px/1 var(--font-geist-mono), monospace; }
+.timco-flowline { display: flex; flex-wrap: wrap; gap: 7px; margin: 27px 0 0; padding: 0; list-style: none; }
+.timco-flowline li { position: relative; display: flex; align-items: center; gap: 7px; color: #4f504b; font-size: 8px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.timco-flowline li:not(:last-child):after { content: "→"; color: #a9a398; }
 .timco-hero-actions { display: flex; gap: 10px; margin-top: 34px; }
 .timco-hero-actions a { min-height: 48px; display: flex; align-items: center; gap: 24px; padding: 0 18px; border: 1px solid rgba(16,21,34,.13); border-radius: 13px; color: var(--timco-ink); background: rgba(255,255,255,.6); font-size: 9px; font-weight: 780; }
 .timco-hero-actions a:first-child { color: white; border-color: var(--timco-ink); background: var(--timco-ink); }
-.timco-hero-facts { position: absolute; z-index: 3; left: 50%; bottom: 22px; width: min(1240px, calc(100% - 48px)); display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid rgba(16,21,34,.1); border-radius: 15px; background: rgba(255,250,244,.88); backdrop-filter: blur(16px); transform: translateX(-50%); }
+.timco-hero-facts { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid rgba(16,21,34,.1); border-radius: 15px; background: rgba(255,250,244,.78); }
 .timco-hero-facts span { display: flex; align-items: center; gap: 12px; padding: 17px 20px; border-right: 1px solid rgba(16,21,34,.09); color: #56564f; font-size: 9px; font-weight: 720; }
 .timco-hero-facts span:last-child { border: 0; }
 .timco-hero-facts strong { color: var(--timco-red); font: 760 8px/1 var(--font-geist-mono), monospace; }
@@ -896,18 +901,20 @@ img { display: block; max-width: 100%; }
 .timco-evidence li:before { content: ""; position: absolute; left: 4px; top: 17px; width: 9px; height: 9px; border-radius: 50%; background: #46c376; box-shadow: 0 0 0 5px rgba(70,195,118,.1); }
 
 .timco-architecture { padding: 140px 0; color: white; background: #101522; }
-.timco-section-heading.is-light>p { color: #9ea4b0; }
-.timco-stack { display: grid; grid-template-columns: repeat(4, 1fr); overflow: hidden; border: 1px solid rgba(255,255,255,.11); border-radius: 22px; background: rgba(255,255,255,.03); }
-.timco-stack article { min-height: 280px; padding: 27px; border-right: 1px solid rgba(255,255,255,.1); }
-.timco-stack article:last-child { border: 0; }
+.timco-architecture>.timco-shell { display: block; }
+.timco-architecture-intro { width: 100%; min-height: 235px; display: grid; grid-template-columns: minmax(0,1.05fr) minmax(320px,.55fr); gap: 100px; align-items: end; margin-bottom: 58px; }
+.timco-architecture-intro h2 { max-width: 760px; margin: 18px 0 0; font-size: clamp(52px,5.5vw,78px); line-height: .94; letter-spacing: -.063em; }
+.timco-architecture-intro>p { max-width: 460px; margin: 0 0 7px; color: #9ea4b0; font-size: 13px; line-height: 1.75; }
+.timco-stack { position: relative; width: 100%; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
+.timco-stack article { min-height: 245px; padding: 31px; border: 1px solid rgba(255,255,255,.11); border-radius: 20px; background: rgba(255,255,255,.035); }
 .timco-stack span { color: #8b78f7; font: 760 9px/1 var(--font-geist-mono), monospace; }
-.timco-stack h3 { margin: 78px 0 14px; font-size: 25px; letter-spacing: -.04em; }
-.timco-stack p { margin: 0; color: #959ca9; font-size: 11px; line-height: 1.7; }
-.timco-roles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; margin-top: 30px; }
-.timco-roles article { padding: 30px; border: 1px solid rgba(255,255,255,.1); border-radius: 18px; background: rgba(255,255,255,.035); }
+.timco-stack h3 { margin: 48px 0 14px; font-size: 29px; letter-spacing: -.045em; }
+.timco-stack p { max-width: 440px; margin: 0; color: #a1a7b2; font-size: 12px; line-height: 1.7; }
+.timco-roles { width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; margin-top: 48px; padding-top: 48px; border-top: 1px solid rgba(255,255,255,.1); }
+.timco-roles article { min-width: 0; min-height: 230px; padding: 30px; border: 1px solid rgba(255,255,255,.1); border-radius: 18px; background: rgba(255,255,255,.035); }
 .timco-roles span { color: #6bd293; font-size: 8px; font-weight: 780; letter-spacing: .11em; text-transform: uppercase; }
-.timco-roles h3 { margin: 20px 0 12px; font-size: 27px; letter-spacing: -.045em; }
-.timco-roles p { margin: 0; color: #959ca9; font-size: 11px; line-height: 1.7; }
+.timco-roles h3 { max-width: 300px; margin: 24px 0 14px; font-size: 29px; line-height: 1.04; letter-spacing: -.045em; }
+.timco-roles p { max-width: 320px; margin: 0; color: #a1a7b2; font-size: 11px; line-height: 1.7; }
 
 .timco-cta { position: relative; overflow: hidden; padding: 135px 0; color: white; background: #6549e5; }
 .timco-cta:after { content: ""; position: absolute; width: 560px; height: 560px; right: -140px; top: -240px; border: 90px solid rgba(255,255,255,.08); border-radius: 50%; }
@@ -922,10 +929,12 @@ img { display: block; max-width: 100%; }
   .timco-header { grid-template-columns: 1fr auto; }
   .timco-header nav { display: none; }
   .timco-intro, .timco-role, .timco-evidence, .timco-section-heading { grid-template-columns: 1fr; gap: 45px; }
+  .timco-hero { padding-top: 112px; }
+  .timco-hero-frame { grid-template-columns: 1fr 1fr; gap: 34px; }
+  .timco-hero-content h1 { font-size: clamp(50px,7vw,68px); }
+  .timco-architecture-intro { grid-template-columns: 1fr; gap: 30px; }
   .timco-story-layout { grid-template-columns: .8fr 1.2fr; gap: 38px; }
   .timco-stack { grid-template-columns: repeat(2, 1fr); }
-  .timco-stack article:nth-child(2) { border-right: 0; }
-  .timco-stack article:nth-child(-n+2) { border-bottom: 1px solid rgba(255,255,255,.1); }
   .warehouse-summary { grid-template-columns: 1fr 1fr; }
   .warehouse-summary>article:first-child { grid-column: 1 / -1; }
 }
@@ -936,16 +945,18 @@ img { display: block; max-width: 100%; }
   .timco-header-link { padding: 12px; }
   .timco-header-link span { display: none; }
   .timco-brand strong { display: none; }
-  .timco-hero { min-height: 900px; align-items: start; }
-  .timco-hero-media { inset: 66px 0 auto; height: 52%; }
-  .timco-hero-media img { object-position: 53% center; }
-  .timco-hero-shade { background: linear-gradient(180deg, rgba(245,237,226,.02) 20%, rgba(245,237,226,.24) 43%, rgba(245,237,226,.98) 62%); }
-  .timco-hero-content { align-self: end; padding: 500px 0 135px; }
-  .timco-hero-content h1 { margin-top: 18px; font-size: clamp(52px, 15vw, 68px); }
+  .timco-hero { min-height: auto; display: block; padding: 92px 0 18px; }
+  .timco-hero-frame { display: flex; flex-direction: column; gap: 30px; }
+  .timco-hero-content { order: 1; }
+  .timco-hero-content h1 { margin-top: 18px; font-size: clamp(49px, 14vw, 64px); }
   .timco-hero-content>p:last-of-type { font-size: 13px; }
+  .timco-hero-media { order: 2; width: 100%; padding: 7px; border-radius: 20px; }
+  .timco-hero-media img { border-radius: 14px; }
+  .timco-flowline { gap: 6px 8px; }
+  .timco-flowline li { font-size: 7px; }
   .timco-hero-actions { flex-direction: column; }
   .timco-hero-actions a { justify-content: space-between; }
-  .timco-hero-facts { bottom: 12px; width: calc(100% - 28px); grid-template-columns: 1fr 1fr; }
+  .timco-hero-facts { width: calc(100% - 28px); grid-template-columns: 1fr 1fr; margin-top: 18px; }
   .timco-hero-facts span { padding: 13px; border-bottom: 1px solid rgba(16,21,34,.09); }
   .timco-hero-facts span:nth-child(2) { border-right: 0; }
   .timco-hero-facts span:nth-child(n+3) { border-bottom: 0; }
@@ -962,6 +973,8 @@ img { display: block; max-width: 100%; }
   .timco-demo-section, .timco-architecture { padding: 90px 0; }
   .timco-section-heading { margin-bottom: 38px; }
   .timco-section-heading h2 { font-size: 50px; }
+  .timco-architecture-intro { min-height: 0; margin-bottom: 38px; }
+  .timco-architecture-intro h2 { font-size: 49px; }
   .warehouse-app { border-radius: 18px; }
   .warehouse-toolbar { grid-template-columns: 1fr auto; }
   .warehouse-tabs { grid-column: 1 / -1; }
@@ -973,9 +986,10 @@ img { display: block; max-width: 100%; }
   .timco-evidence { padding-block: 90px; }
   .timco-evidence h2 { font-size: 44px; }
   .timco-stack, .timco-roles { grid-template-columns: 1fr; }
-  .timco-stack article { min-height: 235px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.1); }
-  .timco-stack article:nth-child(3) { border-bottom: 1px solid rgba(255,255,255,.1); }
-  .timco-stack h3 { margin-top: 48px; }
+  .timco-stack article { min-height: 220px; }
+  .timco-stack h3 { margin-top: 40px; }
+  .timco-roles { margin-top: 34px; padding-top: 34px; }
+  .timco-roles article { min-height: 0; }
   .timco-cta { padding: 95px 0; }
   .timco-cta h2 { font-size: 52px; }
   .timco-footer { min-height: 150px; grid-template-columns: 1fr auto; }
