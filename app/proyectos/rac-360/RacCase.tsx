@@ -77,38 +77,35 @@ const demoStages = [
   },
 ];
 
-const roles = [
+const solutionLayers = [
   {
     number: "01",
-    role: "Administrador Global",
-    title: "Gobierno del sistema",
-    copy: "Gestiona obras, categorías, cuadrillas, subcontratistas, cargos, usuarios y asignaciones.",
+    title: "Proceso",
+    copy: "Programada, abierta y cerrada: cada estado exige la información necesaria para avanzar sin perder evidencia.",
+    image: "/assets/projects/rac-360/solution-process.webp",
+    alt: "Flujo minimalista de una inspección desde su registro hasta el cierre",
   },
   {
     number: "02",
-    role: "Administrador de obra",
-    title: "Control de su operación",
-    copy: "Administra personal y asignaciones de sus obras, registra inspecciones y consulta su alcance.",
+    title: "Modelo de datos",
+    copy: "Obras, áreas, personal, categorías, cuadrillas y empresas se conectan alrededor de cada inspección.",
+    image: "/assets/projects/rac-360/solution-data-model.webp",
+    alt: "Módulos conectados alrededor de un núcleo de información",
   },
   {
     number: "03",
-    role: "Inspector",
-    title: "Captura y seguimiento",
-    copy: "Registra, consulta y cierra inspecciones únicamente dentro de las obras asignadas.",
+    title: "Seguridad",
+    copy: "El rol, la obra asignada y el estado del registro definen con precisión qué puede ver o modificar cada persona.",
+    image: "/assets/projects/rac-360/solution-security.webp",
+    alt: "Escudo minimalista que representa permisos y accesos controlados",
   },
   {
     number: "04",
-    role: "Responsable de partida",
-    title: "Propietario de la corrección",
-    copy: "Queda identificado como responsable operativo del levantamiento, sin controles administrativos innecesarios.",
+    title: "Analítica",
+    copy: "Los registros alimentan reportes y comparaciones para reconocer recurrencias, riesgos y responsables.",
+    image: "/assets/projects/rac-360/solution-analytics.webp",
+    alt: "Indicadores ascendentes que convierten registros en decisiones",
   },
-];
-
-const solutionLayers = [
-  ["01", "Proceso", "Flujo Programada → Abierta → Cerrada, con evidencia obligatoria para completar el cierre."],
-  ["02", "Modelo de datos", "Obras, áreas, personal, categorías, cuadrillas y empresas conectadas alrededor de cada inspección."],
-  ["03", "Seguridad", "Vistas y acciones filtradas por rol, estado y obras asignadas para reducir exposición y errores."],
-  ["04", "Analítica", "Reportes automáticos y dashboard para comparar recurrencias, responsables, riesgos y evolución."],
 ];
 
 export default function RacCase() {
@@ -143,7 +140,7 @@ export default function RacCase() {
         <nav aria-label="Navegación del caso RAC 360">
           <a href="#recorrido">Recorrido</a>
           <a href="#demo">Demo</a>
-          <a href="#roles">Roles</a>
+          <a href="#solucion">Solución</a>
         </nav>
         <Link className="timco-header-link" href="/">Volver al portafolio <span>↗</span></Link>
       </header>
@@ -273,34 +270,18 @@ export default function RacCase() {
         </div>
       </section>
 
-      <section id="roles" className="rac-roles">
-        <div className="timco-shell">
-          <div className="rac-roles-intro">
-            <div><p className="timco-overline">Permisos por alcance</p><h2>Una operación compartida, sin accesos innecesarios.</h2></div>
-            <p>Las obras asignadas, el rol y el estado del registro determinan qué puede consultar o modificar cada persona.</p>
-          </div>
-          <div className="rac-role-grid">
-            {roles.map((item) => (
-              <article key={item.number}>
-                <span>{item.number}</span>
-                <small>{item.role}</small>
-                <h3>{item.title}</h3>
-                <p>{item.copy}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="rac-solution">
+      <section id="solucion" className="rac-solution">
         <div className="timco-shell">
           <div className="rac-solution-heading">
             <div><p className="timco-overline">Diseño de la solución</p><h2>No era digitalizar un formato. Era conectar el ciclo.</h2></div>
             <p>Mi aporte fue traducir la lógica SSOMA en una aplicación operable, segura y medible, desde la captura hasta la lectura gerencial.</p>
           </div>
           <div className="rac-solution-grid">
-            {solutionLayers.map(([number, title, copy]) => (
-              <article key={number}><span>{number}</span><h3>{title}</h3><p>{copy}</p></article>
+            {solutionLayers.map((item) => (
+              <article key={item.number}>
+                <div className="rac-solution-visual"><img src={item.image} alt={item.alt} loading="lazy" decoding="async" /></div>
+                <div className="rac-solution-body"><span>{item.number}</span><h3>{item.title}</h3><p>{item.copy}</p></div>
+              </article>
             ))}
           </div>
         </div>
@@ -309,23 +290,23 @@ export default function RacCase() {
       <section className="timco-cta rac-cta">
         <div className="timco-shell timco-cta-grid">
           <div className="timco-cta-copy">
-            <p className="timco-overline">Conversemos</p>
-            <h2>¿Tu operación también pierde el seguimiento?</h2>
-            <p>Podemos ordenar el flujo, definir responsables y convertir cada registro en información útil antes de elegir la herramienta.</p>
+            <p className="timco-overline">Próximo paso</p>
+            <h2>Que ningún hallazgo vuelva a quedarse a medias.</h2>
+            <p>Una conversación breve puede revelar dónde se corta el seguimiento y qué necesita el equipo para llegar al cierre con evidencia.</p>
             <ul>
-              <li>Conversación inicial de 15 o 30 minutos</li>
-              <li>Sin compromiso ni preparación previa</li>
-              <li>Contexto operativo antes que tecnología</li>
+              <li>Revisamos un caso real de tu operación</li>
+              <li>Identificamos el punto donde se pierde el control</li>
+              <li>Definimos un primer paso viable</li>
             </ul>
-            <a className="timco-cta-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><span />Prefiero coordinar por WhatsApp ↗</a>
+            <a className="timco-cta-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><span />Quiero coordinar por WhatsApp ↗</a>
           </div>
 
           <div className="timco-booking-card">
             <div className="timco-booking-topline"><span><i /> Agenda abierta</span><strong>Cal.com</strong></div>
             <div className="timco-booking-main">
-              <p className="timco-overline">Conversación inicial</p>
-              <h3>Elige un horario y conversemos sobre tu proceso.</h3>
-              <p>La reserva se adapta a tu zona horaria y se añade a tu calendario con un enlace privado para la conversación.</p>
+              <p className="timco-overline">Revisión inicial</p>
+              <h3>Trae un hallazgo real. Saldrás con una ruta más clara.</h3>
+              <p>En 15 o 30 minutos revisamos cómo se registra, quién responde y qué hace falta para cerrar el ciclo.</p>
               <div className="timco-booking-meta">
                 <span><small>Duración</small><strong>15–30 min</strong></span>
                 <span><small>Modalidad</small><strong>Online</strong></span>
