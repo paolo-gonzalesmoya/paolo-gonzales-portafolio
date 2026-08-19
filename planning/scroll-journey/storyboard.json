@@ -1,0 +1,92 @@
+{
+  "projectTitle": "Paolo Gonzales — Dentro del mundo operativo",
+  "source": "source.md",
+  "style": {
+    "aspectRatio": "16:9",
+    "model": "built-in-imagegen",
+    "visualLanguage": "Miniatura 3D isométrica premium con Paolo como personaje recurrente."
+  },
+  "characterReference": "../../public/assets/paolo-gonzales.webp",
+  "beats": [
+    {
+      "id": "S001",
+      "script": "Estoy en mi oficina revisando un proceso que todavía depende de hojas, mensajes y tareas manuales.",
+      "title": "Mi oficina, el punto de partida",
+      "visualMode": "single-scene",
+      "visualClaim": "Paolo inicia el recorrido detectando el desorden operativo que necesita transformar.",
+      "direction": "Oficina isométrica abierta. Paolo aparece de cuerpo completo junto a un escritorio, revisando una pizarra con un proceso enredado; hojas y tarjetas llegan desde la izquierda y un conducto de datos comienza a iluminarse a la derecha.",
+      "labels": [],
+      "prompt": "Create one polished 16:9 cinematic isometric 3D storyboard frame for a premium scroll-driven portfolio landing page. MESSAGE: the viewer must immediately understand that Paolo begins in his office detecting a fragmented manual process he will transform. CHARACTER: use the supplied portrait only as identity reference; preserve Paolo's recognizable straight side-swept black hair, face shape, skin tone and calm focused expression. Render him as a sophisticated stylized miniature 3D character with consistent adult proportions, wearing a black button-up shirt and charcoal jacket with warm beige lining. COMPOSITION: an open architectural office diorama occupies the right two-thirds; Paolo is full-body beside a desk, studying a large process board with tangled diagram shapes, while scattered paper forms and message cards enter from the lower left and the first violet-cyan data conduit lights up toward the right. Leave calm warm-bone negative space on the left for HTML hero copy. Narrative title for production tracking only: “Mi oficina, el punto de partida”. Do not render the title. VISUAL LANGUAGE: premium tactile miniature 3D, fixed 35-degree isometric camera, matte materials, architectural-model craftsmanship, warm studio daylight, realistic soft shadows, restrained depth of field, midnight navy, warm ivory, electric violet, signal cyan, small coral friction accents and green outcome accents. The scene must feel credible, technological and adult, not childish. Do not add any other words, pseudo-text, letters, numbers, logos, watermarks or signatures. Avoid photorealistic skin, exaggerated toy proportions, coffee-shop or farm imagery, duplicate Paolo characters, illegible screen text and decorative clutter."
+    },
+    {
+      "id": "S002",
+      "script": "Primero observo cómo trabaja el equipo y encuentro dónde se pierde tiempo, información y trazabilidad.",
+      "title": "Observar antes de construir",
+      "visualMode": "single-scene",
+      "visualClaim": "Paolo entiende el trabajo real antes de proponer una aplicación.",
+      "direction": "Sala de diagnóstico isométrica. Paolo conversa con un pequeño equipo y señala el punto crítico de un mapa operativo sobre una mesa; una línea del mapa continúa hacia el borde de salida.",
+      "labels": [],
+      "prompt": "Create one polished 16:9 cinematic isometric 3D storyboard frame for a premium scroll-driven portfolio landing page. MESSAGE: the viewer must immediately understand that Paolo observes the real team workflow before building anything. CHARACTER: preserve the supplied portrait identity and the approved character anchor exactly—same recognizable straight side-swept black hair, face, skin tone, adult proportions, black button-up shirt and charcoal jacket with warm beige lining. COMPOSITION: an open meeting-room diorama where Paolo stands beside a process map spread across a central table, listening to three simplified coworkers and pointing to one coral bottleneck; the map's main violet-cyan line exits the room toward the next scene. Narrative title for production tracking only: “Observar antes de construir”. Do not render the title. VISUAL LANGUAGE: premium tactile miniature 3D, fixed 35-degree isometric camera, matte architectural materials, warm studio daylight, realistic soft shadows, restrained depth of field, midnight navy, warm ivory, electric violet, signal cyan, coral friction accents and green result accents. Keep Paolo the focal guide and the room readable at thumbnail size. Do not add any other words, pseudo-text, letters, numbers, logos, watermarks or signatures. Avoid childish proportions, duplicate Paolo characters, corporate stock-photo poses, busy charts and decorative clutter."
+    },
+    {
+      "id": "S003",
+      "script": "Después convierto ese recorrido en una aplicación simple, conectando formularios, reglas y responsables.",
+      "title": "Convertir el proceso en una app",
+      "visualMode": "system-map",
+      "visualClaim": "Paolo transforma el mapa del proceso en una aplicación conectada.",
+      "direction": "Laboratorio digital isométrico. Paolo trabaja frente a un móvil grande y un hub central; formularios, reglas y personas se conectan sin texto mediante tres ramales luminosos.",
+      "labels": [],
+      "prompt": "Create one polished 16:9 cinematic isometric 3D storyboard frame for a premium scroll-driven portfolio landing page. MESSAGE: the viewer must immediately understand that Paolo converts the diagnosed workflow into a simple connected application. CHARACTER: preserve the supplied portrait identity and approved character anchor exactly—same face, side-swept black hair, skin tone, adult miniature proportions, black button-up shirt and charcoal jacket with warm beige lining. COMPOSITION: a compact digital workshop diorama; Paolo actively configures a large upright mobile interface beside one central workflow hub, with three clean luminous branches connecting abstract form tiles, rule switches and responsible-person tokens. The camera path aims directly into the phone screen for the next transition. Narrative title for production tracking only: “Convertir el proceso en una app”. Do not render the title. VISUAL LANGUAGE: premium tactile miniature 3D, fixed 35-degree isometric camera, matte materials, architectural-model craftsmanship, warm studio daylight, soft shadows, restrained depth of field, midnight navy, warm ivory, electric violet, signal cyan, small coral accents and green completion lights. Do not add any other words, pseudo-text, letters, numbers, logos, watermarks or signatures. Avoid glossy sci-fi interfaces, illegible UI text, duplicate Paolo characters, childish styling and visual clutter."
+    },
+    {
+      "id": "S004",
+      "script": "La solución llega al trabajo real: el equipo registra datos desde campo, obra, almacén o celular.",
+      "title": "La solución entra al trabajo",
+      "visualMode": "journey",
+      "visualClaim": "Paolo acompaña la aplicación desde la oficina hasta el lugar donde ocurre el trabajo.",
+      "direction": "Escenario operativo modular con zonas de obra y almacén. Paolo acompaña a una persona que registra desde el celular; el dato sale como una esfera luminosa y avanza por un conducto.",
+      "labels": [],
+      "prompt": "Create one polished 16:9 cinematic isometric 3D storyboard frame for a premium scroll-driven portfolio landing page. MESSAGE: the viewer must immediately understand that Paolo brings the application into real field operations where data is captured once. CHARACTER: preserve the supplied portrait identity and approved character anchor exactly—same face, side-swept black hair, skin tone, adult miniature proportions, black shirt and charcoal jacket with beige lining; add only a simple safety helmet when appropriate. COMPOSITION: one connected operational diorama combining a small construction zone and organized warehouse edge; Paolo stands beside a worker who records an inspection on a phone, and a single cyan data sphere leaves the device through a glowing conduit toward the right. Narrative title for production tracking only: “La solución entra al trabajo”. Do not render the title. VISUAL LANGUAGE: premium tactile miniature 3D, fixed 35-degree isometric camera, matte materials, warm daylight, realistic soft shadows, restrained depth of field, midnight navy, warm ivory, electric violet, signal cyan, coral risk markers and green confirmations. Do not add any other words, pseudo-text, letters, numbers, logos, watermarks or signatures. Avoid specific company logos, heavy machinery clutter, dangerous staging, duplicate Paolo characters and childish toy aesthetics."
+    },
+    {
+      "id": "S005",
+      "script": "Las automatizaciones generan alertas, documentos y aprobaciones sin volver a digitar la información.",
+      "title": "Automatizar sin doble digitación",
+      "visualMode": "pipeline-4",
+      "visualClaim": "Un solo dato activa automáticamente alertas, aprobaciones y documentos.",
+      "direction": "Taller de automatización en cuatro estaciones sin rótulos: dato capturado, alerta, aprobación y documento final. Paolo supervisa el recorrido y corrige una única desviación.",
+      "labels": [],
+      "prompt": "Create one polished 16:9 cinematic isometric 3D storyboard frame for a premium scroll-driven portfolio landing page. MESSAGE: the viewer must immediately understand that one captured datum automatically produces an alert, an approval and a final document without duplicate entry. CHARACTER: preserve the supplied portrait identity and approved character anchor exactly—same recognizable face, side-swept black hair, skin tone, adult miniature proportions, black button-up shirt and charcoal jacket with warm beige lining. COMPOSITION: a clean four-station automation workshop arranged left to right: one incoming cyan data sphere, a coral alert beacon, a green approval gate and a finished document sheet; Paolo stands centrally supervising the uninterrupted conduit and adjusting one small switch. Narrative title for production tracking only: “Automatizar sin doble digitación”. Do not render the title. VISUAL LANGUAGE: premium tactile miniature 3D, fixed 35-degree isometric camera, matte materials, architectural-model craftsmanship, warm studio lighting, soft shadows, restrained depth of field, midnight navy, warm ivory, electric violet, signal cyan, coral alerts and green outcomes. Do not add any other words, pseudo-text, letters, numbers, logos, watermarks or signatures. Avoid factory grime, childish machinery, duplicate Paolo characters, broken conduits and clutter."
+    },
+    {
+      "id": "S006",
+      "script": "Los datos terminan en tableros claros para controlar facturación, riesgos, productividad y próximos pasos.",
+      "title": "Datos listos para decidir",
+      "visualMode": "system-map",
+      "visualClaim": "Paolo convierte los datos operativos en una vista clara para decidir.",
+      "direction": "Centro de control isométrico. Paolo está frente a tres grandes superficies de dashboard abstractas conectadas al hub central; una persona decisora observa el resultado junto a él.",
+      "labels": [],
+      "prompt": "Create one polished 16:9 cinematic isometric 3D storyboard frame for a premium scroll-driven portfolio landing page. MESSAGE: the viewer must immediately understand that Paolo turns operational data into clear dashboards for decisions about billing, risk and productivity. CHARACTER: preserve the supplied portrait identity and approved character anchor exactly—same recognizable face, side-swept black hair, skin tone, adult miniature proportions, black button-up shirt and charcoal jacket with warm beige lining. COMPOSITION: an elegant open control-room diorama; Paolo presents three large abstract dashboard surfaces connected to one luminous central hub while one simplified decision-maker watches beside him. Use only chart shapes, rings and bars without text; leave a clear camera path through the central dashboard. Narrative title for production tracking only: “Datos listos para decidir”. Do not render the title. VISUAL LANGUAGE: premium tactile miniature 3D, fixed 35-degree isometric camera, matte architectural materials, warm studio daylight, soft shadows, restrained depth of field, midnight navy, warm ivory, electric violet, signal cyan, coral attention marks and green outcomes. Do not add any other words, pseudo-text, letters, numbers, logos, watermarks or signatures. Avoid dense UI, fake text, duplicate Paolo characters, childish styling and excessive screens."
+    },
+    {
+      "id": "S007",
+      "script": "Capacito al equipo para que adopte la solución y pueda seguir mejorándola.",
+      "title": "El equipo aprende y evoluciona",
+      "visualMode": "single-scene",
+      "visualClaim": "Paolo enseña al equipo para que la solución continúe creciendo después de la entrega.",
+      "direction": "Aula-estudio isométrica. Paolo explica frente a una gran pantalla abstracta; el equipo prueba la app en sus dispositivos y una planta de nodos crece al fondo.",
+      "labels": [],
+      "prompt": "Create one polished 16:9 cinematic isometric 3D storyboard frame for a premium scroll-driven portfolio landing page. MESSAGE: the viewer must immediately understand that Paolo trains the team so they can adopt and continue improving the solution. CHARACTER: preserve the supplied portrait identity and approved character anchor exactly—same recognizable face, side-swept black hair, skin tone, adult miniature proportions, black button-up shirt and charcoal jacket with warm beige lining. COMPOSITION: a welcoming open training-studio diorama; Paolo teaches beside a large abstract app screen while four simplified learners test the solution on tablets and phones; behind them, a subtle branching plant made of connected nodes grows upward as the progress metaphor. Narrative title for production tracking only: “El equipo aprende y evoluciona”. Do not render the title. VISUAL LANGUAGE: premium tactile miniature 3D, fixed 35-degree isometric camera, matte materials, warm studio daylight, soft shadows, restrained depth of field, midnight navy, warm ivory, electric violet, signal cyan and healthy green growth accents. Do not add any other words, pseudo-text, letters, numbers, logos, watermarks or signatures. Avoid classroom clichés, fake text, duplicate Paolo characters, childish proportions and clutter."
+    },
+    {
+      "id": "S008",
+      "script": "Al final del recorrido, conversemos sobre el proceso que quieres digitalizar.",
+      "title": "Tu proceso puede ser el siguiente",
+      "visualMode": "single-scene",
+      "visualClaim": "Paolo termina el recorrido invitando al visitante a ocupar el siguiente lugar en la conversación.",
+      "direction": "Regreso a una oficina más abierta y ordenada. Paolo está de pie junto a una mesa con una silla vacía orientada al visitante; detrás, todas las rutas de datos convergen en un portal verde suave.",
+      "labels": [],
+      "prompt": "Create one polished 16:9 cinematic isometric 3D storyboard frame for a premium scroll-driven portfolio landing page. MESSAGE: the viewer must immediately understand that Paolo ends the journey by inviting the visitor to discuss the next process to digitize. CHARACTER: preserve the supplied portrait identity and approved character anchor exactly—same recognizable face, side-swept black hair, skin tone, adult miniature proportions, black button-up shirt and charcoal jacket with warm beige lining. COMPOSITION: return to a refined open office diorama; Paolo stands beside a consultation table and gestures naturally toward one empty chair facing the viewer, while all violet-cyan data conduits converge behind him into one calm green outcome portal. Leave clean negative space for an HTML call to action. Narrative title for production tracking only: “Tu proceso puede ser el siguiente”. Do not render the title. VISUAL LANGUAGE: premium tactile miniature 3D, fixed 35-degree isometric camera, matte architectural materials, warm studio daylight, soft shadows, restrained depth of field, midnight navy, warm ivory, electric violet, signal cyan and green outcome glow. Do not add any other words, pseudo-text, letters, numbers, logos, watermarks or signatures. Avoid sales clichés, handshake poses, duplicate Paolo characters, childish styling and decorative clutter."
+    }
+  ]
+}

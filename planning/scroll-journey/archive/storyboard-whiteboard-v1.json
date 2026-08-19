@@ -1,0 +1,88 @@
+{
+  "projectTitle": "Paolo Gonzales — Recorrido de operaciones",
+  "source": "source.md",
+  "format": "16:9",
+  "style": "Storyboard de planificación en pizarra blanca; el arte final será un mundo operativo 3D original.",
+  "beats": [
+    {
+      "id": "S001",
+      "script": "Todo comienza con una fricción que parece pequeña: correos dispersos, doble digitación y tareas que consumen horas sin dejar trazabilidad.",
+      "title": "El tiempo se pierde aquí",
+      "visualClaim": "Un proceso fragmentado convierte el tiempo del equipo en retrabajo.",
+      "visualMode": "metaphor",
+      "labels": ["Fricción manual", "Tiempo", "Retrabajo"],
+      "direction": "A la izquierda, una maraña de hojas, correos y relojes; a la derecha, el mismo trabajo todavía sin conectar. El mascot observa el cuello de botella y señala el punto de entrada del recorrido.",
+      "prompt": "Create a clean 16:9 whiteboard storyboard illustration titled exactly “El tiempo se pierde aquí”. Match the supplied whiteboard style reference and recurring orange low-poly mascot. Use bold black marker linework, pale yellow highlight blocks and small pink accents on a bright white background. Show a left-to-right metaphor: scattered email envelopes, duplicate spreadsheets and clocks funnel into one tangled bottleneck; the orange mascot studies it with a small magnifying glass and points toward an open path on the right. Include only these exact labels: “Fricción manual”, “Tiempo”, “Retrabajo”. Keep one dominant composition, generous white space, clear visual hierarchy, no tiny text, no photorealism. Do not add any other words, letters, numbers, logos, watermarks or signatures."
+    },
+    {
+      "id": "S002",
+      "script": "Cuando personas, datos y decisiones comparten un mismo flujo, la operación deja de depender de seguimientos manuales.",
+      "title": "Todo entra por un flujo",
+      "visualClaim": "Una red simple conecta la información desde el campo hasta la decisión.",
+      "visualMode": "system-map",
+      "labels": ["Personas", "Datos", "Decisiones"],
+      "direction": "Tres nodos grandes forman un triángulo conectado. El mascot conduce una señal desde Personas hacia Datos y finalmente hacia Decisiones, con una sola ruta legible.",
+      "prompt": "Create a clean 16:9 whiteboard storyboard illustration titled exactly “Todo entra por un flujo”. Match the supplied whiteboard style reference and recurring orange low-poly mascot. Use bold black marker linework, pale yellow highlight blocks and small pink accents on a bright white background. Draw a simple system map with three large connected nodes arranged as a clear triangle; the orange mascot carries a glowing marker signal along the path. Include only these exact labels: “Personas”, “Datos”, “Decisiones”. Make the connection direction unambiguous, use thick arrows, generous white space and one dominant composition. Do not add any other words, letters, numbers, logos, watermarks or signatures."
+    },
+    {
+      "id": "S003",
+      "script": "En TIMCO, facturas padre e hijas, validaciones, alertas y reportes se reúnen en un centro de control visible para cada rol.",
+      "title": "Facturación bajo control",
+      "visualClaim": "Los documentos convergen en un tablero que revela estado y próximos pasos.",
+      "visualMode": "flow-3",
+      "labels": ["Registrar", "Validar", "Decidir"],
+      "direction": "Tres estaciones horizontales: documentos que entran, una validación central y un dashboard final. El mascot acompaña una factura por el recorrido sin bloquear las flechas.",
+      "prompt": "Create a clean 16:9 whiteboard storyboard illustration titled exactly “Facturación bajo control”. Match the supplied whiteboard style reference and recurring orange low-poly mascot. Use bold black marker linework, pale yellow highlight blocks and small pink accents on a bright white background. Build a three-step horizontal flow: a stack of parent and child invoices, a validation checkpoint, and a clear executive dashboard with simple chart shapes. The orange mascot escorts one document through the steps. Include only these exact labels beneath the stations: “Registrar”, “Validar”, “Decidir”. Use thick directional arrows, one dominant flow and no illegible UI details. Do not add any other words, letters, numbers, logos, watermarks or signatures."
+    },
+    {
+      "id": "S004",
+      "script": "En obra, cada hallazgo puede registrar evidencia, responsable y acción correctiva para que el riesgo se vea antes de convertirse en incidente.",
+      "title": "Riesgos visibles en obra",
+      "visualClaim": "La trazabilidad convierte hallazgos dispersos en acciones responsables.",
+      "visualMode": "pipeline-4",
+      "labels": ["Hallazgo", "Evidencia", "Responsable", "Cierre"],
+      "direction": "Cuatro estaciones compactas avanzan de izquierda a derecha sobre una silueta de obra. El mascot toma una foto en Evidencia y la ruta termina con un gran check.",
+      "prompt": "Create a clean 16:9 whiteboard storyboard illustration titled exactly “Riesgos visibles en obra”. Match the supplied whiteboard style reference and recurring orange low-poly mascot. Use bold black marker linework, pale yellow highlight blocks and small pink accents on a bright white background. Show a compact four-stage pipeline over a simple construction-site silhouette: warning marker, camera evidence, assigned person, and closed checkmark. The orange mascot takes the evidence photo at the second stage. Include only these exact labels: “Hallazgo”, “Evidencia”, “Responsable”, “Cierre”. Keep arrows unmistakable, spacing generous and every icon large. Do not add any other words, letters, numbers, logos, watermarks or signatures."
+    },
+    {
+      "id": "S005",
+      "script": "Un operador registra su jornada desde el celular, firma, envía y obtiene el documento final sin volver a digitar la información.",
+      "title": "Del celular al documento",
+      "visualClaim": "Una captura móvil alimenta aprobación y PDF sin duplicar trabajo.",
+      "visualMode": "device-sync",
+      "labels": ["Registro móvil", "Firma", "PDF"],
+      "direction": "Un teléfono grande a la izquierda envía una tarjeta firmada hacia un documento final a la derecha. El mascot empuja la señal y un único check confirma el resultado.",
+      "prompt": "Create a clean 16:9 whiteboard storyboard illustration titled exactly “Del celular al documento”. Match the supplied whiteboard style reference and recurring orange low-poly mascot. Use bold black marker linework, pale yellow highlight blocks and small pink accents on a bright white background. Draw one large phone on the left, a signature card in the middle and one finished PDF sheet on the right, connected by a strong flowing arrow. The orange mascot pushes the data signal forward. Include only these exact labels: “Registro móvil”, “Firma”, “PDF”. Avoid small interface details and keep the device-to-document relationship instantly readable. Do not add any other words, letters, numbers, logos, watermarks or signatures."
+    },
+    {
+      "id": "S006",
+      "script": "La transformación se construye en cuatro etapas: entender la fricción, diseñar una primera versión, conectar la operación y evolucionar con el uso real.",
+      "title": "Cuatro pasos, una evolución",
+      "visualClaim": "El método reduce el riesgo al avanzar por etapas visibles y conectadas.",
+      "visualMode": "journey",
+      "labels": ["Entender", "Diseñar", "Conectar", "Evolucionar"],
+      "direction": "Una ruta ascendente de cuatro plataformas. El mascot avanza por ellas y llega a una operación conectada que florece en la última plataforma.",
+      "prompt": "Create a clean 16:9 whiteboard storyboard illustration titled exactly “Cuatro pasos, una evolución”. Match the supplied whiteboard style reference and recurring orange low-poly mascot. Use bold black marker linework, pale yellow highlight blocks and small pink accents on a bright white background. Show an ascending journey of four large connected platforms: magnifying glass, rough prototype, connected nodes, and a healthy evolving system. The orange mascot travels forward across the four stages. Include only these exact labels: “Entender”, “Diseñar”, “Conectar”, “Evolucionar”. Use one continuous path, strong arrows, balanced spacing and a clear final destination. Do not add any other words, letters, numbers, logos, watermarks or signatures."
+    },
+    {
+      "id": "S007",
+      "script": "La capacitación convierte el conocimiento en una aplicación real mediante sesiones en vivo, grabaciones y práctica guiada.",
+      "title": "Aprender haciendo",
+      "visualClaim": "Dos rutas de aprendizaje conducen a una solución construida por el estudiante.",
+      "visualMode": "contrast",
+      "labels": ["Base", "Avanzado", "Proyecto real"],
+      "direction": "Dos rutas paralelas parten de niveles diferentes y convergen en una app funcional. El mascot enseña frente a una pizarra y luego acompaña la construcción.",
+      "prompt": "Create a clean 16:9 whiteboard storyboard illustration titled exactly “Aprender haciendo”. Match the supplied whiteboard style reference and recurring orange low-poly mascot. Use bold black marker linework, pale yellow highlight blocks and small pink accents on a bright white background. Show two parallel learning paths on the left, one shorter and one more technical, converging into a single functional app prototype on the right. The orange mascot teaches at a small board and then points toward the finished project. Include only these exact labels: “Base”, “Avanzado”, “Proyecto real”. Keep the contrast between routes obvious and the final outcome dominant. Do not add any other words, letters, numbers, logos, watermarks or signatures."
+    },
+    {
+      "id": "S008",
+      "script": "El primer paso no es comprar una herramienta: es conversar sobre cómo trabaja hoy el equipo y elegir una mejora concreta.",
+      "title": "Conversemos sobre tu proceso",
+      "visualClaim": "Una conversación clara abre la puerta a una primera mejora alcanzable.",
+      "visualMode": "single-scene",
+      "labels": ["Tu proceso", "Primer paso", "Resultado útil"],
+      "direction": "Paolo y el mascot conversan frente a un mapa simple de proceso. Una puerta abierta al fondo revela un flujo ordenado y una señal de avance.",
+      "prompt": "Create a clean 16:9 whiteboard storyboard illustration titled exactly “Conversemos sobre tu proceso”. Match the supplied whiteboard style reference and recurring orange low-poly mascot. Use bold black marker linework, pale yellow highlight blocks and small pink accents on a bright white background. Show a friendly consultant and the orange mascot discussing a simple process map at a table; behind them an open doorway reveals a clean connected workflow and a positive result marker. Include only these exact labels: “Tu proceso”, “Primer paso”, “Resultado útil”. Keep the human conversation central, the mood confident and the composition uncluttered. Do not add any other words, letters, numbers, logos, watermarks or signatures."
+    }
+  ]
+}
