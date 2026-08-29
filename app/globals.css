@@ -1355,9 +1355,10 @@ img { display: block; max-width: 100%; }
 .pluz-journey-visual>img { position: absolute; inset: 10%; width: 80%; height: 80%; object-fit: contain; object-position: center; transform: translateX(8%); }
 .pluz-journey-card-wash { position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg,var(--pluz-visual-white) 0%,rgba(251,249,247,.99) 24%,rgba(251,249,247,.84) 35%,rgba(251,249,247,.08) 49%,transparent 59%); }
 .pluz-journey-card-copy { position: relative; z-index: 3; width: 42%; height: 100%; display: flex; flex-direction: column; justify-content: center; padding: clamp(28px,4vw,58px); color: var(--pluz-ink); }
+.pluz-journey-card-copy .pluz-overline { font-size: 11px; }
 .pluz-journey-card-copy h3 { max-width: 470px; margin: 20px 0 18px; font-size: clamp(38px,4vw,58px); line-height: .95; letter-spacing: -.06em; text-wrap: balance; }
 .pluz-journey-card-copy>p:nth-of-type(2) { max-width: 440px; margin: 0; color: #667183; font-size: 12px; line-height: 1.72; }
-.pluz-journey-card-copy>small { width: fit-content; display: flex; align-items: center; gap: 10px; margin-top: 23px; padding: 10px 13px; border: 1px solid rgba(47,88,161,.13); border-radius: 999px; color: #566174; background: rgba(247,249,251,.9); font-size: 8px; line-height: 1.35; }
+.pluz-journey-card-copy>small { width: fit-content; display: flex; align-items: center; gap: 10px; margin-top: 23px; padding: 10px 13px; border: 1px solid rgba(47,88,161,.13); border-radius: 999px; color: #566174; background: rgba(247,249,251,.9); font-size: 10px; line-height: 1.35; }
 .pluz-journey-card-copy>small i { flex: 0 0 auto; width: 7px; height: 7px; border-radius: 50%; background: var(--pluz-green); box-shadow: 0 0 0 5px rgba(102,174,59,.1); }
 .pluz-journey-score { position: absolute; z-index: 2; top: 20%; left: 59.2%; width: 23.6%; height: 16%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--pluz-blue); text-align: center; }
 .pluz-journey-score span { color: #8995a6; font: 780 8px/1 var(--font-geist-mono),monospace; letter-spacing: .12em; text-transform: uppercase; }
