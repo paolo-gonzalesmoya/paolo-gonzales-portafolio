@@ -10,74 +10,42 @@ const journeySteps = [
   {
     number: "01",
     eyebrow: "Asignación",
-    title: "Definir los roles correctos.",
-    copy: "Cada líder recibe las perspectivas que corresponden a su realidad: Colaboradores, Pares, Jefe directo y Cliente. La medición empieza asignando bien, no enviando formularios.",
-    evidence: "De 1 a 4 roles según el diseño de la medición.",
+    title: "Asignar los roles correctos.",
+    copy: "Cada líder recibe las perspectivas que corresponden a su realidad: Colaboradores, Pares, Jefe directo y Cliente. Como no todos tienen la misma red, la configuración cambia por persona y respeta la estructura definida para su evaluación.",
+    evidence: "De 1 a 4 roles según el diseño de cada evaluación.",
     image: "/assets/projects/pluz-360/scene-01.webp",
     alt: "Dos configuraciones muestran líderes conectados a tres y cuatro roles",
+    score: null,
   },
   {
     number: "02",
-    eyebrow: "Configuración",
-    title: "Respetar cada estructura.",
-    copy: "No todos los líderes tienen la misma red. Las asignaciones cambian por persona y conservan la estructura definida para la campaña, sin forzar relaciones que no existen.",
-    evidence: "Cada líder conserva su propia configuración.",
-    image: "/assets/projects/pluz-360/scene-02.webp",
-    alt: "Dos configuraciones muestran líderes conectados a uno y dos roles",
-  },
-  {
-    number: "03",
     eyebrow: "Medición",
     title: "Dirigir el feedback al líder.",
     copy: "La plataforma mantiene el sentido de la evaluación: las respuestas provienen de los roles asignados y se concentran en la persona evaluada, sin alterar la lógica del instrumento.",
     evidence: "El sistema hace cumplir el flujo definido.",
     image: "/assets/projects/pluz-360/scene-03.webp",
     alt: "Cuatro roles envían feedback hacia un líder central",
+    score: null,
   },
   {
-    number: "04",
+    number: "03",
     eyebrow: "Confidencialidad",
     title: "Proteger antes de mostrar.",
     copy: "Las respuestas se consolidan dentro de cada rol antes de llegar al dashboard. La lectura conserva el valor de la medición sin convertir una opinión individual en información expuesta.",
     evidence: "El cliente consulta resultados agregados.",
     image: "/assets/projects/pluz-360/scene-04.webp",
     alt: "Grupos de respuestas anónimas convergen en cuatro roles",
-  },
-  {
-    number: "05",
-    eyebrow: "Lectura",
-    title: "Convertir percepciones en lectura.",
-    copy: "El resultado reúne las perspectivas en indicadores comprensibles por rol y en conjunto. Así, el dashboard ayuda a leer patrones sin perder el contexto de la evaluación.",
-    evidence: "Una lectura clara, trazable y coherente con el modelo.",
-    image: "/assets/projects/pluz-360/scene-05.webp",
-    alt: "Un avatar aparece dentro de un anillo de promedio azul",
-  },
-] as const;
-
-const systemLayers = [
-  {
-    number: "01",
-    title: "Asignar con precisión",
-    copy: "Cada evaluador accede únicamente a los líderes y roles definidos para su participación.",
-    tags: ["Asignaciones", "Roles", "Acceso controlado"],
-  },
-  {
-    number: "02",
-    title: "Capturar sin fricción",
-    copy: "El formulario aplica las reglas del instrumento, conserva el avance y ordena cada respuesta por relación y rol.",
-    tags: ["Next.js", "React", "Guardado seguro"],
-  },
-  {
-    number: "03",
-    title: "Proteger por diseño",
-    copy: "Autenticación, permisos y políticas de datos separan las respuestas individuales de la lectura que consume el cliente.",
-    tags: ["Supabase Auth", "Postgres", "RLS"],
+    score: null,
   },
   {
     number: "04",
-    title: "Leer para decidir",
-    copy: "El dashboard convierte avance y resultados agregados en una lectura ejecutiva útil para el seguimiento de la campaña.",
-    tags: ["Indicadores", "Recharts", "Lectura ejecutiva"],
+    eyebrow: "Lectura",
+    title: "Convertir percepciones en lectura.",
+    copy: "El resultado reúne las perspectivas en indicadores comprensibles por rol y en conjunto. El 4.2/5 es un ejemplo visual de la animación; la plataforma conserva el contexto real de cada evaluación.",
+    evidence: "Una lectura clara, trazable y coherente con el modelo.",
+    image: "/assets/projects/pluz-360/scene-05.webp",
+    alt: "Un avatar aparece dentro de un anillo de promedio azul",
+    score: "4.2",
   },
 ] as const;
 
@@ -131,8 +99,16 @@ export default function PluzCase() {
         <div className="timco-shell pluz-journey-stack">
           {journeySteps.map((step, index) => (
             <article key={step.number}>
-              <img src={step.image} alt={step.alt} loading={index === 0 ? "eager" : "lazy"} decoding="async" />
-              <div className="pluz-journey-card-wash" aria-hidden="true" />
+              <div className="pluz-journey-visual">
+                <img src={step.image} alt={step.alt} loading={index === 0 ? "eager" : "lazy"} decoding="async" />
+                <div className="pluz-journey-card-wash" aria-hidden="true" />
+                {step.score ? (
+                  <div className="pluz-journey-score" aria-label={`Promedio de ejemplo: ${step.score} de 5`}>
+                    <span>Promedio</span>
+                    <strong>{step.score}<small>/5</small></strong>
+                  </div>
+                ) : null}
+              </div>
               <div className="pluz-journey-card-copy">
                 <p className="pluz-overline"><span>{step.number}</span>{step.eyebrow}</p>
                 <h3>{step.title}</h3>
@@ -157,37 +133,19 @@ export default function PluzCase() {
         </div>
       </section>
 
-      <section id="sistema" className="pluz-architecture">
-        <div className="timco-shell">
-          <div className="pluz-section-heading is-light">
+      <section id="sistema" className="pluz-system-summary">
+        <div className="timco-shell pluz-system-summary-card">
+          <div>
+            <p className="pluz-overline">Reglas convertidas en sistema</p>
+            <h2>Asignar bien. Proteger siempre. Leer con contexto.</h2>
+          </div>
+          <div className="pluz-system-summary-copy">
+            <p>La solución sigue el mismo recorrido que la medición: cada relación tiene un rol, cada respuesta permanece protegida y el dashboard muestra una lectura agregada.</p>
             <div>
-              <p className="pluz-overline">Reglas convertidas en sistema</p>
-              <h2>El proceso manda. La tecnología lo hace cumplir.</h2>
+              <a href="#consulta">¿Tienes un proceso parecido? <span>→</span></a>
+              <a href={repositoryUrl} target="_blank" rel="noreferrer">Ver la solución técnica <span>↗</span></a>
             </div>
-            <p>Asignación, captura, protección y lectura forman un solo flujo. La plataforma traduce cada regla de la medición en permisos, datos y experiencias concretas.</p>
           </div>
-
-          <div className="pluz-architecture-flow" aria-label="Flujo del proceso dentro de la plataforma">
-            <div><span>01</span><strong>Asignación</strong><small>Evaluador + líder + rol</small></div>
-            <i>→</i>
-            <div><span>02</span><strong>Respuesta</strong><small>Instrumento controlado</small></div>
-            <i>→</i>
-            <div><span>03</span><strong>Protección</strong><small>Auth + RLS + Postgres</small></div>
-            <i>→</i>
-            <div><span>04</span><strong>Lectura</strong><small>Resultados agregados</small></div>
-          </div>
-
-          <div className="pluz-system-grid">
-            {systemLayers.map((layer) => (
-              <article key={layer.number}>
-                <span>{layer.number}</span>
-                <h3>{layer.title}</h3>
-                <p>{layer.copy}</p>
-                <ul>{layer.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
-              </article>
-            ))}
-          </div>
-          <a className="pluz-repository-link" href={repositoryUrl} target="_blank" rel="noreferrer">Revisar código y documentación en GitHub <span>↗</span></a>
         </div>
       </section>
 
