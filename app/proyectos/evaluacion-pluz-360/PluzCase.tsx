@@ -84,9 +84,20 @@ export default function PluzCase() {
 
       <section id="recorrido" className="pluz-journey">
         <div className="timco-shell pluz-journey-intro">
-          <p>Reglas antes que pantallas</p>
-          <h2>La medición define el sistema.</h2>
-          <span>Cada decisión de producto nace de una regla del proceso 360: asignar bien, respetar los roles, proteger las respuestas y mostrar una lectura útil.</span>
+          <div className="pluz-journey-heading">
+            <p><span>01—04</span> Reglas antes que pantallas</p>
+            <h2>La medición define <em>el sistema.</em></h2>
+          </div>
+          <div className="pluz-journey-logic">
+            <span>Principio de diseño</span>
+            <p>Cada decisión de producto nace de una regla del proceso 360. La plataforma no reemplaza la metodología: la hace cumplir.</p>
+            <div aria-label="Asignar, guiar, proteger y leer">
+              <span><b>01</b>Asignar</span>
+              <span><b>02</b>Guiar</span>
+              <span><b>03</b>Proteger</span>
+              <span><b>04</b>Leer</span>
+            </div>
+          </div>
         </div>
         <div className="timco-shell pluz-journey-stack">
           {journeySteps.map((step, index) => (
