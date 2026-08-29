@@ -4,11 +4,11 @@ import PluzCase from "./PluzCase";
 export const metadata: Metadata = {
   title: "Evaluación de Liderazgo 360 — PLUZ | Paolo Gonzales",
   description:
-    "Caso de estudio de una plataforma a medida para 671 evaluadores, 87 líderes y 1,109 asignaciones, con confidencialidad por rol y dashboard de indicadores.",
+    "Caso de estudio de una plataforma que convierte las reglas de una medición 360 en asignaciones precisas, respuestas protegidas y lectura ejecutiva.",
   openGraph: {
     title: "Evaluación de Liderazgo 360 — PLUZ",
     description:
-      "Asignaciones, evaluación, confidencialidad y lectura ejecutiva dentro de una plataforma construida a medida.",
+      "Un proceso 360 convertido en asignaciones precisas, respuestas protegidas y una lectura ejecutiva clara.",
     type: "article",
     images: [
       {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Evaluación de Liderazgo 360 — PLUZ",
-    description: "Un proceso de evaluación complejo convertido en un recorrido claro, confidencial y medible.",
+    description: "Las reglas de la medición convertidas en una experiencia clara, confidencial y medible.",
     images: ["/assets/projects/pluz-360/og-pluz-360.png"],
   },
 };

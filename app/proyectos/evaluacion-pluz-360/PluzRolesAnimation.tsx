@@ -6,11 +6,11 @@ const COLORS = ["#2F58A1", "#66AE3B", "#F7B900", "#8B5CF6"] as const;
 const ROLE_NAMES = ["Colaborador", "Pares", "Jefe directo", "Cliente"] as const;
 
 const scenes = [
-  "Cada líder puede recibir feedback de hasta cuatro roles.",
-  "La configuración cambia: también existen líderes con uno o dos roles.",
-  "El feedback fluye únicamente hacia la persona evaluada.",
-  "Las respuestas se combinan dentro de su rol antes de mostrarse.",
-  "El resultado agregado termina en un promedio claro.",
+  "La medición asigna a cada líder los roles que corresponden.",
+  "Cada persona conserva la configuración definida para su evaluación.",
+  "El feedback sigue el flujo previsto hacia la persona evaluada.",
+  "Las respuestas se consolidan por rol antes de llegar al dashboard.",
+  "El resultado agregado se convierte en una lectura clara.",
 ] as const;
 
 const positions: Record<number, Array<[number, number]>> = {
@@ -212,7 +212,7 @@ function ModelScene({ scene }: { scene: number }) {
 export default function PluzRolesAnimation() {
   const [scene, setScene] = useState(0);
   const [cycle, setCycle] = useState(0);
-  const [playing, setPlaying] = useState(true);
+  const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
     if (!playing) return undefined;
@@ -243,10 +243,10 @@ export default function PluzRolesAnimation() {
     <div className="pluz-model-demo">
       <div className="pluz-model-toolbar">
         <div>
-          <span><i /> Modelo 360 en ejecución</span>
+          <span><i /> {playing ? "Secuencia en ejecución" : "Lista para iniciar"}</span>
           <strong>Dashboard / KPI&apos;s</strong>
         </div>
-        <button type="button" onClick={replay}>↻ Reproducir secuencia</button>
+        <button type="button" onClick={replay}>▶ Iniciar animación</button>
       </div>
       <div className="pluz-model-canvas">
         <svg viewBox="0 0 800 560" role="img" aria-labelledby="pluz-model-title pluz-model-desc">
