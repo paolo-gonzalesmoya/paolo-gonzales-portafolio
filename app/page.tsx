@@ -78,6 +78,16 @@ const cases = [
   },
   {
     number: "03",
+    client: "PLUZ Energía Perú",
+    title: "Evaluación de Liderazgo 360",
+    copy: "Una campaña de 671 evaluadores convertida en una experiencia clara: asignaciones por rol, respuestas protegidas y lectura ejecutiva sin exponer opiniones individuales.",
+    tags: ["671 evaluadores", "Confidencialidad", "RLS", "Dashboard ejecutivo"],
+    image: "/assets/projects/pluz-360/scene-01.webp",
+    tone: "blue",
+    href: "/proyectos/evaluacion-pluz-360",
+  },
+  {
+    number: "04",
     client: "Parte Diario",
     title: "Jornadas de operador desde el celular",
     copy: "Registro móvil, firma, aprobación y generación del documento final sin infraestructura adicional.",

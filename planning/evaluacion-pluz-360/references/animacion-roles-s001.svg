@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Referencia visual derivada de la primera escena de AnimacionRoles">
+  <defs>
+    <linearGradient id="avatar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#64748b"/>
+      <stop offset="1" stop-color="#334155"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="#ffffff"/>
+
+  <g transform="translate(650 338)" filter="url(#shadow)">
+    <line x1="0" y1="-52" x2="0" y2="-102" stroke="#2F58A1" stroke-width="4.5" stroke-linecap="round" opacity="0.7"/>
+    <line x1="45" y1="26" x2="88" y2="51" stroke="#66AE3B" stroke-width="4.5" stroke-linecap="round" opacity="0.7"/>
+    <line x1="-45" y1="26" x2="-88" y2="51" stroke="#F7B900" stroke-width="4.5" stroke-linecap="round" opacity="0.7"/>
+    <circle cx="0" cy="-127" r="25" fill="#2F58A1"/>
+    <circle cx="110" cy="63.5" r="25" fill="#66AE3B"/>
+    <circle cx="-110" cy="63.5" r="25" fill="#F7B900"/>
+    <circle r="52" fill="url(#avatar)"/>
+    <circle r="52" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.55"/>
+    <circle cy="-11" r="9" fill="none" stroke="#ffffff" stroke-width="2.6" opacity="0.9"/>
+    <path d="M -14 15 Q 0 3 14 15" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" opacity="0.9"/>
+  </g>
+
+  <g transform="translate(980 338)" filter="url(#shadow)">
+    <line x1="0" y1="-52" x2="0" y2="-102" stroke="#2F58A1" stroke-width="4.5" stroke-linecap="round" opacity="0.7"/>
+    <line x1="52" y1="0" x2="102" y2="0" stroke="#66AE3B" stroke-width="4.5" stroke-linecap="round" opacity="0.7"/>
+    <line x1="0" y1="52" x2="0" y2="102" stroke="#F7B900" stroke-width="4.5" stroke-linecap="round" opacity="0.7"/>
+    <line x1="-52" y1="0" x2="-102" y2="0" stroke="#8B5CF6" stroke-width="4.5" stroke-linecap="round" opacity="0.7"/>
+    <circle cx="0" cy="-127" r="25" fill="#2F58A1"/>
+    <circle cx="127" cy="0" r="25" fill="#66AE3B"/>
+    <circle cx="0" cy="127" r="25" fill="#F7B900"/>
+    <circle cx="-127" cy="0" r="25" fill="#8B5CF6"/>
+    <circle r="52" fill="url(#avatar)"/>
+    <circle r="52" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.55"/>
+    <circle cy="-11" r="9" fill="none" stroke="#ffffff" stroke-width="2.6" opacity="0.9"/>
+    <path d="M -14 15 Q 0 3 14 15" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" opacity="0.9"/>
+  </g>
+</svg>
