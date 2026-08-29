@@ -135,12 +135,19 @@ export default function PluzCase() {
 
       <section id="sistema" className="pluz-system-summary">
         <div className="timco-shell pluz-system-summary-card">
-          <div>
-            <p className="pluz-overline">Reglas convertidas en sistema</p>
-            <h2>Asignar bien. Proteger siempre. Leer con contexto.</h2>
+          <div className="pluz-system-map" aria-label="Asignar, guiar, proteger y leer dentro del sistema 360">
+            <div className="pluz-system-orbit" aria-hidden="true">
+              <span><i>01</i>Asignar</span>
+              <span><i>02</i>Guiar</span>
+              <span><i>03</i>Proteger</span>
+              <span><i>04</i>Leer</span>
+              <strong>360<small>Proceso</small></strong>
+            </div>
           </div>
           <div className="pluz-system-summary-copy">
-            <p>La solución sigue el mismo recorrido que la medición: cada relación tiene un rol, cada respuesta permanece protegida y el dashboard muestra una lectura agregada.</p>
+            <p className="pluz-overline">Reglas convertidas en sistema</p>
+            <h2>La lógica 360 vive dentro del sistema.</h2>
+            <p>Asignar, guiar, proteger y leer dejan de ser pasos manuales: la plataforma aplica esas reglas en cada evaluación.</p>
             <div>
               <a href="#consulta">¿Tienes un proceso parecido? <span>→</span></a>
               <a href={repositoryUrl} target="_blank" rel="noreferrer">Ver la solución técnica <span>↗</span></a>
