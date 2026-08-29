@@ -79,12 +79,6 @@ export default function PluzCase() {
               <a href="#modelo">Ver cómo funciona</a>
             </div>
           </div>
-          <div className="pluz-hero-metrics" aria-label="Dimensión de la campaña">
-            <span><strong>671</strong><small>Evaluadores</small></span>
-            <span><strong>87</strong><small>Líderes</small></span>
-            <span><strong>1,109</strong><small>Asignaciones</small></span>
-            <span><strong>56</strong><small>Preguntas</small></span>
-          </div>
         </div>
       </section>
 
