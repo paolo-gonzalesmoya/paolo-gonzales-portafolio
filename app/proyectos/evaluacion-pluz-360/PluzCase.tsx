@@ -2,9 +2,8 @@ import Link from "next/link";
 import PluzRolesAnimation from "./PluzRolesAnimation";
 
 const whatsappUrl =
-  "https://wa.me/51925180724?text=Hola%20Paolo%2C%20vi%20el%20caso%20de%20Evaluaci%C3%B3n%20360%20para%20PLUZ%20y%20quiero%20conversar%20sobre%20un%20proceso%20que%20necesito%20digitalizar.";
+  "https://wa.me/51925180724?text=Hola%20Paolo%2C%20vi%20el%20caso%20de%20Evaluaci%C3%B3n%20360%20y%20quiero%20conversar%20sobre%20un%20proceso%20que%20necesito%20digitalizar.";
 const calComUrl = "https://cal.com/paolo-gonzales-8itwaw";
-const repositoryUrl = "https://github.com/paolo-gonzalesmoya/evaluacion-pluz-360";
 
 const journeySteps = [
   {
@@ -56,7 +55,7 @@ export default function PluzCase() {
         <Link className="timco-brand" href="/" aria-label="Volver al portafolio de Paolo Gonzales">
           <span>PG</span><strong>Paolo Gonzales</strong>
         </Link>
-        <nav aria-label="Navegación del caso PLUZ 360">
+        <nav aria-label="Navegación del caso de evaluación 360">
           <a href="#recorrido">Reglas</a>
           <a href="#modelo">Animación</a>
           <a href="#sistema">Sistema</a>
@@ -70,12 +69,11 @@ export default function PluzCase() {
           <div className="pluz-hero-wash" aria-hidden="true" />
           <div className="pluz-hero-copy">
             <div className="pluz-project-mark">
-              <img src="/assets/projects/pluz-360/logo-pluz.png" alt="PLUZ" />
-              <span>Caso de estudio · Liderazgo</span>
+              <span>Diseño de proceso · Medición 360</span>
             </div>
             <h1>Evaluación<br /><em>360.</em></h1>
             <p className="pluz-hero-lead">Un proceso complejo convertido en una medición clara, confidencial y gobernada por reglas.</p>
-            <p className="pluz-hero-description">No empezamos por una encuesta. Primero entendimos quién evalúa a quién, qué roles aplican y cómo debía protegerse cada respuesta. Desde ahí, VUCA Consultoría construyó para Asertiva Consulting y PLUZ Energía Perú una plataforma alineada con el proceso real.</p>
+            <p className="pluz-hero-description">No empezamos por una encuesta. Primero entendimos quién evalúa a quién, qué roles aplican y cómo debía protegerse cada respuesta. Desde ahí, el proceso se convirtió en una plataforma alineada con las reglas reales de una medición 360.</p>
             <div className="pluz-hero-actions">
               <a href="#recorrido">Entender las reglas <span>↓</span></a>
               <a href="#modelo">Ver cómo funciona</a>
@@ -150,7 +148,7 @@ export default function PluzCase() {
             <p>Asignar, guiar, proteger y leer dejan de ser pasos manuales: la plataforma aplica esas reglas en cada evaluación.</p>
             <div>
               <a href="#consulta">¿Tienes un proceso parecido? <span>→</span></a>
-              <a href={repositoryUrl} target="_blank" rel="noreferrer">Ver la solución técnica <span>↗</span></a>
+              <a href="#modelo">Explorar la animación <span>↑</span></a>
             </div>
           </div>
         </div>

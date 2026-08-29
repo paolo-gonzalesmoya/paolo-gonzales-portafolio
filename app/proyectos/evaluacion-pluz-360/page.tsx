@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import PluzCase from "./PluzCase";
 
 export const metadata: Metadata = {
-  title: "Evaluación de Liderazgo 360 — PLUZ | Paolo Gonzales",
+  title: "Evaluación de Liderazgo 360 | Paolo Gonzales",
   description:
     "Caso de estudio de una plataforma que convierte las reglas de una medición 360 en asignaciones precisas, respuestas protegidas y lectura ejecutiva.",
   openGraph: {
-    title: "Evaluación de Liderazgo 360 — PLUZ",
+    title: "Evaluación de Liderazgo 360",
     description:
       "Un proceso 360 convertido en asignaciones precisas, respuestas protegidas y una lectura ejecutiva clara.",
     type: "article",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Evaluación de Liderazgo 360 — PLUZ",
+    title: "Evaluación de Liderazgo 360",
     description: "Las reglas de la medición convertidas en una experiencia clara, confidencial y medible.",
     images: ["/assets/projects/pluz-360/og-pluz-360.png"],
   },

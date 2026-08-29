@@ -78,13 +78,13 @@ const cases = [
   },
   {
     number: "03",
-    client: "PLUZ Energía Perú",
+    client: "Caso de estudio",
     title: "Evaluación de Liderazgo 360",
     copy: "Una plataforma que traduce las reglas de una medición 360 en asignaciones precisas, respuestas protegidas y una lectura ejecutiva clara.",
     tags: ["671 evaluadores", "Proceso 360", "Confidencialidad", "Dashboard"],
     image: "/assets/projects/pluz-360/portfolio-card-v2.png",
     tone: "blue",
-    href: "/proyectos/evaluacion-pluz-360",
+    href: "/proyectos/evaluacion-360",
   },
   {
     number: "04",
