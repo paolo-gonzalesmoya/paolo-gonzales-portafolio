@@ -1,0 +1,9 @@
+Use case: precise-object-edit
+Asset type: 16:9 application-design scene for a scroll-driven portfolio
+Input images: Image 1 is the current S003 edit target; Image 2 is the approved S001 character/style anchor; Image 3 is Paolo's identity reference.
+Primary request: Preserve at least 90% of the current digital-workshop image. The connected application must be the protagonist: large phone, central hub, form tiles, rule controls, responsible-person tokens and luminous branches must explain the process immediately. Paolo is a secondary guide configuring the system.
+Scale reference: Reduce Paolo only slightly from the current scene and match the approved anchor's credible adult scale relative to the desk chair and workstation, approximately 1.8 times the chair's visible height.
+Composition: Preserve the exact camera, crop, platform, desk, phone, hub, three branches, controls, people tokens, plants and object positions. Paolo must not overlap or visually compete with the phone or hub.
+Identity and style: Preserve Paolo's identity, black shirt, charcoal jacket with beige lining, premium tactile miniature 3D, matte materials, warm daylight, soft shadows and the existing navy/ivory/violet/cyan/coral/green palette.
+Constraints: Change only Paolo's scale/visual emphasis and increase process clarity by no more than 10%. Keep all geometry, lighting and materials unchanged. No words, pseudo-text, letters, numbers, logos, watermarks or signatures.
+Avoid: dominant Paolo, extra people, duplicate Paolo, new UI elements, fake readable text, redesigned architecture, glossy sci-fi styling or clutter.

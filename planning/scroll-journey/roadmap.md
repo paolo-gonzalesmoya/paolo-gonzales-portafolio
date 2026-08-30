@@ -1,8 +1,8 @@
-# Roadmap — Paolo dentro del mundo operativo
+# Roadmap — El proceso dentro del mundo operativo
 
 ## Dirección corregida
 
-El elemento diferencial será ver a **Paolo trabajando dentro de cada escena**. No será una sucesión de paisajes corporativos: será un recorrido por su jornada profesional. Su apariencia, ropa y proporciones permanecerán constantes mientras cambia el entorno.
+El elemento diferencial será ver **el proceso transformarse dentro de cada escena**. Paolo seguirá presente y reconocible, pero como guía secundario: los mapas, estaciones, datos, reglas y resultados ocuparán el primer plano narrativo. Su apariencia y ropa permanecerán constantes mientras su escala visual baja de forma deliberada.
 
 La referencia `scroll-world` aporta la lógica de cámara y transición: miniaturas 3D, profundidad, pausas narrativas y acercamientos. La identidad visual será original y estará construida alrededor de automatización, operaciones y AppSheet.
 
@@ -24,7 +24,7 @@ La referencia `scroll-world` aporta la lógica de cámara y transición: miniatu
 1. La fotografía actual de Paolo funciona como referencia de identidad.
 2. S001 se genera primero y se aprueba como **character anchor**.
 3. Para S002–S008 se adjuntan tanto la fotografía como S001.
-4. Se bloquean rostro, peinado, camisa negra, chaqueta gris con interior beige, proporciones, acabado de piel y escala.
+4. Se bloquean rostro, peinado, camisa negra, chaqueta gris con interior beige, proporciones y acabado de piel; su escala se mantiene entre 32% y 38% de la altura del encuadre y cerca de 1.8 veces la altura visual de una silla equivalente en la escena.
 5. Solo cambian pose, herramienta y escenario.
 
 ## Dirección artística
@@ -34,6 +34,8 @@ La referencia `scroll-world` aporta la lógica de cámara y transición: miniatu
 - Materiales mate, arquitectura modular, sombras suaves y profundidad de campo contenida.
 - Paleta: tinta nocturna, hueso cálido, violeta eléctrico, cian de señal, coral para fricción y verde para resultados.
 - El flujo de datos luminoso es el elemento que conecta todas las escenas.
+- El flujo y sus estaciones tienen mayor contraste y jerarquía que Paolo; la escena debe seguir explicándose si el personaje se oculta.
+- Conservar al menos 90% de la composición, paleta, materiales e iluminación de las imágenes actuales.
 - Textos, cifras, botones, logos y dashboards detallados permanecen en HTML.
 
 ## Recomendación de producción

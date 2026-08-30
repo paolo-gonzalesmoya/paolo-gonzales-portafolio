@@ -1,0 +1,9 @@
+Use case: precise-object-edit
+Asset type: 16:9 diagnostic scene for a scroll-driven portfolio
+Input images: Image 1 is the current S002 edit target; Image 2 is the approved S001 character/style anchor; Image 3 is Paolo's identity reference.
+Primary request: Preserve at least 90% of the current diagnostic-room image. Make the process map, its coral bottleneck and the violet-cyan route the primary visual story. Paolo remains recognizable but secondary, listening and pointing to the bottleneck rather than posing.
+Scale reference: Keep Paolo at the same adult furniture-relative scale as the approved anchor, approximately 1.8 times the visible height of a nearby office chair. All coworkers must use the same credible scale.
+Composition: Preserve the exact isometric camera, room, table, chairs, people count, shelves, plants, route and object positions. Do not add or remove people. Keep the process understandable if Paolo is visually covered.
+Identity and style: Preserve Paolo's face, side-swept black hair, skin tone, black shirt and charcoal jacket with beige lining. Preserve premium tactile miniature 3D, matte architectural materials, warm daylight, soft shadows, midnight navy, warm ivory, violet, cyan, coral and green accents.
+Constraints: Change only Paolo's scale/visual emphasis and the process-map clarity by no more than 10%. No words, pseudo-text, letters, numbers, logos, watermarks or signatures.
+Avoid: Paolo as the largest object, extra people, duplicate Paolo, stock-office posing, redesigned architecture, new props, decorative clutter or childish proportions.

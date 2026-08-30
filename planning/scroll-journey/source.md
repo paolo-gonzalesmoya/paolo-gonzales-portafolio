@@ -1,8 +1,8 @@
-# Fuente narrativa: Paolo Gonzales dentro del mundo operativo
+# Fuente narrativa: El proceso dentro del mundo operativo
 
 ## Idea rectora
 
-Paolo aparece como protagonista recurrente dentro de un mundo 3D isométrico. El visitante lo acompaña desde su oficina hacia distintas escenas de su trabajo: diagnosticar procesos, construir aplicaciones, llevarlas al campo, automatizar documentos, revisar tableros, capacitar equipos y conversar con un posible cliente.
+El proceso es el protagonista recurrente dentro de un mundo 3D isométrico. Paolo aparece como guía humano y reconocible, pero en una escala secundaria: acompaña al visitante desde el desorden manual hasta una operación conectada, automatizada y medible sin competir con los objetos que explican cada etapa.
 
 La cámara avanza siempre hacia delante. Cada cambio de escena ocurre atravesando un objeto relacionado con el trabajo: una pizarra, una pantalla, un teléfono, un flujo de datos o un dashboard. Esto produce la sensación de recorrido de `scroll-world` sin copiar sus escenarios, personajes ni recursos.
 
@@ -12,6 +12,7 @@ La cámara avanza siempre hacia delante. Cada cambio de escena ocurre atravesand
 - Mantener cabello negro lacio hacia un lado, facciones reconocibles y tono de piel.
 - Personaje 3D estilizado y sofisticado, con proporciones de miniatura editorial; no caricatura infantil.
 - Vestimenta ancla: camisa negra y chaqueta gris carbón con interior beige.
+- Mantener a Paolo entre 32% y 38% de la altura del encuadre, aproximadamente 1.8 veces la altura visual de una silla de oficina cercana. Su escala debe ser creíble con el mobiliario, pero su contraste y posición deben mantenerlo como guía secundario.
 - La primera escena aprobada se convierte en referencia adicional para conservar rostro, proporciones, vestimenta y materiales en el resto.
 
 ## Guion visual acordado
@@ -36,7 +37,9 @@ La cámara avanza siempre hacia delante. Cada cambio de escena ocurre atravesand
 
 ## Restricciones
 
-- Paolo debe aparecer en las ocho escenas realizando una acción concreta.
+- Paolo debe aparecer en las ocho escenas realizando una acción concreta, siempre como guía secundario del proceso.
+- El flujo, sus estaciones y la transformación antes/después deben entenderse incluso si se cubre visualmente al personaje.
+- Conservar al menos 90% de la dirección visual existente: cámara, paleta, materiales, iluminación y arquitectura modular.
 - No hornear textos, botones ni logos dentro de las imágenes; se superponen como HTML.
 - No copiar la cafetería, granja, reparto, personajes o paleta de la demo de referencia.
 - La historia debe funcionar con imágenes 2.5D si no existe video.

@@ -1,0 +1,11 @@
+Use case: precise-object-edit
+Asset type: 16:9 anchor scene for a scroll-driven portfolio
+Input images: Image 1 is the edit target (S001 process-first v2); Image 2 is the identity reference for Paolo.
+Primary request: Enlarge only Paolo by approximately 18% from the supplied draft. He should occupy 32–38% of the frame height: only slightly smaller than the original scene, but without becoming the focal point.
+Scale reference: Use the nearby office chair as the physical reference. Standing Paolo must be approximately 1.8 times the chair's visible height, with credible adult proportions and feet grounded naturally on the platform. This furniture-relative scale will be reused in every later scene.
+Composition: Preserve the exact camera, crop, platform, desk, chair, shelves, papers, board, conduit, negative space and every object position. Keep at least 90% of the supplied image unchanged. The process board and violet-cyan flow must remain more visually prominent through contrast and clarity; Paolo must not overlap or dominate them.
+Identity: Preserve Paolo's face, straight side-swept black hair, skin tone, calm expression, adult proportions, black button-up shirt and charcoal jacket with warm beige lining.
+Style: Preserve the premium tactile isometric 3D miniature, fixed 35-degree camera, matte materials, warm studio daylight, soft shadows, restrained depth of field, midnight navy, warm ivory, electric violet, signal cyan, coral friction accents and green outcomes.
+Text: No text.
+Constraints: Change only Paolo's scale and the naturally filled floor immediately around him. Keep all other geometry, palette, lighting, materials and process hierarchy unchanged.
+Avoid: extra people, duplicate Paolo, new props, redesigned architecture, decorative clutter, childish proportions, photorealistic skin, words, pseudo-text, letters, numbers, logos, watermarks or signatures.

@@ -1,0 +1,9 @@
+Use case: precise-object-edit
+Asset type: 16:9 automation-pipeline scene for a scroll-driven portfolio
+Input images: Image 1 is the current S005 edit target; Image 2 is the approved S001 character/style anchor; Image 3 is Paolo's identity reference.
+Primary request: Preserve at least 90% of the current four-station automation image. The uninterrupted route from captured datum to alert, approval and final document is the protagonist. Paolo is a secondary guide checking one control beside the line.
+Scale reference: Keep Paolo at the approved anchor's adult scale relative to the stations, approximately 1.8 times the height of an equivalent nearby chair or workstation control cluster; reduce him only if needed to keep every station visible.
+Composition: Preserve the exact camera, crop, platform, four stations, cyan sphere, coral alert, green approval gate, final document, conduit and object positions. The left-to-right sequence must remain unobstructed.
+Identity and style: Preserve Paolo's identity and wardrobe, premium tactile miniature 3D, matte materials, warm daylight, soft shadows and existing palette.
+Constraints: Change only Paolo's scale/visual emphasis and pipeline clarity by no more than 10%. No words, pseudo-text, letters, numbers, logos, watermarks or signatures.
+Avoid: dominant Paolo, extra people, duplicate Paolo, added stations, redesigned machinery, fake text, excessive glow or clutter.

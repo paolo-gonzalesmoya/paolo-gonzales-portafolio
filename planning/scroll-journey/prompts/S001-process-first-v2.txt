@@ -1,0 +1,10 @@
+Use case: precise-object-edit
+Asset type: 16:9 hero scene for a scroll-driven portfolio
+Input images: Image 1 is the edit target (current S001 scene); Image 2 is the identity reference for Paolo.
+Primary request: Preserve at least 90% of the existing image and change only the visual hierarchy. Reduce Paolo to approximately 65% of his current height so he occupies 25–35% of the frame height and less than 10% of the total visual weight. Make the fragmented manual process, process board and violet-cyan data conduit immediately understandable and dominant.
+Composition: Keep the exact camera, crop, platform, desk, shelves, papers, board, conduit, negative space and object positions. Fill the space around the smaller character naturally; do not add new objects. Increase the process board and luminous flow emphasis only 5–10% through scale, contrast or clarity.
+Identity: Preserve Paolo's face, straight side-swept black hair, skin tone, calm expression, adult proportions, black button-up shirt and charcoal jacket with warm beige lining.
+Style: Preserve the premium tactile isometric 3D miniature, fixed 35-degree camera, matte materials, warm studio daylight, soft shadows, restrained depth of field, midnight navy, warm ivory, electric violet, signal cyan, coral friction accents and green outcomes.
+Text: No text.
+Constraints: Change only the character scale and process hierarchy. Keep all other geometry, palette, lighting and materials unchanged. No words, pseudo-text, letters, numbers, logos, watermarks or signatures.
+Avoid: extra people, duplicate Paolo, new props, redesigned architecture, decorative clutter, childish proportions or photorealistic skin.

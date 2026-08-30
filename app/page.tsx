@@ -8,42 +8,42 @@ const scenes = [
   {
     number: "01",
     eyebrow: "Entender",
-    title: "Los procesos cuentan una historia.",
-    copy: "En mi oficina reviso hojas, mensajes y tareas manuales; luego sigo la información junto al equipo hasta encontrar dónde se pierde tiempo y trazabilidad.",
-    signal: "Una prioridad clara antes que herramientas",
-    image: "/assets/journey/scene-01.webp",
+    title: "Primero, entender la operación.",
+    copy: "Analizo cómo circulan la información, las decisiones y la evidencia para identificar la fricción prioritaria antes de definir herramientas.",
+    signal: "Diagnóstico antes que tecnología",
+    image: "/assets/journey-v2/scene-01.webp",
   },
   {
     number: "02",
     eyebrow: "Diseñar",
-    title: "El recorrido se convierte en una app.",
-    copy: "Conecto formularios, reglas y responsables en una primera versión simple que el equipo puede probar antes de invertir de más.",
-    signal: "Prototipo funcional",
-    image: "/assets/journey/scene-03.webp",
+    title: "El proceso se diseña como sistema.",
+    copy: "Convierto reglas, responsables y excepciones en una primera aplicación funcional que el equipo puede validar con bajo riesgo.",
+    signal: "Prototipo validable",
+    image: "/assets/journey-v2/scene-03.webp",
   },
   {
     number: "03",
     eyebrow: "Implementar",
-    title: "La solución llega al trabajo real.",
-    copy: "Campo, obra, almacén o celular: el dato nace donde ocurre la operación y viaja sin volver a ser digitado.",
-    signal: "Captura desde cualquier lugar",
-    image: "/assets/journey/scene-04.webp",
+    title: "El sistema entra en la operación.",
+    copy: "La información se captura en campo, obra, almacén o celular, desde el punto donde nace y sin duplicar registros.",
+    signal: "Datos desde el origen",
+    image: "/assets/journey-v2/scene-04.webp",
   },
   {
     number: "04",
     eyebrow: "Automatizar",
-    title: "Una acción activa todo el flujo.",
-    copy: "Alertas, documentos, firmas y aprobaciones avanzan de forma automática mientras cada rol mantiene el control que necesita.",
-    signal: "Menos seguimiento manual",
-    image: "/assets/journey/scene-05.webp",
+    title: "Cada registro activa el siguiente paso.",
+    copy: "Alertas, documentos, aprobaciones y firmas avanzan dentro de un flujo controlado, con responsabilidades y trazabilidad claras.",
+    signal: "Automatización con control",
+    image: "/assets/journey-v2/scene-05.webp",
   },
   {
     number: "05",
     eyebrow: "Decidir y evolucionar",
-    title: "Los datos guían la siguiente mejora.",
-    copy: "Facturación, riesgos y productividad se convierten en decisiones claras; luego acompaño al equipo para mejorar la solución a partir del uso real.",
-    signal: "Control y adopción sostenible",
-    image: "/assets/journey/scene-06.webp",
+    title: "La operación se convierte en criterio.",
+    copy: "Los datos de uso, riesgos, productividad e inventario permiten controlar resultados y priorizar la siguiente mejora.",
+    signal: "Decisiones con evidencia",
+    image: "/assets/journey-v2/scene-06.webp",
   },
 ];
 
@@ -62,8 +62,8 @@ const cases = [
     number: "01",
     client: "TIMCO",
     title: "Almacén Layout",
-    copy: "Un caso completo de ingreso, evidencia, inventario y salida: el layout táctil convierte cada movimiento del almacén en control operativo y área para cobro.",
-    tags: ["Ingreso y salida", "PDF + QR", "Layout táctil", "Área y cobro"],
+    copy: "Registro de ingresos y salidas, evidencia PDF con QR, inventario vigente y layout táctil en un solo sistema. La ubicación y el área ocupada quedan listas para la operación y el cobro.",
+    tags: ["Ingreso y salida", "PDF + QR", "Inventario vigente", "Área y cobro"],
     image: "/assets/projects/timco/scene-01.webp",
     tone: "violet",
     href: "/proyectos/inventario-almacenes",
@@ -72,7 +72,7 @@ const cases = [
     number: "02",
     client: "PDK Produktiva",
     title: "RAC 360",
-    copy: "Metas semanales, informes automáticos y hallazgos SSOMA trazables: menos horas de consolidación para Document Control y una base preparada para detectar patrones con IA.",
+    copy: "Un flujo trazable para registrar, clasificar, asignar y cerrar hallazgos SSOMA. Controla metas semanales, automatiza informes y deja una base consistente para analizar recurrencias con IA.",
     tags: ["Metas semanales", "Informes automáticos", "Trazabilidad SST", "Base para IA"],
     image: "/assets/projects/rac-360/scene-01.webp",
     tone: "orange",
@@ -82,7 +82,7 @@ const cases = [
     number: "03",
     client: "Caso de estudio",
     title: "Evaluación de Liderazgo 360",
-    copy: "Una plataforma que traduce las reglas de una medición 360 en asignaciones precisas, respuestas protegidas y una lectura ejecutiva clara.",
+    copy: "Una plataforma que respeta la lógica real de una medición 360: roles configurables por líder, respuestas agregadas para proteger la confidencialidad y resultados ejecutivos claros.",
     tags: ["Roles configurables", "Proceso 360", "Confidencialidad", "Dashboard"],
     image: "/assets/projects/pluz-360/portfolio-card-v2.png",
     tone: "blue",
@@ -91,11 +91,11 @@ const cases = [
 ];
 
 const method = [
-  ["01", "Entender", "Seguir el proceso real y encontrar la fricción prioritaria."],
-  ["02", "Diseñar", "Convertir el recorrido principal en un prototipo funcional."],
-  ["03", "Implementar", "Llevar la solución al lugar donde ocurre el trabajo."],
-  ["04", "Automatizar", "Conectar personas, datos, documentos y alertas."],
-  ["05", "Decidir y evolucionar", "Medir el uso, acompañar al equipo y priorizar la siguiente mejora."],
+  ["01", "Entender", "Observar el trabajo real, sus reglas y la fricción que merece prioridad."],
+  ["02", "Diseñar", "Traducir el recorrido en datos, roles y una primera experiencia validable."],
+  ["03", "Implementar", "Llevar el sistema al contexto donde el equipo realmente lo utiliza."],
+  ["04", "Automatizar", "Conectar alertas, documentos, aprobaciones e indicadores con control."],
+  ["05", "Evolucionar", "Medir el uso, acompañar la adopción y decidir la siguiente mejora."],
 ];
 
 const whatsappUrl =
@@ -223,11 +223,11 @@ export default function Home() {
               const opacity = isCurrent ? 1 : isNext ? sceneBlend : 0;
               const direction = index % 2 === 0 ? 1 : -1;
               const motionBoost = isMobile ? 1.5 : 1;
-              const scale = isCurrent
+              const scale = 0.95 * (isCurrent
                 ? 1 + sceneBlend * 0.016 * motionBoost
                 : isNext
                   ? 1 + (1 - sceneBlend) * 0.018 * motionBoost
-                  : 1 + 0.018 * motionBoost;
+                  : 1 + 0.018 * motionBoost);
               const pan = isCurrent
                 ? sceneBlend * -1.05 * direction * motionBoost
                 : isNext
@@ -284,14 +284,14 @@ export default function Home() {
                     decoding="async"
                   />
                   <div className="world-kicker"><span>{scene.number}</span>{scene.eyebrow}</div>
-                  {index === 0 && <p className="world-role">Consultor no-code · Especialista AppSheet</p>}
+                  {index === 0 && <p className="world-role">Consultor de automatización · Especialista en AppSheet</p>}
                   <h1>{scene.title}</h1>
                   <p>{scene.copy}</p>
                   <div className="world-signal"><i />{scene.signal}</div>
                   {index === 0 && (
                     <div className="world-actions">
-                      {!isMobile && <button type="button" onClick={() => goToScene(1)}>Comenzar el recorrido <span>↓</span></button>}
-                      <a href={whatsappUrl} target="_blank" rel="noreferrer">Escribir por WhatsApp ↗</a>
+                      {!isMobile && <button type="button" onClick={() => goToScene(1)}>Ver cómo trabajo <span>↓</span></button>}
+                      <a href={whatsappUrl} target="_blank" rel="noreferrer">Conversar por WhatsApp ↗</a>
                     </div>
                   )}
                   {!isMobile && index === activeScenes.length - 1 && (
@@ -334,7 +334,7 @@ export default function Home() {
 
       <section className="world-trust" aria-label="Empresas con las que ha trabajado Paolo">
         <div className="world-shell">
-          <p>Experiencia desarrollando soluciones para</p>
+          <p>Experiencia desarrollando sistemas para</p>
           <div>
             {clients.map((client) => <img className={client.name === "Asertiva" ? "is-asertiva" : undefined} src={client.logo} alt={client.name} key={client.name} />)}
           </div>
@@ -344,8 +344,8 @@ export default function Home() {
       <section id="casos" className="world-section world-cases">
         <div className="world-shell">
           <div className="world-heading world-portfolio-heading">
-            <div><p>Portafolio de productos</p><h2>Procesos reales convertidos en productos digitales.</h2></div>
-            <span>Una selección de soluciones construidas alrededor de operaciones reales. El portafolio crecerá con nuevos casos completos, sin perder claridad.</span>
+            <div><p>Casos de estudio</p><h2>Sistemas diseñados alrededor de operaciones reales.</h2></div>
+            <span>Cada proyecto parte de reglas, responsables y evidencia concretos. Aquí muestro cómo el proceso se traduce en una solución que el equipo puede usar y controlar.</span>
           </div>
 
           <article className="world-project-featured">
@@ -370,8 +370,8 @@ export default function Home() {
           </article>
 
           <div className="world-project-library-heading">
-            <div><p>Archivo de proyectos</p><h3>Otras soluciones construidas.</h3></div>
-            <span>Casos breves que se convertirán progresivamente en páginas completas.</span>
+            <div><p>Más casos</p><h3>Soluciones con reglas distintas, un mismo criterio.</h3></div>
+            <span>Diseñar desde el proceso, validar con usuarios y automatizar sólo donde aporta control.</span>
           </div>
 
           <div className="world-project-library">
@@ -395,13 +395,13 @@ export default function Home() {
         <div className="world-shell">
           <div className="world-heading light world-method-heading">
             <div>
-              <p>Cómo trabajo</p>
-              <h2>Una transformación<br />en cinco movimientos.</h2>
-              <span className="world-method-lead">Una buena app no empieza con pantallas. Empieza entendiendo una fricción y crece con el uso real.</span>
+              <p>Método de trabajo</p>
+              <h2>Del proceso real a un sistema que se sostiene.</h2>
+              <span className="world-method-lead">La herramienta llega después del diagnóstico. Cada fase reduce incertidumbre, valida decisiones y prepara la siguiente mejora.</span>
             </div>
             <div className="world-method-visual">
-              <img src="/assets/journey/scene-07.webp" alt="Paolo capacitando al equipo para adoptar la solución" loading="lazy" decoding="async" />
-              <span>La tecnología se vuelve útil cuando el equipo la hace suya.</span>
+              <img src="/assets/journey-v2/scene-07.webp" alt="Paolo guiando al equipo durante la adopción del sistema" loading="lazy" decoding="async" />
+              <span>La solución se consolida cuando el equipo entiende el proceso y puede operarlo con autonomía.</span>
             </div>
           </div>
           <div className="world-method-grid">
@@ -425,9 +425,9 @@ export default function Home() {
             <img src="/assets/paolo-gonzales.webp" alt="Paolo Gonzales, consultor de automatización y especialista en AppSheet" />
           </div>
           <div className="world-profile-copy">
-            <p className="world-overline">Paolo Gonzales</p>
-            <h2>La tecnología es el medio. El proceso es el punto de partida.</h2>
-            <p>Combino criterio de negocio, desarrollo no-code y experiencia en campo para crear soluciones simples de operar, medibles y sostenibles.</p>
+            <p className="world-overline">Criterio técnico y operativo</p>
+            <h2>Diseño tecnología alrededor del proceso, no al revés.</h2>
+            <p>Combino análisis de negocio, desarrollo no-code y experiencia en campo para construir sistemas claros de operar, trazables y preparados para evolucionar.</p>
             <div className="world-profile-facts">
               <div><strong>10+</strong><span>soluciones empresariales</span></div>
               <div><strong>4+</strong><span>años liderando proyectos</span></div>
@@ -440,29 +440,29 @@ export default function Home() {
       <section className="world-courses">
         <div className="world-shell world-courses-grid">
           <div>
-            <p className="world-overline">Formación práctica</p>
-            <h2>También te enseño a construir.</h2>
-            <p>AppSheet desde los fundamentos hasta automatizaciones avanzadas, con sesiones en vivo, grabaciones y proyecto práctico.</p>
+            <p className="world-overline">Formación aplicada</p>
+            <h2>Aprende a construir soluciones que sí llegan a operación.</h2>
+            <p>Cursos de AppSheet orientados a casos prácticos: desde estructurar datos y crear una primera app hasta implementar seguridad, automatizaciones e integraciones.</p>
             <a href="/cursos">Explorar cursos <span>↗</span></a>
           </div>
           <div className="world-course-levels">
-            <article><span>01</span><small>US$20</small><h3>Básico e intermedio</h3><p>Convierte hojas y procesos manuales en una primera aplicación funcional.</p></article>
-            <article><span>02</span><small>US$40</small><h3>Avanzado</h3><p>Seguridad, automatizaciones e integraciones para soluciones empresariales.</p></article>
+            <article><span>01</span><small>US$20</small><h3>Básico e intermedio</h3><p>Estructura datos y convierte un proceso manual en una aplicación funcional.</p></article>
+            <article><span>02</span><small>US$40</small><h3>Avanzado</h3><p>Implementa seguridad, automatizaciones e integraciones con criterio empresarial.</p></article>
           </div>
         </div>
       </section>
 
       <section id="contacto" className="world-contact">
         <div className="world-contact-scene" aria-hidden="true">
-          <img src="/assets/journey/scene-08.webp" alt="" />
+          <img src="/assets/journey-v2/scene-08.webp" alt="" />
         </div>
         <div className="world-shell world-contact-grid">
           <div>
-            <p className="world-overline">¿Tienes un proceso manual por mejorar?</p>
-            <h2>Tu operación puede ser la siguiente escena.</h2>
+            <p className="world-overline">Conversemos sobre tu operación</p>
+            <h2>El siguiente sistema empieza por entender cómo trabajan hoy.</h2>
           </div>
           <div className="world-contact-card">
-            <p>Cuéntame cómo trabajan hoy. Definiremos una primera etapa clara, útil y ajustada a tu presupuesto.</p>
+            <p>Revisemos el proceso, la fricción prioritaria y el alcance de una primera etapa útil, sin sobredimensionar la solución ni comprometer el control.</p>
             <a href={whatsappUrl} target="_blank" rel="noreferrer"><span>WhatsApp</span><strong>+51 925 180 724</strong><b>↗</b></a>
             <a href="mailto:paolo.gonzalesmoya@gmail.com"><span>Correo</span><strong>paolo.gonzalesmoya@gmail.com</strong><b>↗</b></a>
             <small>Lima, Perú · Proyectos presenciales y remotos</small>

@@ -1,0 +1,9 @@
+Use case: precise-object-edit
+Asset type: 16:9 decision-dashboard scene for a scroll-driven portfolio
+Input images: Image 1 is the current S006 edit target; Image 2 is the approved S001 character/style anchor; Image 3 is Paolo's identity reference.
+Primary request: Preserve at least 90% of the current control-room image. The three dashboard surfaces, central data hub and connected metrics must be the primary visual hierarchy. Paolo interprets the information as a secondary guide while the decision-maker observes.
+Scale reference: Match both people to the approved anchor's adult scale relative to the dashboard consoles and nearby chair; Paolo must not be larger or higher contrast than the central hub or screens.
+Composition: Preserve the exact camera, crop, platform, three screens, hub, people count, conduits, plants and object positions. Keep charts abstract and the camera path through the central dashboard clear.
+Identity and style: Preserve Paolo's identity and wardrobe, premium tactile miniature 3D, matte materials, warm daylight, soft shadows and existing palette.
+Constraints: Change only Paolo's scale/visual emphasis and dashboard hierarchy by no more than 10%. No words, pseudo-text, letters, numbers, logos, watermarks or signatures.
+Avoid: dominant Paolo, extra people, duplicate Paolo, dense UI, fake text, added screens, scene redesign or clutter.

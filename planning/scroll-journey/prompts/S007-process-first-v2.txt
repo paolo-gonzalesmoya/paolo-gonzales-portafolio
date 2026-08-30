@@ -1,0 +1,9 @@
+Use case: precise-object-edit
+Asset type: 16:9 team-training scene for a scroll-driven portfolio
+Input images: Image 1 is the current S007 edit target; Image 2 is the approved S001 character/style anchor; Image 3 is Paolo's identity reference.
+Primary request: Preserve at least 90% of the current training-studio image. Team adoption is the protagonist: learners using devices, the abstract app screen and the connected growth nodes must communicate that the solution continues after delivery. Paolo teaches as a secondary facilitator.
+Scale reference: Match Paolo and learners to the approved anchor's credible adult scale relative to chairs, tablets and the screen. Paolo must be the same scale as the team and must not dominate the group.
+Composition: Preserve the exact camera, crop, platform, screen, learners, chairs, devices, node plants, conduits and object positions. Keep the learning interaction and growth metaphor unobstructed.
+Identity and style: Preserve Paolo's identity and wardrobe, premium tactile miniature 3D, matte materials, warm daylight, soft shadows and existing palette.
+Constraints: Change only Paolo's scale/visual emphasis and team/process clarity by no more than 10%. No words, pseudo-text, letters, numbers, logos, watermarks or signatures.
+Avoid: dominant Paolo, extra people, duplicate Paolo, classroom clichés, new props, fake text, scene redesign or clutter.

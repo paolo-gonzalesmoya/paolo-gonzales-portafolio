@@ -1,0 +1,9 @@
+Use case: precise-object-edit
+Asset type: 16:9 consultation scene for a scroll-driven portfolio
+Input images: Image 1 is the current S008 edit target; Image 2 is the approved S001 character/style anchor; Image 3 is Paolo's identity reference.
+Primary request: Preserve at least 90% of the current open-office image. The transformed process is the protagonist: scattered inputs now converge through an orderly violet-cyan route toward a green outcome, ending at an open consultation place. Paolo invites the viewer as a secondary host.
+Scale reference: Use the empty consultation chair as the physical reference. Standing Paolo should match the approved anchor at approximately 1.8 times the chair's visible height, only slightly smaller than the original scene and never the largest object.
+Composition: Preserve the exact camera, crop, office platform, desk, empty chair, papers, route, green outcome hub, negative space and object positions. Keep the empty chair and converging process route more prominent than Paolo.
+Identity and style: Preserve Paolo's identity and wardrobe, premium tactile miniature 3D, matte materials, warm daylight, soft shadows and existing palette.
+Constraints: Change only Paolo's scale/visual emphasis and process convergence clarity by no more than 10%. No words, pseudo-text, letters, numbers, logos, watermarks or signatures.
+Avoid: dominant Paolo, extra people, duplicate Paolo, handshake pose, sales clichés, new props, scene redesign or clutter.

@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "Paolo Gonzales | Digitalización que sí se usa";
+const title = "Paolo Gonzales | Sistemas para operaciones reales";
 const description =
-  "Recorre el trabajo de Paolo Gonzales: diagnóstico, aplicaciones empresariales, AppSheet, automatización, analítica y capacitación.";
+  "Portafolio de Paolo Gonzales: sistemas de automatización, AppSheet y digitalización de procesos para operaciones que necesitan trazabilidad, control y capacidad de evolucionar.";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
@@ -47,7 +47,7 @@ export async function generateMetadata(): Promise<Metadata> {
           url: socialImage,
           width: 1200,
           height: 630,
-          alt: "Paolo Gonzales — Digitalización que sí se usa",
+          alt: "Paolo Gonzales — Sistemas para operaciones reales",
         },
       ],
     },

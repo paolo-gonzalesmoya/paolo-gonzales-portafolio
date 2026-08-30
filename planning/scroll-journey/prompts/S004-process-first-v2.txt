@@ -1,0 +1,9 @@
+Use case: precise-object-edit
+Asset type: 16:9 field-implementation scene for a scroll-driven portfolio
+Input images: Image 1 is the current S004 edit target; Image 2 is the approved S001 character/style anchor; Image 3 is Paolo's identity reference.
+Primary request: Preserve at least 90% of the current construction-and-warehouse image. The operational capture must be primary: the worker's device, cyan data sphere, conduit and receiving hub must clearly show that data is registered once where work happens. Paolo accompanies the worker as a secondary guide.
+Scale reference: Match Paolo and the worker to the approved anchor's credible scale relative to nearby pallets, barriers and forklift; Paolo must not be larger than the worker or operational equipment.
+Composition: Preserve the exact camera, crop, construction zone, warehouse edge, people count, device, conduit, hub, pallets, forklift and object positions. Keep the data path unobstructed and visually dominant.
+Identity and style: Preserve Paolo's identity and wardrobe, premium tactile miniature 3D, matte materials, warm daylight, soft shadows and existing navy/ivory/violet/cyan/coral/green palette.
+Constraints: Change only Paolo's scale/visual emphasis and data-path clarity by no more than 10%. No words, pseudo-text, letters, numbers, logos, watermarks or signatures.
+Avoid: dominant Paolo, extra people, duplicate Paolo, added machinery, unsafe staging, scene redesign, childish proportions or clutter.
