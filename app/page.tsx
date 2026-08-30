@@ -86,15 +86,6 @@ const cases = [
     tone: "blue",
     href: "/proyectos/evaluacion-360",
   },
-  {
-    number: "04",
-    client: "Parte Diario",
-    title: "Jornadas de operador desde el celular",
-    copy: "Registro móvil, firma, aprobación y generación del documento final sin infraestructura adicional.",
-    tags: ["Registro móvil", "Firma digital", "Aprobación", "PDF automático"],
-    image: "/assets/parte-diario.webp",
-    tone: "coral",
-  },
 ];
 
 const method = [
