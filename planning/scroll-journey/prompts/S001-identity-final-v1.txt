@@ -1,0 +1,9 @@
+Use case: identity-preserve
+Asset type: final facial-likeness correction for the first website hero scene
+Input images: Image 1 is the edit target; Image 2 is the only authoritative identity reference.
+
+Change only the face and hair of the standing man. Make him recognizably Paolo Gonzales from Image 2, including his real adult age and mature facial proportions. The current face in Image 1 is too youthful, too round and generic.
+
+Copy these visible traits from Image 2: an adult man in his early-to-mid 40s; elongated narrow face and longer midface; subtle forehead and under-eye definition; high cheekbones; dark brown, relatively large and more rounded eyes; prominent long straight nose; slim closed mouth; narrow chin; medium warm tan skin; clean-shaven; straight layered black hair crossing the forehead diagonally and framing the sides of the face. Preserve the same calm, serious gaze as Image 2. The result must look like the real person photographed in Image 2, miniaturized, not like a young generic character.
+
+Keep absolutely everything else from Image 1 unchanged: body, pose, hand position, clothing, avatar size, platform position, lighting, shadows, workflow, desk, board, documents, paths, objects, crop and negative space. No text, no new objects, no logos, no watermark.

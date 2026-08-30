@@ -11,7 +11,7 @@ const scenes = [
     title: "Primero, entender la operación.",
     copy: "Analizo cómo circulan la información, las decisiones y la evidencia para identificar la fricción prioritaria antes de definir herramientas.",
     signal: "Diagnóstico antes que tecnología",
-    image: "/assets/journey-v2/scene-01.webp",
+    image: "/assets/journey-v2/scene-01-identity.webp",
   },
   {
     number: "02",
