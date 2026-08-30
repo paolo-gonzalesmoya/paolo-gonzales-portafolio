@@ -53,6 +53,8 @@ const clients = [
   { name: "Storange", logo: "/assets/logo-storange.webp" },
   { name: "Loyola Live Solar", logo: "/assets/logo-loyola.webp" },
   { name: "ABC Carbon", logo: "/assets/logo-abc-carbon.webp" },
+  { name: "Asertiva", logo: "/assets/logo-asertiva.png" },
+  { name: "PUCP", logo: "/assets/logo-pucp.jpg" },
 ];
 
 const cases = [
@@ -334,7 +336,7 @@ export default function Home() {
         <div className="world-shell">
           <p>Experiencia desarrollando soluciones para</p>
           <div>
-            {clients.map((client) => <img src={client.logo} alt={client.name} key={client.name} />)}
+            {clients.map((client) => <img className={client.name === "Asertiva" ? "is-asertiva" : undefined} src={client.logo} alt={client.name} key={client.name} />)}
           </div>
         </div>
       </section>

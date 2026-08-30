@@ -585,9 +585,10 @@ img { display: block; max-width: 100%; }
 .world-trust { border-top: 1px solid rgba(17,21,34,.09); border-bottom: 1px solid rgba(17,21,34,.1); background: #fffaf3; }
 .world-trust .world-shell { min-height: 118px; display: grid; grid-template-columns: 210px 1fr; align-items: center; gap: 40px; }
 .world-trust p { margin: 0; color: #898379; font-size: 8px; font-weight: 720; line-height: 1.5; letter-spacing: .14em; text-transform: uppercase; }
-.world-trust .world-shell>div { display: grid; grid-template-columns: repeat(5, 1fr); align-items: center; gap: 22px; }
-.world-trust img { width: 100%; height: 38px; object-fit: contain; filter: grayscale(1); opacity: .57; transition: filter .25s, opacity .25s, transform .25s; }
-.world-trust img:hover { filter: none; opacity: 1; transform: translateY(-2px); }
+.world-trust .world-shell>div { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); align-items: center; gap: clamp(14px,1.5vw,22px); }
+.world-trust img { width: 100%; height: 38px; object-fit: contain; filter: grayscale(1); opacity: .57; transform: scale(var(--client-logo-scale,1)); transition: filter .25s, opacity .25s, transform .25s; }
+.world-trust img.is-asertiva { --client-logo-scale: 2.35; }
+.world-trust img:hover { filter: none; opacity: 1; transform: translateY(-2px) scale(var(--client-logo-scale,1)); }
 
 .world-section { padding: 140px 0; }
 .world-heading { display: grid; grid-template-columns: 1.1fr .48fr; gap: 90px; align-items: end; margin-bottom: 68px; }
@@ -779,7 +780,7 @@ img { display: block; max-width: 100%; }
   .world-actions { margin-top: 18px; }
   .world-actions button, .world-actions a { min-height: 43px; padding: 0 13px; font-size: 8px; }
   .world-trust .world-shell { min-height: 150px; grid-template-columns: 1fr; gap: 18px; padding: 25px 0; }
-  .world-trust .world-shell>div { grid-template-columns: repeat(3, 1fr); gap: 15px; }
+  .world-trust .world-shell>div { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px 15px; }
   .world-section, .world-reel, .world-profile, .world-courses, .world-contact { padding: 90px 0; }
   .world-heading { margin-bottom: 44px; }
   .world-heading h2 { font-size: 47px; }
